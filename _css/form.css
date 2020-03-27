@@ -1,0 +1,55 @@
+
+input, select {
+  display: block;
+  font-family: "Helvetica";
+  font-size: 1em;
+  color: var(--text-color);
+  background: white;
+  margin: 0.5em 0 1.5em;
+  padding: 0.75em;
+  box-sizing: border-box;
+  border: 3px solid var(--text-color);
+}
+input[type=submit] {
+  -webkit-appearance: none;
+}
+
+.button, .btn {
+  cursor: pointer;
+  display: block;
+  padding: .7em .7em .6em;
+  border: 3px solid var(--light-grey);
+  background: white;
+  border-radius: 0;
+
+  @extend .title-sm;
+}
+.btn.btn--lg {
+  font-size: 2em;
+  padding: .35em .7em .2em;
+}
+.btn--inline {
+  display: inline-block;
+  min-width: 5em;
+  text-align: center;
+}
+.btn-sizes {
+  width: auto;
+  display: inline-block;
+  padding: 0.5em .6em .3em;
+}
+.btn.active {
+  border-color: var(--text-color);
+}
+
+.btn--inline {
+  display: inline-block;
+}
+.btn--pink {
+  border: 3px solid var(--dark-peach);
+  background: var(--light-peach);
+}
+.btn--grey-blue {
+  color: white;
+  background: var(--dark-grey-blue);
+}

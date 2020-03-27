@@ -1,0 +1,16 @@
+{% if include.title_filter %}
+  {% assign events = site.data.studyhall.events | where: "title", include.title_filter %}
+{% else %}
+  {% assign events = site.data.studyhall.events %}
+{% endif %}
+
+<div class="clearfix">
+
+{% for studyhall in events %}
+  {% assign img_rand = studyhall.eventphotos | randomize %}
+  {% for img in img_rand %}
+    <img src="{{ img | asset_url }}" class="studyhall-thumbs">
+  {% endfor %}
+{% endfor %}
+
+</div>

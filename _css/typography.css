@@ -1,0 +1,127 @@
+@font-face {
+  font-family: "Helvetica";
+  src: url("/assets/fonts/HelveticaNeueLight.woff") format("woff");
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Helvetica";
+  src: url("/assets/fonts/HelveticaNeueLightItalic.woff") format("woff");
+  font-style: italic;
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Helvetica";
+  src: url("/assets/fonts/HelveticaNeuBold.woff") format("woff");
+  font-style: normal;
+  font-weight: 700;
+}
+
+body {
+  font-family: "Helvetica";
+  font-size: 16px;
+  color: var(--text-color);
+  background: white;
+  line-height: 1.1;
+}
+@media (--viewport-xs-only) {
+  body {
+    font-size: 15px;
+  }
+}
+p {
+  margin: 0 0 .8em;
+  line-height: 1.4em;
+}
+li {
+  line-height: 1.4em;
+  margin: 0 0 .8em;
+}
+ul.tight li {
+  margin-bottom: 0;
+}
+
+a {
+  color: var(--text-color);
+}
+a,
+nav a:hover,
+nav .active a,
+.button:hover,
+.btn:hover,
+.superlink:hover {
+  text-decoration: underline;
+}
+nav a,
+a:hover,
+.button,
+.btn,
+.superlink {
+  text-decoration: none;
+}
+
+
+/* .title-alt-xxl,
+.title-alt-lg,
+.title-alt-md,
+.title-alt-sm,
+.title-alt-xs,
+.title-alt-xxs,
+.text-content h1,
+.text-content h2,
+.text-content h3 {
+  font-weight: 700;
+  line-height: 1.1em;
+} */
+
+.title-xxl,
+.title-xl,
+.title-lg,
+.title-md,
+.title-sm,
+.title-xs
+{
+  font-weight: 700;
+  line-height: 1.15;
+}
+.title-xxl, .title-alt-xxl {
+  font-size: 10em;
+}
+.title-xl {
+  font-size: 6em;
+}
+p.title-xl, p.title-lg {
+  margin-bottom: 0.4em;
+}
+
+.title-lg, .title-alt-lg {
+  font-size: 4em;
+}
+.title-md, .title-alt-md {
+  font-size: 2.5em;
+}
+.title-sm, .title-alt-sm {
+  font-size: 1.5em;
+}
+.title-xs, .title-alt-xs {
+  font-size: 1em;
+}
+
+@media (--viewport-xs-only) {
+  .title-xxl, .title-alt-xxl {
+    font-size: 4.5em;
+  }
+  .title-xl {
+    font-size: 3em;
+  }
+  .title-lg, .title-alt-lg {
+    font-size: 2.5em;
+  }
+  .title-md, .title-alt-md {
+    font-size: 1.8em;
+  }
+  .title-sm, .title-alt-sm {
+    font-size: 1.2em;
+  }
+
+}

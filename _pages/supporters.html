@@ -1,0 +1,28 @@
+---
+layout: default
+title: "Study Hall | Supporters & Presenters"
+permalink: /supporters
+---
+
+
+<div class="section">
+  <div class="container">
+
+    <div class="title-xl">Supporters</div>
+    <div class="row">
+
+      {% assign img_rand = site.data.studyhall.sponsors %}
+      {% for img in img_rand %}
+        <img src="{{ img.logo_black | asset_url }}" class="sponsors-thumbs" alt="{{ img.name }}">
+      {% endfor %}
+
+      {% assign img_rand = site.data.studyhall.speakers | randomize %}
+      {% for img in img_rand %}
+        <img src="{{ img.logo_black | asset_url }}" class="sponsors-thumbs" alt="{{ img.name }}">
+      {% endfor %}
+
+
+    </div>
+
+  </div>
+</div>

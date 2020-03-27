@@ -1,0 +1,42 @@
+
+<div class="nav-item">
+  <a href="/">Home</a>
+</div>
+
+<div class="nav-item">
+  <a href="/landfills-as-museums">Landfills as Museums</a>
+</div>
+
+<div class="nav-item">
+  <a href="https://onexone.earth" target="_blank">One X One</a>
+</div>
+
+<div class="nav-item">
+  <a href="/studyhall">Study Hall Summit</a>
+
+  {% assign pages = site.pages | where_exp: "page", "page.url contains 'study-hall'" | sort: "date", "last" | reverse %}
+  {% for item in pages %}
+    <div class="nav-item">
+      <a href="{{ item.url }}"><span class="title-xs">{{ item.title }}</span><br>
+        <!-- <span style="font-weight:400;">{{ item.date | date: "%B %e, %Y" }}</span> -->
+      </a>
+    </div>
+  {% endfor %}
+
+  <div class="nav-item">
+    <a href="/supporters">Supporters & Presenters</a>
+  </div>
+
+</div>
+
+<div class="nav-item">
+  <a href="/live">Study Hall Live Radio</a>
+</div>
+
+<div class="nav-item">
+  <a href="https://shop.slowfactory.foundation/collections/all">Exit Through the Gift Shop</a>
+</div>
+
+<!-- <div class="nav-item">
+  <a href="/team">Team</a>
+</div> -->

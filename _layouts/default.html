@@ -1,0 +1,31 @@
+{% include html-head.liquid %}
+
+<body>
+
+  <!--[if lt IE 10]>
+  <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+  <![endif]-->
+
+{% include header.liquid %}
+
+<div class="main-content">
+
+  {{ content }}
+
+</div>
+
+{% include footer.liquid %}
+
+{% comment %}
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-34384760-3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-34384760-3');
+</script>
+{% endcomment %}
+</body>
+</html>

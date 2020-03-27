@@ -1,0 +1,17 @@
+{% if include.title_filter %}
+  {% assign events = site.data.studyhall.events | where: "title", include.title_filter %}
+  {% assign event = events[0] %}
+  {% assign sponsors = event.sponsors %}
+{% else %}
+  {% assign sponsors = site.data.studyhall.globalsponsors %}
+{% endif %}
+
+<div class="row-xs" style="justify-content: space-between;">
+
+  {% for sponsor in sponsors %}
+    {% assign sponsor_obj = site.data.studyhall.sponsors | where: "name", sponsor %}
+    {% assign sponsor_obj = sponsor_obj[0] %}
+    <img src="{{ sponsor_obj.logo_white | asset_url }}" class="sponsors-thumbs">
+  {% endfor %}
+
+</div>

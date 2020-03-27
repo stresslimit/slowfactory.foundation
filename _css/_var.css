@@ -1,0 +1,47 @@
+:root {
+
+  --text-color: #000;
+
+/* helvetica redesign */
+
+  --dark-grey: #848484;
+  --green: #449856;
+  --light-green: #77b06e;
+  --orange: #ef4623;
+  --red: #d33027;
+  --blue: #3d65af;
+  --fuscia: #df3f8e;
+  --yellow: #f1b729;
+  --purple: #7368af;
+
+/* study hall NYT 2020 palette from Riposte */
+
+  --nyt-blue: #4062b7;
+  --nyt-light-blue: #b3c0e4;
+  --nyt-pink: #fba8cc;
+  --nyt-orange: #f9593c;
+  --nyt-salmon: #fdbeac;
+  --nyt-green: #5e814e;
+  --nyt-brown: #623b33;
+  --nyt-beige: #e3bfa0;
+
+
+/* old old colours */
+
+  --salmon: #e38587;
+  --lime: #a5d7be;
+
+  --light-grey: #e1e1e1;
+  --very-light-grey: #f4f4f4;
+  --light-grey-blue: #d2d9dd;
+  --medium-grey-blue: #a7c0d1;
+  --dark-grey-blue: #5d7688;
+  --light-peach: #f7dfd8;
+  --dark-peach: #efb9a9;
+  --light-purple: #b68dce;
+  --gold: #d3a077;
+  --mustard: #f8d482;
+
+  --unit: 30px;
+
+}

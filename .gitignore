@@ -1,0 +1,5 @@
+.DS_Store
+node_modules
+config.yml
+yarn.lock
+Gemfile.lock
