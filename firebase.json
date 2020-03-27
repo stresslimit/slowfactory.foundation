@@ -1,0 +1,58 @@
+{
+  "hosting": {
+    "public": "_site",
+    "cleanUrls": true,
+    "redirects": [
+      {
+        "source": "/products/:product*",
+        "destination": "https://shop.slowfactory.foundation/products/:product",
+        "type": 301
+      },
+      {
+        "source": "/r/study-hall-nyc-2020-media-assets",
+        "destination": "https://www.dropbox.com/sh/2l3cj6i85hpp0re/AABUbiYtwtwlwom02RlTsf57a?dl=0",
+        "type": 301
+      },
+      {
+        "source": "/r/studyhall-journal-2020",
+        "destination": "/study-hall/nyc-summit-2020",
+        "type": 301
+      },
+      {
+        "source": "/london",
+        "destination": "/study-hall/london-central-saint-martins-2019",
+        "type": 301
+      },
+      {
+        "source": "/pages/team",
+        "destination": "/team",
+        "type": 301
+      },
+      {
+        "source": "/pages/study-hall-un-summit",
+        "destination": "/study-hall/un-summit-2019",
+        "type": 301
+      },
+      {
+        "source": "/pages/study-hall-los-angeles-2018",
+        "destination": "/study-hall/los-angeles-2018",
+        "type": 301
+      },
+      {
+        "source": "/pages/study-hall",
+        "destination": "/studyhall",
+        "type": 301
+      },
+      {
+        "source": "/study-hall",
+        "destination": "/studyhall",
+        "type": 301
+      },
+      {
+        "source": "/youtube",
+        "destination": "https://www.youtube.com/channel/UC1Ydo54vtq8j0LtwClHqX_A",
+        "type": 301
+      }
+    ]
+  }
+}

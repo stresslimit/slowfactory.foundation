@@ -1,0 +1,119 @@
+---
+layout: default
+title: "Study Hall London"
+date: 2019-04-27 13:00:00
+permalink: /study-hall/london-central-saint-martins-2019
+---
+
+{% assign events = site.data.studyhall.events | where: "title", "London 2019" %}
+{% assign event = events[0] %}
+
+<div class="section">
+  <div class="container">
+
+    <div class="section">
+      <h1 class="title-xl">Study Hall London</h1>
+      <h3 class="title-md">UAL: Central Saint Martins</h3>
+    </div>
+
+      <p class="title-alt-sm">Watch the Full Program:</p>
+      <p class="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLNJL2HNWGykEmVnEPpNOIjS1QG7BehD9y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </p>
+      <br><br>
+
+      <div class="row valign-top">
+        <div class="half">
+          <p><img src="{{ 'images/studyhall-london-2019/TheLibrary_20181117_StudyHally_London.jpg' | asset_url }}"></p>
+        </div>
+        <div class="half">
+          <p>On Saturday, April 27th, 2019, Slow Factory hosted “Study Hall: Sustainability as a Culture”, the fourth in its critically-acclaimed conference series Study Hall. Hot on the heels of a successful partnership with the United Nations in February, the first international edition was held in London UK at Central Saint Martins college of art and design, in collaboration with Fashion Revolution. The event took place during Fashion Revolution Week, on the 6th anniversary of the Rana Plaza factory collapse.</p>
+          <p>As with previous Study Hall events, Study Hall x Central Saint Martins gathered leading industry experts in fashion and textile manufacturing, paired with cultural influencers, academics, activists and artists. Study Hall continues to be among the most culturally diverse events of its kind, this time exploring the central theme of “Sustainability as a Culture”, and themes of racial justice, responsible sourcing and manufacturing, circularity, and authenticity in design. Study Hall x Central Saint-Martins is powered by G-Star Raw, adidas, and Calik Denim, Youtube.</p>
+        </div>
+      </div>
+
+
+    <br>
+    <br>
+    <!-- <div class="container-sm section">
+      <p class="align-center"><a class="button" style="display:inline-block;" href="https://www.eventbrite.com/e/study-hall-london-tickets-58609926869" target="_blank">Register with Invite Code</a></p>
+    </div> -->
+
+
+    {% include studyhall-eventphotos.liquid title_filter=event.title %}
+
+    <br>
+    <br>
+    <div class="container-sm">
+
+      <p class="title-md">Program Schedule</p>
+
+      <h4 class="title-sm">Welcome Remarks</h4>
+      <p>13:00 - 13:10 — Hywel Davis, Céline Semaan &amp; Orsola De Castro</p>
+      <h4 class="title-sm">Special Introduction</h4>
+      <p>13:15 - 13:30 — Wilson Oryema, Spoken word</p>
+      <h4 class="title-sm">Good for the People: The New Table</h4>
+      <p>13:35 - 14:20 — American politician Shirley Chisholm who first said: “If you don’t have a seat at the table, bring your own folding chair.” In reality, we want a bigger table, a new table. This panel explores the elephant in the room when it comes to Fashion: Diversity &amp; The Current System designed around exploitation of both labor and resources. How can Sustainable Fashion as a Culture, effectively lead positive change across the industry?</p>
+      <ul class="tight">
+        <li>Aja Barber — American living in London, Writer</li>
+        <li>Allen Salway — @lilnativeboy Native American, Activist and Writer</li>
+        <li>Sophia Li — Chinese-American Journalist, former entertainment media editor for Vogue</li>
+        <li>Moderated by: Céline Semaan — Founder Study Hall</li>
+      </ul>
+      <h4 class="title-sm">Cancel Culture</h4>
+      <p>14:25 - 14:35 — Yumna Al-Arashi</p>
+      <h4 class="title-sm">“May Our Voices Be Heard”: Authenticity &amp; Design</h4>
+      <p>14:40 - 15:25 — How can we design with aesthetics, sustainability and culture in mind. What is Design really for? Making beautiful products, or designing the world we want to live in? What is responsible design in today’s socio-political and environmental landscape?</p>
+      <ul class="tight">
+        <li>Mara Hoffman — American Fashion Designer</li>
+        <li>Claire Bergkamp — Head of Sustainability, Stella McCartney</li>
+        <li>Priya Ahluwalia — adidas</li>
+        <li>Korina Emmerich — First Nation Fashion Designer</li>
+        <li>Recho Omondi — New York Fashion Designer</li>
+        <li>Moderated by: Marjon Carlos — Journalist, Influencer</li>
+      </ul>
+      <h4 class="title-sm">Designing Global Movements</h4>
+      <p>15:30 - 15:45 — Fashion Revolution: Beyond the Movement.</p>
+      <ul class="tight">
+        <li>Orsola de Castro &amp; Carry Somers, co-founders, Fashion Revolution</li>
+        <li>Moderated by: Sarah Mower</li>
+      </ul>
+      <h4 class="title-sm">Circular Design</h4>
+      <p>15:50 - 16:00 — Dr. Kate Goldsworthy, Centre for Circular Design</p>
+      <h4 class="title-sm">Good for the Earth: Circularity Leading the way at Scale</h4>
+      <p>16:05 - 16:50 — How can we move passed the debate into action?</p>
+      <ul class="tight">
+        <li>Tamara Zwart — Cradle to Cradle Products Innovation Institute</li>
+        <li>Andrea Venier — Recycrom (Italy)</li>
+        <li>Giusy Bettoni — Class Eco Hub</li>
+        <li>Pinar Demirel — Calik Denim</li>
+        <li>Adriana Galijasevic — G-Star Raw</li>
+        <li>Moderator by: Dio Kurazawa  — The Bear Scouts</li>
+      </ul>
+      <h4 class="title-sm">Microbes &amp; Micro-Fibers</h4>
+      <p>16:55 - 17:10 — Sudeep Motupalli Rao, CiCLO Textiles</p>
+      <h4 class="title-sm">How do we know it’s well made?</h4>
+      <p>17:15 - 17:40 — How can a brand inform people of their sustainable efforts? How do we know it’s well made? A fireside chat looking at consumer-facing certifications and how to best communicate ethics and responsibility.</p>
+      <ul class="tight">
+        <li>Kerry Bannigan, Conscious Fashion Campaign</li>
+        <li>Céline Semaan, Study Hall</li>
+      </ul>
+      <h4 class="title-sm">Closing remarks</h4>
+      <p>17:50 - 18:00</p>
+
+    </div>
+
+  </div>
+</div>
+
+
+<div class="section">
+  {% include studyhall-thumbs.liquid title_filter=event.title %}
+</div>
+
+
+<div class="section">
+  <div class="container">
+    {% include events-big-menu.liquid %}
+  </div>
+</div>

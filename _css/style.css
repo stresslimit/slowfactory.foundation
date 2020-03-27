@@ -1,0 +1,196 @@
+
+/*
+*/
+hr {
+  height: 1px;
+  margin: var(--unit) 0;
+  border: 0;
+  border-top: 1px solid #000;
+}
+.header {
+  font-size: 90%;
+  position: relative;
+  padding-top: var(--unit);
+}
+
+/* Helvetica redesign styles
+*/
+.the-earth {
+  background-size: contain;
+}
+@media (--viewport-md) {
+  .the-earth {
+    padding: 3em 0 1.5em 3em;
+    background-size: contain;
+  }
+  .container-donorbox {
+    margin-bottom: -10em;
+  }
+}
+.slash::before {
+  content: ' ';
+  height: 5px;
+  transform: rotate(9deg);
+  margin-top: 10em;
+  display: block;
+  position: relative;
+  top: -8em;
+  z-index: -1;
+  background: var(--text-color);
+}
+.slash--left::before {
+  transform: rotate(-7deg);
+}
+
+/* Helvetica list styles
+*/
+.impact-list-item {
+  padding: 1em 0;
+  border-bottom: 2px dotted var(--dark-grey);
+}
+.impact-list-item a {
+  display: block;
+  text-decoration: none;
+}
+
+
+/* Study Hall NYT 2020 */
+
+.nyt-btn {
+  cursor: pointer;
+  display: block;
+  padding: .7em .7em .6em;
+  border: 3px solid black;
+  background: white;
+  border-radius: 0;
+
+  @extend .title-sm;
+  width: 5em;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  text-decoration: none;
+  margin-bottom: 1em;
+}
+.nyt-livestream {
+  background: var(--nyt-pink);
+  border-color: var(--nyt-pink);
+}
+.nyt-program { color: var(--nyt-blue); }
+.nyt-speakers { color: var(--nyt-orange); }
+.nyt-media { color: var(--nyt-pink); }
+.nyt-survey { color: var(--nyt-green); }
+.nyt-partners { color: var(--nyt-blue); }
+.nyt-title { padding: 2em 0 .75em; }
+.nyt-L { transform: rotate(3deg); }
+.nyt-R { transform: rotate(-3deg); }
+
+.podcast-icon {
+  height: 1em;
+  width: auto;
+}
+
+.sponsors-thumbs {
+  width: 20% !important;
+  max-width: 200px;
+  padding: 0 calc(var(--unit) *1.5);
+  box-sizing: border-box;
+}
+
+.studyhall-thumbs {
+  width: 16.66666% !important;
+  height: auto;
+  display: block;
+  float: left;
+}
+@media (--viewport-lg) {
+  .studyhall-thumbs {
+    width: 10% !important;
+  }
+}
+@media (--viewport-xs-only) {
+  .studyhall-thumbs {
+    width: 25% !important;
+  }
+  .sponsors-thumbs {
+    width: 32% !important;
+  }
+  #js-typewriter {
+    min-height: 2.2em;
+  }
+}
+
+.page-section {
+  background: var(--very-light-grey);
+  padding: var(--unit);
+}
+@media (--viewport-md) {
+  .page-section {
+    padding: calc(var(--unit) *2);
+  }
+}
+
+
+/* Study Hall Locations List Menu
+*/
+.list-menu a, .list-menu span {
+  display: inline-block;
+  padding: .5em 0;
+  margin: 0 .5em;
+}
+.list-menu a {
+  text-decoration: none;
+  border-top: 3px solid white;
+  border-left: 3px solid white;
+  border-right: 3px solid white;
+  border-bottom: 3px solid;
+}
+.list-menu a:hover {
+  border: 3px solid;
+}
+
+
+/* Big fancy link bars
+*/
+.superlink {
+  padding: 0.5em 0 0.25em;
+  display: block;
+  text-align: center;
+}
+.superlink--gold {
+  color: white;
+  background: var(--gold);
+  border-bottom: 10px solid var(--yellow);
+}
+
+
+/* Home logos Study Hall
+*/
+.un-summit-logos-row {
+  display: flex;
+  justify-content: center;
+}
+.un-summit-logos-row div {
+  padding: 0 1em;
+}
+.un-summit-logos img {
+  max-width: 140px;
+  height: auto;
+}
+
+
+/* Team
+*/
+.card-team {
+  margin-bottom: 0.8em;
+}
+.team-img {
+  text-align: center;
+}
+.team-img img {
+  max-width: 80%;
+}
+.team-name {
+  margin-bottom: 0;
+  @extend .title-sm;
+}

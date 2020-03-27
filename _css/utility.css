@@ -1,0 +1,43 @@
+
+.img-line {
+  height: 1.1em;
+  width: auto;
+  vertical-align: bottom;
+}
+.nowrap {
+  /*white-space: nowrap;*/
+  flex-wrap: nowrap;
+}
+.block {
+	display: block;
+}
+.inline-block {
+	display: inline-block;
+}
+.vspace-top {
+  margin-top: 0.8em;
+}
+.align-left, .text-left {
+  text-align: left;
+}
+.align-right, .text-right {
+  text-align: right;
+}
+.align-center, .text-center {
+  text-align: center;
+}
+
+@media (--viewport-xs-only) {
+  .hidden-xs {
+    display: none;
+  }
+}
+@media (--viewport-md) {
+  .hidden-md {
+    display: none;
+  }
+}
+
+.clearfix:before, .clearfix:after, .cf:before, .cf:after { content:"\0020"; display:block; height:0; visibility:hidden; }
+.clearfix:after, .cf:after { clear:both; }
+.clearfix, .cf { min-height:0; }

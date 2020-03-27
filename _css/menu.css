@@ -1,0 +1,90 @@
+
+nav {
+  display: inline-block;
+  padding: 0.5em;
+}
+nav.sub-menu {
+  padding: 0;
+}
+.burger-menu-placement {
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+}
+
+.nav-item {
+  padding: 1.5em 1em 0;
+  display: block;
+
+  @extend .title-xs;
+}
+.nav-item a {
+  display: block;
+  padding: 0.3em;
+}
+.nav-item.active a {
+  font-weight: bold;
+}
+
+
+/*  Burger icon itself
+*/
+.burger-menu {
+}
+@media (--viewport-md) {
+  .burger-menu {
+    margin-top: 12px;
+  }
+}
+.burger-menu span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  background: #000;
+}
+
+
+/*  Mobile menu flyout
+*/
+.mobile-menu {
+  display: none;
+  right: 0;
+}
+.mobile-menu.mobile-menu--open {
+  display: block;
+  transition: all 2s ease-in-out;
+}
+.mobile-menu nav {
+  padding: 0;
+  display: block;
+}
+.mobile-menu .nav-item {
+  display: block;
+}
+.close {
+  padding: 0 .25em;
+  float: right;
+  cursor: pointer;
+  font-size: 4em;
+}
+.overlay-menu {
+  position: fixed;
+  z-index: 7;
+  box-sizing: border-box;
+  width: 400px;
+  height: 100%;
+  overflow-y: auto;
+  background: #ebebeb;
+  padding: 1em;
+}
+@media (--viewport-xs-only) {
+  .mobile-menu {
+    width: 100%;
+  }
+  body.overlay-menu--open {
+    overflow: hidden;
+  }
+}
