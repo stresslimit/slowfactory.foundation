@@ -1,20 +1,18 @@
 
-/*
+
+
+/* Helvetica redesign styles
 */
-hr {
-  height: 1px;
-  margin: var(--unit) 0;
-  border: 0;
-  border-top: 1px solid #000;
-}
 .header {
   font-size: 90%;
   position: relative;
   padding-top: var(--unit);
 }
-
-/* Helvetica redesign styles
-*/
+.dot {
+  width: 4em;
+  height: 4em;
+  border-radius: 2em;
+}
 .the-earth {
   background-size: contain;
 }
@@ -42,6 +40,7 @@ hr {
   transform: rotate(-7deg);
 }
 
+
 /* Helvetica list styles
 */
 .impact-list-item {
@@ -54,8 +53,22 @@ hr {
 }
 
 
-/* Study Hall NYT 2020 */
+/* Sidebar design that Pops
+*/
+.sidebar-pop::before {
+  display: block;
+  content: '';
+  width: 20em;
+  height: 20em;
+  border-radius: 5em;
+  background: var(--yellow);
+  position: absolute;
+  z-index: -1;
+  top: -3em;
+}
 
+/* Study Hall NYT 2020
+ */
 .nyt-btn {
   cursor: pointer;
   display: block;
@@ -147,35 +160,6 @@ hr {
 }
 .list-menu a:hover {
   border: 3px solid;
-}
-
-
-/* Big fancy link bars
-*/
-.superlink {
-  padding: 0.5em 0 0.25em;
-  display: block;
-  text-align: center;
-}
-.superlink--gold {
-  color: white;
-  background: var(--gold);
-  border-bottom: 10px solid var(--yellow);
-}
-
-
-/* Home logos Study Hall
-*/
-.un-summit-logos-row {
-  display: flex;
-  justify-content: center;
-}
-.un-summit-logos-row div {
-  padding: 0 1em;
-}
-.un-summit-logos img {
-  max-width: 140px;
-  height: auto;
 }
 
 

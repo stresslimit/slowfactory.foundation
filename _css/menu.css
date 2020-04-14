@@ -13,7 +13,7 @@ nav.sub-menu {
 }
 
 .nav-item {
-  padding: 1.5em 1em 0;
+  padding: 1em 1em 0;
   display: block;
 
   @extend .title-xs;
@@ -68,7 +68,8 @@ nav.sub-menu {
   padding: 0 .25em;
   float: right;
   cursor: pointer;
-  font-size: 4em;
+  font-size: 3em;
+  font-weight: 400;
 }
 .overlay-menu {
   position: fixed;

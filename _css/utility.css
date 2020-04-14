@@ -1,4 +1,11 @@
 
+hr {
+  height: 1px;
+  margin: var(--unit) 0;
+  border: 0;
+  border-top: 1px solid #000;
+}
+
 .img-line {
   height: 1.1em;
   width: auto;
