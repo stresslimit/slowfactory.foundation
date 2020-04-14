@@ -8,8 +8,11 @@
 
   <form method="post" class="newsletter-signup-form" target="_blank" action="https://slowfactory.us7.list-manage.com/subscribe/post?u=2572360f05297ce3376c6d5a5&amp;id={{ list_id }}">
 
-    <label class="title-sm" style="display: inline-block;" for="EMAIL">Your Email:</label> &nbsp;
-    <input class="title-sm" style="border:0; border-bottom: 5px solid #000; display: inline-block; padding:.5em 0 0 0; width: 15em" type="email" value="" name="EMAIL" required="true"> &nbsp;
+    <label class="title-sm" for="EMAIL">Your Email:</label> &nbsp;
+    <input class="title-sm" style="width: 15em" type="email" value="" name="EMAIL" required="true"> &nbsp;
+    {% if newsletter_source %}
+      <input type="hidden" value="{{ newsletter_source }}" name="SOURCE">
+    {% endif %}
     <input class="newsletter-signup-form__submit button" style="display: inline-block;" type="submit" value="{{ newsletter_button_text }}" name="subscribe">
 
   </form>

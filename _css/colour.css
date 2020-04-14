@@ -8,6 +8,8 @@
 .orange { color: var(--orange); }
 .red { color: var(--red); }
 .purple { color: var(--purple); }
+.yellow { color: var(--yellow); }
+.bg-yellow { background: var(--yellow); }
 
 
 /* NYT 2020  */
@@ -29,16 +31,7 @@
 .bg-nyt-beige { background: var(--nyt-beige); }
 
 
-.bg-mustard { background: var(--mustard); }
-.bg-very-light-grey { background: var(--very-light-grey); }
-.bg-light-grey { background: var(--light-grey); }
-.bg-light-grey-blue { background: var(--light-grey-blue); }
-.bg-dark-grey-blue { background: var(--dark-grey-blue); }
-.bg-light-peach { background: var(--light-peach); }
-.bg-dark-peach { background: var(--dark-peach); }
-
-.color-dark-grey-blue { color: var(--dark-grey-blue); }
-
+/* Original Study Hall colours: mostly for cities events-big-menu */
 .salmon { color: var(--salmon); }
 .lime { color: var(--lime); }
 .light-grey { color: var(--light-grey); }
@@ -51,5 +44,4 @@
 .blue { color: var(--blue); }
 .light-purple { color: var(--light-purple); }
 .gold { color: var(--gold); }
-.yellow { color: var(--yellow); }
 .mustard { color: var(--mustard); }
