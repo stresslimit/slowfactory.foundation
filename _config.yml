@@ -15,6 +15,3 @@ exclude: [
   yarn.lock
 ]
 permalink: /:title/
-collections:
-  case_studies:
-    output: true

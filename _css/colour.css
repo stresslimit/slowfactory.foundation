@@ -10,6 +10,9 @@
 .purple { color: var(--purple); }
 .yellow { color: var(--yellow); }
 .bg-yellow { background: var(--yellow); }
+.bg-light-green { background: var(--light-green); }
+.bg-green { background: var(--green); }
+/* .bg- { background: var(--); } */
 
 
 /* NYT 2020  */
