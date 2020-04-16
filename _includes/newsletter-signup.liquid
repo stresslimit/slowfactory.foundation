@@ -3,16 +3,15 @@
 {% endunless %}
 
 {% unless list_id %}
-  {% assign list_id = 'a6ef69f2c6' %}
+  {% assign list_id = 'cf50edda3a' %}{% comment %} Slow Factory Newsletter {% endcomment %}
+  {% comment %}{% assign list_id = 'a6ef69f2c6' %} The Library Study Hall {% endcomment %}
+  {% comment %}{% assign list_id = 'eae0637d0c' %} Sustainability Literacy {% endcomment %}
 {% endunless %}
 
   <form method="post" class="newsletter-signup-form" target="_blank" action="https://slowfactory.us7.list-manage.com/subscribe/post?u=2572360f05297ce3376c6d5a5&amp;id={{ list_id }}">
 
     <label class="title-sm" for="EMAIL">Your Email:</label> &nbsp;
     <input class="title-sm" style="width: 15em" type="email" value="" name="EMAIL" required="true"> &nbsp;
-    {% if newsletter_source %}
-      <input type="hidden" value="{{ newsletter_source }}" name="SOURCE">
-    {% endif %}
     <input class="newsletter-signup-form__submit button" style="display: inline-block;" type="submit" value="{{ newsletter_button_text }}" name="subscribe">
 
   </form>
