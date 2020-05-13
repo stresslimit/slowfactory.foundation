@@ -36,7 +36,6 @@ To run local build of `css` & `js`
   1. Check the version `yarn -v`
 
 
-
 ### One-time Setup
 
 1. `bundle install`
@@ -45,7 +44,7 @@ To run local build of `css` & `js`
 
 ### Local Development
 
-This needs to be better, but works for now.
+Open 2 terminal windows with the below commands, then go in the browser to http://localhost:4000
 
 1. `yarn run dev-webpack` in one terminal window
 1. `yarn run dev-jekyll` in another
@@ -53,6 +52,6 @@ This needs to be better, but works for now.
 
 ### Deploy
 
-Set up your favourite static site hosting, I used to run S3 but now I'm all Firebase Hosting.
+We’re hosting on [Firebase](https://console.firebase.google.com/u/0/project/slow-factory-foundation/)
 
 So now it’s set up for firebase, just run `yarn run deploy-stage` or `yarn run deploy-production`.
