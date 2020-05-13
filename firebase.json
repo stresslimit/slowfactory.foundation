@@ -19,6 +19,16 @@
         "type": 301
       },
       {
+        "source": "/landfills",
+        "destination": "/landfills-as-museums",
+        "type": 301
+      },
+      {
+        "source": "/onexone",
+        "destination": "https://onexone.earth",
+        "type": 301
+      },
+      {
         "source": "/london",
         "destination": "/study-hall/london-central-saint-martins-2019",
         "type": 301
