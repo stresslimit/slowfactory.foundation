@@ -1,6 +1,7 @@
 :root {
 
   --text-color: #000;
+  --unit: 30px;
 
 /* helvetica redesign */
 
@@ -41,7 +42,5 @@
   --light-purple: #b68dce;
   --gold: #d3a077;
   --mustard: #f8d482;
-
-  --unit: 30px;
 
 }
