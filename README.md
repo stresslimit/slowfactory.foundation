@@ -46,8 +46,8 @@ To run local build of `css` & `js`
 
 Open 2 terminal windows with the below commands, then go in the browser to http://localhost:4000
 
-1. `yarn run dev-webpack` in one terminal window
-1. `yarn run dev-jekyll` in another
+1. `yarn dev-webpack` in one terminal window
+1. `yarn dev` in another
 
 
 ### Deploy

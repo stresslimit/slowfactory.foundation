@@ -12,6 +12,7 @@ exclude: [
   postcss.config.js,
   webpack.config.js,
   webpack.config.babel.js,
+  vendor,
   yarn.lock
 ]
 permalink: /:title/

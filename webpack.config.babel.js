@@ -1,13 +1,10 @@
 import webpack from 'webpack'
 import path from 'path'
-import ExtractTextPlugin from 'extract-text-webpack-plugin'
-
-let extractStyles = new ExtractTextPlugin({
-  filename: '[name].css'
-})
+import ExtractTextPlugin from 'mini-css-extract-plugin'
 
 
 let config = {
+  mode: 'development',
   stats: 'minimal',
   entry: {
     'css/style': [
@@ -21,13 +18,26 @@ let config = {
     path: path.resolve(__dirname, 'assets' ),
     filename: '[name].js'
   },
+  plugins: [
+    new webpack.LoaderOptionsPlugin({
+      minimize: false,
+      debug: true,
+      options: {}
+    }),
+    new ExtractTextPlugin({
+      filename: '[name].css'
+    })
+  ],
   module: {
     rules: [
       {
         test: /\.css$/,
-        use: extractStyles.extract({
-          use: ['css-loader?importLoaders=1','postcss-loader']
-        })
+        use: [
+          ExtractTextPlugin.loader,
+          // { loader: 'css-loader', options: { importLoaders: 1, }, },
+          'css-loader',
+          'postcss-loader'
+        ]
       },
       {
         test: /\.jsx?$/,
@@ -37,19 +47,12 @@ let config = {
         }
       }
     ]
-  },
-  plugins: [
-    new webpack.LoaderOptionsPlugin({
-      minimize: false,
-      debug: true,
-      options: {
-      }
-    }),
-    extractStyles
-  ],
+  }
 }
 
+
 if ( process.env.NODE_ENV === 'production' ) {
+  config.mode = 'production'
   config.plugins.push(new webpack.DefinePlugin({
     'process.env': {
       NODE_ENV: JSON.stringify('production')
