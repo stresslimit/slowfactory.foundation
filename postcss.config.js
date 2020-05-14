@@ -1,7 +1,7 @@
 module.exports = {
   plugins: {
-    'postcss-cssnext': {
-      browsers: ['last 2 version', 'Explorer >= 10', 'Android >= 4']
+    'postcss-preset-env': {
+      browsers: 'last 2 versions'
     },
     'postcss-import': {},
     'postcss-custom-properties': {},

@@ -13,31 +13,32 @@
   "license": "ISC",
   "devDependencies": {
     "babel-core": "^6.26.3",
-    "babel-loader": "^8.1.0",
+    "babel-loader": "^7.0.0",
     "babel-preset-es2015": "^6.18.0",
-    "css-layout": "^1.1.1",
+    "babel-preset-react": "^6.24.1",
+    "css-layout": "stresslimit/css-layout",
     "css-loader": "^3.5.3",
     "csswring": "^7.0.0",
-    "extract-text-webpack-plugin": "^3.0.2",
+    "mini-css-extract-plugin": "^0.9.0",
     "postcss-calc": "^7.0.2",
-    "postcss-cssnext": "^3.1.0",
     "postcss-custom-media": "^7.0.8",
     "postcss-custom-properties": "^9.1.1",
     "postcss-extend": "^1.0.5",
     "postcss-import": "^12.0.1",
     "postcss-loader": "^3.0.0",
     "postcss-nested": "^4.2.1",
+    "postcss-preset-env": "^6.7.0",
     "style-loader": "^1.2.1",
     "webpack": "^4.43.0",
-    "webpack-dev-server": "^3.11.0"
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.11.0",
+    "yarn": "^1.22.4"
   },
   "dependencies": {
-    "babel-preset-react": "^6.24.1",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
     "react-fastclick": "^3.0.2",
     "superagent-webpack-client": "^1.3.0",
-    "underscore": "^1.8.3",
-    "yarn": "^1.22.4"
+    "underscore": "^1.8.3"
   }
 }
