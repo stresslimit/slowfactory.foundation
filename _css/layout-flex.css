@@ -54,8 +54,8 @@
   .row-flex {
     display: flex;
     align-items: center;
-    margin-left:  -var(--unit);
-    margin-right: -var(--unit);
+    margin-left:  calc(-1 * var(--unit));
+    margin-right: calc(-1 * var(--unit));
   }
   .row-flex.valign-top {
     align-items: stretch;
