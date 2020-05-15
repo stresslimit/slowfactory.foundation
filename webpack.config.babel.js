@@ -34,7 +34,6 @@ let config = {
         test: /\.css$/,
         use: [
           ExtractTextPlugin.loader,
-          // { loader: 'css-loader', options: { importLoaders: 1, }, },
           'css-loader',
           'postcss-loader'
         ]
