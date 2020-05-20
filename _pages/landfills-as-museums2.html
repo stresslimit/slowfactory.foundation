@@ -5,85 +5,119 @@ permalink: /lam
 ---
 
 
- <div class="section">
-
- 	<p class="video-container">
- 		<video width="1000" frameborder="0" allowfullscreen>
- 			<source src="images/landfills-as-museums/DroneDown.mov" type="video/mov">
+ <div class="section-lam">
+ 	
+ 		<video controls width="100%">
+ 			<source src="{{  'images/landfills-as-museums/DroneDown.mov' | asset_url }}  type="video/mp4">
  		</video>
- 	</p>
-
+ 	
  </div>
 
-<div class="section bg-black">
-  <div class="container">
+<div class="section-lam bg-black" style="height:600px;">
+ 
+ 	<div class="container">
 
-    <p class="title-xl bg-dark">Landfills as Museums</p>
-    <p class="bg-dark">Our mission is to educate and advocate for a waste-led design approach that considers the end of life of materials at the beginning of the design process. We aim to educate students and emerging designers and encourage them to implement circular design and other sustainability thinking methods into their products to reduce the burden placed on landfills.</p>
-    <p class="bg-dark">Reframing Landfills as Museums allows us to reconsider them as a valuable opportunity to educate about waste, and think about the resources and opportunities to divert materials before they end up at the landfill.</p>
+    	<p class="title-xl bg-dark">Landfills as Museums</p>
+    	<p class="bg-dark">Our mission is to educate and advocate for a waste-led design approach that considers the end of life of materials at the beginning of the design process. We aim to educate students and emerging designers and encourage them to implement circular design and other sustainability thinking methods into their products to reduce the burden placed on landfills.</p>
+    	<p class="bg-dark">Reframing Landfills as Museums allows us to reconsider them as a valuable opportunity to educate about waste, and think about the resources and opportunities to divert materials before they end up at the landfill.</p>
 
-  </div>
+    </div>
+
 </div>
 
-<div class="section">
-	<div class="container">
+<div class="section-lam">
+	
 
-		<img src="{{  'images/landfills-as-museums/landfill_anatomy.jpg' | asset_url }}">
+		<img height="100%" src="{{  'images/landfills-as-museums/landfill_anatomy.jpg' | asset_url }}">
 
-	</div>
+ 
+
+	
 </div>
 
 <div class="section bg-black">
-  <div class="container">
+  <div class="container" style="height:600px;">
 
     <p class="title-xl bg-dark">Think about the end of life first.</p>
-    <p class="bg-dark">Our mission is to educate and advocate for a waste-led design approach that considers the end of life of materials at the beginning of the design process. We aim to educate students and emerging designers and encourage them to implement circular design and other sustainability thinking methods into their products to reduce the burden placed on landfills.</p>
+  
 
   </div>
 </div>
 
-<div class="section">
-  <div class="container">
+<div class="container">
+   <div class="section row valign-top">
+    <p class="title-md half ">With a sustainable and circular system: we must practice as little as possible extraction & waste, and as much as possible usage.</p>
 
-    <p class="title-xl ">With a sustainable and circular system: we must practice as little as possible extraction & waste, and as much as possible usage.</p>
-
-<!--  graph here -->
-    <img src="">
+    <img class="half" src="{{ 'images/landfills-as-museums/graph.png' | asset_url }}">
 
   </div>
 </div>
+
 
 <!--  parallax here maybe -->
-<div class="section">
-  <div class="container">
 
-    <p class="title-xl ">So how do we solve this problem?</p>
+<div class="section">
+
+  <div class="container" style="position: relative;">
+
+    <p class="title-xl overlay" style=" position: absolute; top: 80px; left: 16px; z-index: 1;">So how do we solve this problem?
+    </p>
 
  	</div>
+
+ 	<img src="{{ 'images/landfills-as-museums/IMG_0338.JPG' | asset_url }}">
+
  </div>
+
+
+<div class="container">
+   <div class="section row valign-top">
+    <p class="title-xl half ">Waste <br> as a resource</p>
+
+    <img class="half" src="{{ 'images/landfills-as-museums/waste_circle_orbit.png' | asset_url }}">
+
+  </div>
+</div>
 
 
 <!--  CARD STACK BEGINS -->
-<div class="section">
-  <div class="container">
 
-    <p class="title-xl ">Waste as a resource</p>
+<div class="card-container">
+			<div class="card-stack">
+				<a class="buttons prev" href="#"><</a>
+				<ul class="card-list">
+					<li class="card5" style="background-color: #4CD964;">
 
-    <img src="">
+            
+          </li>
+					<li class="card4" style="background-color: #FFCC00;"></li>
+					<li class="card3" style="background-color: #FF3B30;"></li>
+					<li class="card2" style="background-color: #34AADC;"></li>	
 
-  </div>
+					<li class="card1" style="background-color: #FF9500;">
+
+           <p class="title-md half">What is a waste-led design system?
+          </p>
+
+      
+        
+          </li>
+
+			</ul>	
+			<a class="buttons next" href="#">></a>
+		</div>
 </div>
 
 <div class="section">
   <div class="container">
 
-    <p class="title-xl ">What is a waste-led design system?
-	</p>
+    <p class="title-xl">What is a waste-led design system?
+	 </p>
 
     <p>Waste-led design is a practice in which a product's end of life is considered from the beginning of the design process rather than the end. This allows for waste to be a core part of the process just as functionality, material, and comfort are.</p>
 
 
-    <img src="">
+    <img src="{{ 'images/landfills-as-museums/lca_circle_2.png' | asset_url }}">
 
   </div>
 </div>
@@ -94,7 +128,7 @@ permalink: /lam
     <p class="title-xl ">Life Cycle Assesment</p>
     <p>A method used to quantify the environmental impact of a product from raw material to acquisition through end of life disposal; usually used to inform strategies for reducing the environmental footprint.</p>
 
-    <img src="">
+    <img src="{{ 'images/landfills-as-museums/lca_puzzle.png' | asset_url }}">
 
   </div>
 </div>
@@ -107,7 +141,7 @@ permalink: /lam
     <p class="title-xl ">Which of these are more sustainable?</p>
 
 
-    <img src="">
+    <img src="{{ 'images/landfills-as-museums/bags_icons1.png' | asset_url }}">
 
   </div>
 </div>
@@ -118,7 +152,7 @@ permalink: /lam
     <p class="title-xl ">LCA / Bags</p>
     <p>Carbon Dioxide Emissions</p>
 
-    <img src="">
+    <img src="{{ 'images/landfills-as-museums/bags_scale.png' | asset_url }}">
 
   </div>
 </div>
@@ -128,7 +162,10 @@ permalink: /lam
 
     <p class="title-xl ">It's about time we think about time.</p>
 
-    <img src="">
+      <img src="{{ 'images/landfills-as-museums/graph2.png' | asset_url }}">
+
 
   </div>
 </div>
+
+
