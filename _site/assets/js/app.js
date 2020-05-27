@@ -86,6 +86,18 @@
 /************************************************************************/
 /******/ ({
 
+/***/ "./_js/cardstack.js":
+/*!**************************!*\
+  !*** ./_js/cardstack.js ***!
+  \**************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nexports.default = function (card) {\n\n  console.log(\"testing\");\n\n  // let card = document.querySelector('.card')\n  var lastCard = document.querySelector(\".card-list .card\").length - 1;\n\n  document.querySelector('.next').addEventListener('click', function () {\n    var prependList = function prependList() {\n      if (card.classList.contains('activeNow')) {\n        var slicedCard = card.slice(lastCard).classList.remove('transformThis activeNow');\n        $('ul').prepend(slicedCard);\n      }\n    };\n    document.querySelector('li').last().classList.remove('transformPrev').classList.add('transformThis').prev().classList.add('activeNow');\n    setTimeout(function () {\n      prependList();\n    }, 150);\n  });\n\n  document.querySelector('.prev').click(function () {\n    var appendToList = function appendToList() {\n      if (card.classList.contains('activeNow')) {\n        var slicedCard = card.slice(0, 1).classList.add('transformPrev');\n        document.querySelector('.card-list').appendChild(slicedCard);\n      }\n    };\n    document.querySelector('li').classList.remove('transformPrev').last().classList.add('activeNow').prevAll().classList.remove('activeNow');\n    setTimeout(function () {\n      appendToList();\n    }, 150);\n  });\n};\n\n//# sourceURL=webpack:///./_js/cardstack.js?");
+
+/***/ }),
+
 /***/ "./_js/index.js":
 /*!**********************!*\
   !*** ./_js/index.js ***!
@@ -94,7 +106,7 @@
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\nvar _reactFastclick = __webpack_require__(/*! react-fastclick */ \"./node_modules/react-fastclick/src/index.js\");\n\nvar _reactFastclick2 = _interopRequireDefault(_reactFastclick);\n\nvar _mobileMenu = __webpack_require__(/*! ./mobile-menu */ \"./_js/mobile-menu.js\");\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nwindow.onload = function () {\n\n  (0, _reactFastclick2.default)();\n  (0, _mobileMenu.init)();\n};\n\n//# sourceURL=webpack:///./_js/index.js?");
+eval("\n\nvar _reactFastclick = __webpack_require__(/*! react-fastclick */ \"./node_modules/react-fastclick/src/index.js\");\n\nvar _reactFastclick2 = _interopRequireDefault(_reactFastclick);\n\nvar _cardstack = __webpack_require__(/*! ./cardstack */ \"./_js/cardstack.js\");\n\nvar _cardstack2 = _interopRequireDefault(_cardstack);\n\nvar _mobileMenu = __webpack_require__(/*! ./mobile-menu */ \"./_js/mobile-menu.js\");\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nwindow.onload = function () {\n\n  (0, _reactFastclick2.default)();\n  (0, _mobileMenu.init)();\n\n  var card = document.querySelector('.card');\n  if (card) (0, _cardstack2.default)(card);\n};\n\n//# sourceURL=webpack:///./_js/index.js?");
 
 /***/ }),
 
