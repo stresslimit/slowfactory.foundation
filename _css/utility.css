@@ -5,7 +5,11 @@ hr {
   border: 0;
   border-top: 1px solid #000;
 }
-
+.bg-image {
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+}
 .img-line {
   height: 1.1em;
   width: auto;
@@ -48,5 +52,3 @@ hr {
 .clearfix:before, .clearfix:after, .cf:before, .cf:after { content:"\0020"; display:block; height:0; visibility:hidden; }
 .clearfix:after, .cf:after { clear:both; }
 .clearfix, .cf { min-height:0; }
-
-

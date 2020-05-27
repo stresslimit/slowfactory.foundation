@@ -15,9 +15,9 @@
   padding-bottom: calc(var(--unit) *2);
 }
 
-.section-lam {
-  padding-top: 0px;
-  padding-bottom: 0px;
+.section-lg {
+  padding-top: calc(var(--unit) *3);
+  padding-bottom: calc(var(--unit) *3);
 }
 .section-md {
   padding-top: var(--unit);
@@ -74,7 +74,3 @@
 }
 
 /* LAM */
-
-
-
-

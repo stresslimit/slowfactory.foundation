@@ -178,12 +178,13 @@
 }
 
 
-/* LAM */
+/* LAM
+*/
 
 
 .overlay {
-  position: absolute; 
-  top:70px; 
+  position: absolute;
+  top:70px;
   z-index: 1;
 
 }
@@ -200,5 +201,3 @@
     text-decoration: none;
     margin-bottom: 1em;
 }
-
-

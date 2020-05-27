@@ -1,7 +1,7 @@
 
 /* Helvetica redesign */
 
-.bg-dark { color: white; }
+.on-dark-bg { color: white; }
 .dark-grey { color: var(--dark-grey); }
 .green { color: var(--green); }
 .light-green { color: var(--light-green); }
