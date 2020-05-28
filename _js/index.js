@@ -6,9 +6,6 @@ window.onload = () => {
 
   initReactFastclick()
   mobile_menu()
-
-  let card = document.querySelector('.card')
-  if ( card )
-    cardstack(card)
+  cardstack()
 
 }
