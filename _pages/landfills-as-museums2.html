@@ -24,7 +24,7 @@ body { font-size: 20px; }
 
   </div>
 
-  <video controls width="100%">
+  <video class="drone" autoplay controls width="100%">
     <source src="{{ 'images/landfills-as-museums/DroneDown.mov' | asset_url }}" type="video/mp4">
   </video>
 
@@ -54,7 +54,7 @@ body { font-size: 20px; }
 <div class="section">
 	<div class="container">
 
-		<p><img  src="{{  'images/landfills-as-museums/landfill_anatomy3.jpg' | asset_url }}"></p>
+		<p><img  src="{{  'images/landfills-as-museums/landfill_anatomy_v5.jpg' | asset_url }}"></p>
 
 
     <div class="text-center title-sm section"><p>--</p></div>
@@ -65,14 +65,18 @@ body { font-size: 20px; }
 </div>
 
 
-
-<div class="section-lg bg-black on-dark-bg">
+<div class="section-lg bg-image on-dark-bg" style="background-image: url({{ 'images/landfills-as-museums/IMG_7828.JPG' | asset_url }})">
   <div class="container">
 
-    <p class="title-md">Why is waste a problem?</p>
-    <p class="">Most production systems today are not designed to reuse materials because they are created using a linear system resulting in an abundance of waste. The accumulation of waste causes TK TK TK</p>
+    <!-- <div class="row valign-top">
+      <div class="two-thirds"> -->
+        <p class="title-md">Why is waste a problem?</p>
+        <p class="">Most production systems today are not designed to reuse materials because they are created using a linear system resulting in an abundance of waste. The accumulation of waste causes TK TK TK</p>
+      <!-- </div>
+    </div> -->
 
   </div>
+
 </div>
 
 
@@ -97,6 +101,7 @@ body { font-size: 20px; }
     <p class="title-md">Sustainable Circular Systems</p>
     <p class="">With a sustainable and circular system:  we must practice as little as possible extraction & waste, and as much as possible usage.</p>
 
+    <img class="" src="{{ 'images/landfills-as-museums/lca_full_circle.jpg' | asset_url }}">
 
   </div>
 </div>
@@ -109,7 +114,7 @@ body { font-size: 20px; }
 
     <!-- <div class="row valign-top">
       <div class="two-thirds"> -->
-        <p class="title-lg">It’s time to rethink our relationship with waste and see it as a resource</p>
+        <p class="title-lg on-dark-bg">It’s time to rethink our relationship with waste and see it as a resource</p>
       <!-- </div>
     </div> -->
 
@@ -146,24 +151,34 @@ body { font-size: 20px; }
 				<a class="buttons prev" href="#"><</a>
 				<ul class="card-list">
 
+          <li class="card" style="">
 
+            <p class="title-md">LCA / Bags</p>
+            <p class="">Usage</p>
 
-					<li class="card row" style="">
-
-            <p class="half"><span class="title-md">LCA / Bags</span><br>
-            Water</p>
-
-            <img class="half"  src="{{ 'images/landfills-as-museums/bags_scale.png' | asset_url }}">
+            <img style="width:60%;" src="{{ 'images/landfills-as-museums/carbon.gif' | asset_url }}">
 
 
           </li>
 
-					<li class="card row" style="">
 
-            <p class="half"><span class="title-md">LCA / Bags</span><br>
-            Carbon Dioxide Emissions</p>
 
-            <img class="half"  src="{{ 'images/landfills-as-museums/bags_scale.png' | asset_url }}">
+					<li class="card" style="">
+
+            <p class="title-md">LCA / Bags</p>
+            <p class="">Water</p>
+
+            <img style="width:60%;" src="{{ 'images/landfills-as-museums/carbon.gif' | asset_url }}">
+
+
+          </li>
+
+					<li class="card" style="">
+
+            <p class="title-md">LCA / Bags</p>
+            <p class="">Carbon Dioxide Emissions</p>
+
+            <img style="width:60%;" src="{{ 'images/landfills-as-museums/carbon.gif' | asset_url }}">
 
 
           </li>
@@ -207,13 +222,25 @@ body { font-size: 20px; }
 <div class="section">
   <div class="container">
 
-    <p class="title-xl ">It's about time we think about time.</p>
+    <p class="title-lg">It's about time we think about time.</p>
 
       <img src="{{ 'images/landfills-as-museums/graph2.png' | asset_url }}">
 
 
   </div>
 </div>
+
+<div class="section">
+  <div class="container">
+
+    <p class="title-xl ">Title TK</p>
+
+      <p class="video-container"><iframe title="vimeo-player" src="https://player.vimeo.com/video/388864835" width="1000" height="563" frameborder="0" allowfullscreen></iframe></p>
+
+      <p class="title-sm">The Seventh Generation Principle is based on an ancient Iroquois philosophy that the decisions we make today should result in a sustainable world seven generations into the future.</p>  
+  </div>
+</div>
+
 
 
 <div class="container row grow | shrink" style="">
@@ -239,16 +266,6 @@ body { font-size: 20px; }
  </div>
 
 
- <div class="section">
-  <div class="container">
-
-    <p class="title-xl ">Title TK</p>
-
-      <p class="video-container"><iframe title="vimeo-player" src="https://player.vimeo.com/video/388864835" width="1000" height="563" frameborder="0" allowfullscreen></iframe></p>
-
-
-  </div>
-</div>
 
 
  <div class="section">

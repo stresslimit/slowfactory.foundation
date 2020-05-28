@@ -181,6 +181,11 @@
 /* LAM
 */
 
+.drone {
+
+  height: 1300px;
+  object-fit: cover;
+}
 
 .overlay {
   position: absolute;

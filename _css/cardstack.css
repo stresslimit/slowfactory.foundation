@@ -1,6 +1,7 @@
 .card-container {
    
     background-color: #fff;
+    height: 550px;
    
 
   .card-stack {
@@ -13,11 +14,11 @@
             
             position: absolute;
             border-radius: 50%;
-            width: 35px;
+            width: 55px;
             height: 35px;
             left: 0;
-            top: 160px;
-            color: rgba(255, 255, 255, 0.7);
+            top: 200px;
+            color: #000000;
             text-align: center;
             line-height: 35px;
             text-decoration: none;
@@ -59,6 +60,7 @@
                 transition: all 100ms ease-in-out;
                 border-radius: 2px;
                 list-style: none;
+                position: absolute;
                 height: 400px;
                 -webkit-box-shadow: 0 2px 15px 1px rgba(225, 225, 225, 0.5);
                 box-shadow: 0 1px 4px 1px rgba(0, 0, 0, 0.5);    
@@ -90,6 +92,10 @@
                 &:nth-child(5) {
                     top: 40px;
                     width: 96%;
+                }
+                  &:nth-child(6) {
+                    top: 30px;
+                    width: 95%;
                 }
             }
 
