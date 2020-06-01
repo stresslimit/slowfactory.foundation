@@ -79,7 +79,8 @@ a:hover,
 .title-lg,
 .title-md,
 .title-sm,
-.title-xs
+.title-xs,
+.title-card
 {
   font-weight: 700;
   line-height: 1.15;
@@ -107,6 +108,10 @@ p.title-xl, p.title-lg {
   font-size: 1em;
 }
 
+.title-card {
+  font-size: 2.5em;
+}
+
 @media (--viewport-xs-only) {
   .title-xxl, .title-alt-xxl {
     font-size: 4.5em;
@@ -123,5 +128,8 @@ p.title-xl, p.title-lg {
   .title-sm, .title-alt-sm {
     font-size: 1.2em;
   }
+  .title-card {
+  font-size: 2em;
+}
 
 }

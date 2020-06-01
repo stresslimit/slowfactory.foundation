@@ -199,7 +199,7 @@
     display: block;
     padding: .7em .7em .6em;
     border: 3px solid black;
-    background: white;
+    background: none;
     border-radius: 0;
     width: 7em;
     text-align: center;

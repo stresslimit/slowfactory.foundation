@@ -1,6 +1,6 @@
 .card-container {
    
-    background-color: #fff;
+    background-color: #EBBD48;
     height: 650px;
    
 
@@ -72,6 +72,7 @@
                 background-size:cover;
                 background-color: #ffffff;
 
+
                 &:nth-child(1) {
                     top: 80px;
                     width: 100%;
@@ -101,6 +102,11 @@
                 &:nth-child(7) {
                     top: 20px;
                     width: 94%;
+                }
+
+                 &:nth-child(8) {
+                    top: 10px;
+                    width: 93%;
                 }
             }
 
@@ -132,4 +138,24 @@
 .transformPrev {
     animation: scaleUp 100ms;
     display: none;
+}
+
+.graphic {
+
+    width: 90%;
+
+}
+
+
+
+@media (--viewport-xs-only) {
+  .title-md, .title-alt-md {
+    font-size: 1.2em;
+  }
+
+  .scale {
+
+    display: none;
+  }
+
 }
