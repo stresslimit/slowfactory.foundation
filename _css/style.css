@@ -182,8 +182,7 @@
 */
 
 .drone {
-
-  height: 1300px;
+  /* height: 1300px; */
   object-fit: cover;
 }
 
