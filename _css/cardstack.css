@@ -106,6 +106,10 @@
                     right: 33px;
                     top: 5px;
                 }
+                &:nth-child(9) {
+                    right: 37px;
+                    top: 2px;
+                }
              }
           }
 
