@@ -13,17 +13,27 @@ nav.sub-menu {
 }
 
 .nav-item {
-  padding: 1em 1em 0;
+  margin: 1.25em 1em 0;
   display: block;
 
   @extend .title-xs;
 }
 .nav-item a {
   display: block;
-  padding: 0.3em;
+  /* padding: 0.3em; */
 }
 .nav-item.active a {
   font-weight: bold;
+}
+.nav-group {
+  margin: 0 1em 0;
+  border-left: 2px solid var(--black);
+}
+.nav-heading {
+  padding: 1.25em 1em 0;
+  display: block;
+
+  /* @extend .title-xs; */
 }
 
 

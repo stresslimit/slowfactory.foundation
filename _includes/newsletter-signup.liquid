@@ -3,15 +3,18 @@
 {% endunless %}
 
 {% unless list_id %}
-  {% assign list_id = 'cf50edda3a' %}{% comment %} Slow Factory Newsletter {% endcomment %}
-  {% comment %}{% assign list_id = 'a6ef69f2c6' %} The Library Study Hall {% endcomment %}
-  {% comment %}{% assign list_id = 'eae0637d0c' %} Sustainability Literacy {% endcomment %}
+  {% assign list_id = 'MUIEAAr1D_AV6yI3pgyIe8dmR8FrT1g4ftLkvJj5Qg_MJdH981ZN19I_FBiQoaETG8H7lPaV6KTeAYRcMwz3P_yHoqkGRGdGv7aX-3kGPPHoaq3t9yCYcCCSQ66_II7rcZFXdTNZ-qnl-GIPMeLNTtpks_iw4cz6sV2S16ZVvOrgjqrlXCRHtpzje66fp2AGEoxbsFo6A9KC5PMw' %}{% comment %} Slow Factory Newsletter {% endcomment %}
+  {% comment %}{% assign list_id = 'MUIEAGHwiMKQX4U3iKpJRHScnCGGpku8lKJ7QmsPLIMkfUoxcoYGhnRexMS6PQKyPwylnNj6_iNaCCy1BOrF6ZMXrReTFTKcpao-VzDG6qI5uPdxwRbQNwi1JUPR9KA_uzY2uvM9j8Jq-l6pH4K-ZRQC3Ukwi78eaHKhi6hLrDg_3EZrCSdYqWx_y4M0EgEQ9AdZM-B8Jm2V9K51' %} Sustainability Literacy {% endcomment %}
 {% endunless %}
 
-  <form method="post" class="newsletter-signup-form" target="_blank" action="https://slowfactory.us7.list-manage.com/subscribe/post?u=2572360f05297ce3376c6d5a5&amp;id={{ list_id }}">
+  <form method="post" class="newsletter-signup-form" target="_blank" action="https://cf3ef3ac.sibforms.com/serve/{{ list_id }}">
+
+    <input type="text" name="email_address_check" value="" style="display:none;">
+    <input type="hidden" name="locale" value="en">
+    <input type="hidden" name="html_type" value="simple">
 
     <label class="title-sm" for="EMAIL">Your Email:</label> &nbsp;
-    <input class="title-sm" style="width: 15em" type="email" value="" name="EMAIL" required="true"> &nbsp;
+    <input class="title-sm" style="width: 15em" type="email" value="" name="EMAIL" required="true" autocomplete="off"> &nbsp;
     <input class="newsletter-signup-form__submit button" style="display: inline-block;" type="submit" value="{{ newsletter_button_text }}" name="subscribe">
 
   </form>
