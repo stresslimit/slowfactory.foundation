@@ -34,11 +34,10 @@ export default (cardSelector) => {
   		if( $('.card').hasClass('activeNow') ) {
   			var $slicedCard = $('.card').slice(0, 1).addClass('transformPrev')
   			$('.card-list').append($slicedCard)
-  		}}
-
-  			$('li').removeClass('transformPrev').last().addClass('activeNow').prevAll().removeClass('activeNow')
+  		}
+    }
+		$('li').removeClass('transformPrev').last().addClass('activeNow').prevAll().removeClass('activeNow')
   	setTimeout(function(){appendToList()}, 150)
   })
-
 
 }
