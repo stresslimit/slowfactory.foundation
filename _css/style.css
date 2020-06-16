@@ -42,8 +42,9 @@
 /* Helvetica list styles
 */
 .impact-list-item {
-  padding: 1em 0;
+  padding-bottom: 1em;
   border-bottom: 2px dotted var(--dark-grey);
+  margin-bottom: 1em;
 }
 .impact-list-item a {
   display: block;

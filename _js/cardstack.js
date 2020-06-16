@@ -34,12 +34,13 @@ export default (cardSelector) => {
   		if( $('.card').hasClass('activeNow') ) {
   			var $slicedCard = $('.card').slice(0, 1).addClass('transformPrev')
   			$('.card-list').append($slicedCard)
-  		}}
-
-  			$('li').removeClass('transformPrev').last().addClass('activeNow').prevAll().removeClass('activeNow')
+  		}
+    }
+		$('li').removeClass('transformPrev').last().addClass('activeNow').prevAll().removeClass('activeNow')
   	setTimeout(function(){appendToList()}, 150)
   })
 
+<<<<<<< HEAD
   window.addEventListener('load', function(){
     var allimages= document.getElementsByTagName('img');
     for (var i=0; i<allimages.length; i++) {
@@ -50,4 +51,6 @@ export default (cardSelector) => {
 })
 
 
+=======
+>>>>>>> 92d659f18a3c01a4fe7faa8b19d8d84caf73daf0
 }

@@ -3,44 +3,70 @@
   <a href="/">Home</a>
 </div>
 
-<div class="nav-item">
-  <a href="/landfills-as-museums">Landfills as Museums</a>
+<!-- <div class="nav-item">
+  <a href="/superfund">Super Fund</a>
+</div> -->
+
+<div class="nav-heading">
+  Programs:
 </div>
 
-<div class="nav-item">
-  <a href="https://onexone.earth" target="_blank">One X One</a>
-</div>
-
-<div class="nav-item">
-  <a href="/study-hall/">Study Hall Summit Series</a>
-
-  {% assign pages = site.pages | where_exp: "page", "page.url contains 'study-hall'" | sort: "date", "last" | reverse %}
-  {% for item in pages %}
-    <div class="nav-item">
-      <a href="{{ item.url }}"><span class="title-xs">{{ item.title }}</span><br>
-        <!-- <span style="font-weight:400;">{{ item.date | date: "%B %e, %Y" }}</span> -->
-      </a>
-    </div>
-  {% endfor %}
+<div class="nav-group">
 
   <div class="nav-item">
-    <a href="/supporters">Supporters & Presenters</a>
+    <a href="/open-education">Open Education Fund</a>
+  </div>
+
+  <div class="nav-item">
+    <a href="/landfills-as-museums">Landfills as Museums</a>
+  </div>
+
+  <div class="nav-item">
+    <a href="https://onexone.earth">One X One Incubator</a>
+  </div>
+
+  <div class="nav-item">
+    <a href="/sustainability-literacy/crash-course">Sustainability Literacy Crash Course</a>
+  </div>
+
+  <div class="nav-item">
+    <a href="/study-hall/">Study Hall Summit Series</a>
+
+  {% comment %}
+    { % assign pages = site.pages | where_exp: "page", "page.url contains 'study-hall'" | sort: "date", "last" | reverse %}
+    { % for item in pages %}
+      <div class="nav-item">
+        <a href="{{ item.url }}"><span class="title-xs">{{ item.title }}</span><br>
+          <!-- <span style="font-weight:400;">{{ item.date | date: "%B %e, %Y" }}</span> -->
+        </a>
+      </div>
+    { % endfor %}
+  {% endcomment %}
+
+  </div>
+
+  <div class="nav-item">
+    <a href="/supporters">Study Hall Supporters</a>
+  </div>
+
+  <div class="nav-item">
+    <a href="/live">Study Hall Live Radio</a>
   </div>
 
 </div>
 
-<div class="nav-item">
-  <a href="/live">Study Hall Live Radio</a>
+<div class="nav-heading">
+  Reading:
 </div>
 
-<div class="nav-item">
-  <a href="/impact-marketing">Impact Marketing Guide</a>
-</div>
+<div class="nav-group">
 
-<div class="nav-item">
-  <a href="/sustainability-literacy/">Sustainability Literacy</a>
   <div class="nav-item">
-    <a href="/sustainability-literacy/crash-course">Crash Course</a>
+    <a href="/impact-marketing">Impact Marketing Guide</a>
+  </div>
+
+  <div class="nav-item">
+    <a href="/sustainability-literacy/">Sustainability Literacy</a>
   </div>
 
 </div>

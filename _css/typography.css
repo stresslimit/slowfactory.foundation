@@ -59,6 +59,12 @@ a:hover,
 .superlink {
   text-decoration: none;
 }
+.text-lg {
+  font-size: 1.5em;
+}
+.text-sm {
+  font-size: .9em;
+}
 
 
 /* .title-alt-xxl,

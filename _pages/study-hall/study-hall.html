@@ -5,27 +5,47 @@ permalink: /studyhall
 ---
 
 
+<div class="section bg-image on-dark-bg" style="background-image:url({{ 'images/study-hall-general/study-hall-banner.jpg' | asset_url }})">
+  <div class="container">
+
+    <!-- <p class="title-lg">Bringing together the world’s leading experts and influencers in sustainable fashion & beyond</p> -->
+
+    <div class="title-lg" style="line-height:1.7em;"><span style="background:black">An Open Conference on Climate & Culture, using fashion as medium for social & environmental change</span></div>
+
+  </div>
+</div>
+
+
+
 <div class="section">
   <div class="container">
 
-    <div class="title-lg">Bringing together the world’s leading experts and influencers in sustainable fashion & beyond</div>
+    <div class="row valign-top">
+      <div class="two-thirds">
 
-    <p class="title-sm">Study Hall is an education initiative focused on climate & culture, using fashion as medium for social & environmental change. The cross-cultural, inter-disciplinary global conferences convene throughout the year, fostering partnerships and education around sustainability literacy in Fashion and beyond.</p>
-    <p class="title-sm">Each event gathers hundreds of industry leaders, scientists, advocates & influencers. We prioritize and center the voices of Black, Brown, Indigenous and other marginalized voices.</p>
+        <p class="title-md dark-grey">International and interdisciplinary seminars from industry leaders, scientists, advocates, artists & elected officials</p>
 
+        <p class="title-sm">Study Hall is an education initiative focused on climate & culture, using fashion as medium for social & environmental change. The cross-cultural, inter-disciplinary global conferences convene throughout the year, fostering partnerships and education around sustainability literacy in Fashion and beyond.</p>
+        <p class="title-sm">Each event gathers hundreds of industry leaders, scientists, advocates & influencers. We prioritize and center the voices of Black, Brown, Indigenous and other marginalized voices.</p>
 
-    <p id="js-typewriter" class="title-md">&nbsp;</p>
-
-
-    <div class="impact-list">
-    {% assign pages = site.pages | where_exp: "page", "page.url contains 'study-hall'" | sort: "date", "last" | reverse %}
-    {% for item in pages %}
-      <div class="impact-list-item">
-        <a class="title-xs" href="{{ item.url }}">
-          {{ item.title }}
-        </a>
       </div>
-    {% endfor %}
+      <div class="third">
+
+        <!-- <p id="js-typewriter" class="title-md">&nbsp;</p> -->
+        <p class="title-md">Our Summits:</p>
+
+        <div class="impact-list">
+        {% assign pages = site.pages | where_exp: "page", "page.url contains 'study-hall'" | sort: "date", "last" | reverse %}
+        {% for item in pages %}
+          <div class="impact-list-item">
+            <a class="title-xs" href="{{ item.url }}">
+              {{ item.title }}
+            </a>
+          </div>
+        {% endfor %}
+        </div>
+
+      </div>
     </div>
 
   </div>
