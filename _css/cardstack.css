@@ -1,6 +1,7 @@
 .card-container {
 
     background-color: #EBBD48;
+    width: 100%;
     height: 600px;
     padding-top: 5%;
     padding-bottom: 5%;
@@ -40,13 +41,13 @@
 
 
         .prev {
-            left: 0px;
+            left: 15px;
             right: auto;
         }
 
         .next {
             left: auto;
-            right: 13px;
+            right: 15px;
         }
 
     
