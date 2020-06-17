@@ -1,5 +1,6 @@
 import initReactFastclick from 'react-fastclick'
 import cardstack from './cardstack'
+import formAjax from './form-ajax'
 import { init as mobile_menu, close_mobile_menu } from './mobile-menu'
 
 window.onload = () => {
@@ -8,6 +9,7 @@ window.onload = () => {
   initReactFastclick()
   mobile_menu()
   cardstack()
+  formAjax()
 
 }
 
