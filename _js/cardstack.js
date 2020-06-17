@@ -14,43 +14,44 @@ export default (cardSelector) => {
   function init() {
     let lastChild = $cards.last()
     lastChild.addClass('activeNow')
+    resetImages()
   }
 
   $('.next').click(function(e){
     e.preventDefault()
   	var prependList = function() {
-  		if( $('.card-list .card').hasClass('activeNow') ) {
+  		// if( $('.card-list .card').hasClass('activeNow') ) {
   			var $slicedCard = $('.card-list .card').slice(lastCardIndex).removeClass('transformThis activeNow')
   			$('.card-list').prepend($slicedCard)
-  		}
+        resetImages()
+  		// }
   	}
-  	$('li').last().removeClass('transformPrev').addClass('transformThis').prev().addClass('activeNow')
+    let $newActive = $('.card').last()
+  	$newActive.removeClass('transformPrev').addClass('transformThis').prev().addClass('activeNow')
   	setTimeout(function(){ prependList() }, 150)
   })
 
   $('.prev').click(function(e) {
     e.preventDefault()
   	var appendToList = function() {
-  		if( $('.card').hasClass('activeNow') ) {
-  			var $slicedCard = $('.card').slice(0, 1).addClass('transformPrev')
+  		// if( $('.card').hasClass('activeNow') ) {
+  			var $slicedCard = $('.card-list .card').slice(0, 1).addClass('transformPrev')
   			$('.card-list').append($slicedCard)
-  		}
+        resetImages()
+  		// }
     }
-		$('li').removeClass('transformPrev').last().addClass('activeNow').prevAll().removeClass('activeNow')
-  	setTimeout(function(){appendToList()}, 150)
+		$('.card').removeClass('transformPrev').last().addClass('activeNow').prevAll().removeClass('activeNow')
+  	setTimeout(function(){ appendToList() }, 150)
   })
 
-<<<<<<< HEAD
-  window.addEventListener('load', function(){
-    var allimages= document.getElementsByTagName('img');
-    for (var i=0; i<allimages.length; i++) {
-        if (allimages[i].getAttribute('data-src')) {
-           allimages[i].setAttribute('src', allimages[i].getAttribute('data-src'));
-        }
-    }
-})
+}
 
-
-=======
->>>>>>> 92d659f18a3c01a4fe7faa8b19d8d84caf73daf0
+function resetImages() {
+  let $el = $('.card-list .card').last()
+  $el.find('img').each(function (i) {
+    console.log('resetting', $el)
+    let s = $(this).data('src')
+    $(this).attr('src', s)
+  })
+  // $el.css({background: 'black'})
 }
