@@ -1,7 +1,6 @@
 export default (cardSelector) => {
 
   let cardList = document.querySelector('.card-list')
-  // let cards = document.querySelectorAll('.card-list .card')
   if ( !cardList ) return
 
   var $card = $('.card')
@@ -20,11 +19,9 @@ export default (cardSelector) => {
   $('.next').click(function(e){
     e.preventDefault()
   	var prependList = function() {
-  		// if( $('.card-list .card').hasClass('activeNow') ) {
-  			var $slicedCard = $('.card-list .card').slice(lastCardIndex).removeClass('transformThis activeNow')
-  			$('.card-list').prepend($slicedCard)
-        resetImages()
-  		// }
+			var $slicedCard = $('.card-list .card').slice(lastCardIndex).removeClass('transformThis activeNow')
+			$('.card-list').prepend($slicedCard)
+      resetImages()
   	}
     let $newActive = $('.card').last()
   	$newActive.removeClass('transformPrev').addClass('transformThis').prev().addClass('activeNow')
@@ -34,11 +31,9 @@ export default (cardSelector) => {
   $('.prev').click(function(e) {
     e.preventDefault()
   	var appendToList = function() {
-  		// if( $('.card').hasClass('activeNow') ) {
-  			var $slicedCard = $('.card-list .card').slice(0, 1).addClass('transformPrev')
-  			$('.card-list').append($slicedCard)
-        resetImages()
-  		// }
+			var $slicedCard = $('.card-list .card').slice(0, 1).addClass('transformPrev')
+			$('.card-list').append($slicedCard)
+      resetImages()
     }
 		$('.card').removeClass('transformPrev').last().addClass('activeNow').prevAll().removeClass('activeNow')
   	setTimeout(function(){ appendToList() }, 150)
@@ -53,5 +48,4 @@ function resetImages() {
     let s = $(this).data('src')
     $(this).attr('src', s)
   })
-  // $el.css({background: 'black'})
 }
