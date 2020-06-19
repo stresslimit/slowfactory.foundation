@@ -1,158 +1,73 @@
-.card-container {
-
-    background-color: #EBBD48;
-    width: 100%;
-    height: 600px;
-    padding-top: 5%;
-    padding-bottom: 5%;
-   
 
 .card-stack {
-        max-width: 90%;
-        margin: 0px auto;
-        position: relative;
+  background: white;
+}
+.card-number {
+  position: absolute;
+  bottom:0px;
+}
 
-
-
-        .buttons {
-
-            position: absolute;
-            border-radius: 50%;
-            position: absolute;
-            background-color: #3494BA;
-            border-radius: 50%;
-            width: 35px;
-            height: 35px;
-            left: 0;
-            top: 230px;
-            color: #ffffff;
-            text-align: center;
-            line-height: 31px;
-            text-decoration: none;
-            font-size: 22px;
-            z-index: 100;
-            outline: none;
-            transition: all 0.2s ease;
-
-              &:hover {
-                transform: scale(1.3,1.3);
-            }
-          }
-
-
-        .prev {
-            left: 15px;
-            right: auto;
-        }
-
-        .next {
-            left: auto;
-            right: 15px;
-        }
-
-    
-
- 
-
- .card-list {
-
-
-
-    li {
-                transition: all 100ms ease-in-out;
-                border-radius: 2px;
-                list-style: none;
-                position: absolute;
-                height: 500px;
-                box-shadow: 2px 2px 3px 1px rgba(0, 0, 0, 0.25);
-                left: 0;
-                right: 0;
-                margin: 0 auto;
-                padding-top: 20px;
-                text-align: left;
-                background-size:cover;
-                background-color: #ffffff;
-
-
-                &:nth-child(1) {
-                    right: 5px;
-                    top: 26px;
-                    /* animation: scaleCard 100ms; */
-                }
-                &:nth-child(2) {
-                    right: 9px;
-                    top: 23px;
-                }
-                &:nth-child(3) {
-                    right: 13px;
-                    top: 20px;
-                }
-                &:nth-child(4) {
-                    right: 17px;
-                    top: 17px;
-                }
-                &:nth-child(5) {
-                    right: 21px;
-                    top: 14px;
-                }
-                &:nth-child(6) {
-                    right: 25px;
-                    top: 11px;
-                }
-                &:nth-child(7) {
-                    right: 29px;
-                    top: 8px;
-                }
-                &:nth-child(8) {
-                    right: 33px;
-                    top: 5px;
-                }
-                &:nth-child(9) {
-                    right: 37px;
-                    top: 2px;
-                }
-             }
-          }
-
-      }
-  }
-
-
-
+.slick-arrow {
+  z-index: 10001;
+  outline: none;
+  font-size: 0;
+  line-height: 0;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+.slick-prev:before, .slick-next:before {
+  position: absolute;
+  top: 50%;
+  width: 20px;
+  height: 20px;
+  background-color: #3494BA;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 20px;
+  line-height: 1;
+  color: white;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.slick-prev:before {
+  content: '<';
+  left: -25px;
+}
+.slick-next:before {
+  content: '>';
+  right: -25px;
+}
 
 
 .card-text {
-    font-size: 15px;
+  font-size: 15px;
 }
 
 .source {
-    font-size: 12px;
-    font-style: italic;
+  font-size: 12px;
+  font-style: italic;
 }
 .transformThis {
-    animation: scaleDown 500ms;
+  animation: scaleDown 500ms;
 }
 
 .transformPrev {
-    animation: scaleUp 100ms;
-    display: none;
+  animation: scaleUp 100ms;
+  display: none;
 }
 
 .graphic {
-
-    width: 80%;
-
+  width: 80%;
 }
 
 .title-card {
-
-    margin-bottom: 0.3em !important;
+  margin-bottom: 0.3em !important;
 }
 
 .card-number {
-
-    position: absolute;
-    bottom:0px;
+  position: absolute;
+  bottom:0px;
 }
 
 
@@ -161,21 +76,15 @@
   .title-md, .title-alt-md {
     font-size: 1.2em;
   }
-
   .scale {
-
     display: none;
   }
-
   .graphic {
-
     width: 100%;
-
-}
-
-.source {
+  }
+  .source {
     font-size: 10px;
     font-style: italic;
-}
+  }
 
 }
