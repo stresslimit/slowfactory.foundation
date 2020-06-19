@@ -177,7 +177,7 @@ body { font-size: 20px; }
           <a class="buttons prev" href=""><</a>
           <a class="buttons next" href="">></a>
 
-				<ul class="card-list" data-slick='{"slidesToShow": 9, "slidesToScroll": 9}'>
+				<ul class="card-list">
 
               <li class="card container-md" id="c1">
 
@@ -426,9 +426,10 @@ body { font-size: 20px; }
 
 
 <script type="text/javascript">
-    $(document).ready(function(){
-      $('.card-list').slick({
-        setting-name: setting-value
-      });
-    });
+  $(document).ready(function(){
+    $('.card-list').slick({
+      arrows: true,
+      infinite: true
+    })
+  })
 </script>
