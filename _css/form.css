@@ -31,7 +31,7 @@ input[type=submit] {
 .button, .btn {
   cursor: pointer;
   display: block;
-  padding: .7em .7em .6em;
+  padding: .6em;
   border: 3px solid var(--light-grey);
   background: white;
   border-radius: 0;
