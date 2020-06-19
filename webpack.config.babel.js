@@ -1,6 +1,7 @@
 import webpack from 'webpack'
 import path from 'path'
 import ExtractTextPlugin from 'mini-css-extract-plugin'
+import fs from 'fs'
 
 
 let config = {
@@ -16,7 +17,7 @@ let config = {
   },
   output: {
     path: path.resolve(__dirname, 'assets' ),
-    filename: '[name].js'
+    filename: '[name]-[hash].js'
   },
   plugins: [
     new webpack.LoaderOptionsPlugin({
@@ -25,8 +26,16 @@ let config = {
       options: {}
     }),
     new ExtractTextPlugin({
-      filename: '[name].css'
-    })
+      filename: '[name]-[hash].css'
+    }),
+    // this.hooks.done.tap()
+    function() {
+      this.plugin('done', stats => {
+        fs.writeFileSync(path.join(__dirname, '_data', 'webpack.yml'),
+          'hash: "'+ stats.hash +'"')
+        console.log("\r\n\r\n+++ writing to webpack.yml +++\r\n\r\n")
+      })
+    }
   ],
   module: {
     rules: [
