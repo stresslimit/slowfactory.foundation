@@ -1,10 +1,61 @@
-
 .card-stack {
-  background: white;
+
+  width: 80%;
+  height: 550px;
+  -webkit-box-shadow: 0 2px 15px 1px rgba(225, 225, 225, 0.5);
+   box-shadow: 0 1px 4px 1px rgba(0, 0, 0, 0.5); 
+   background: white;
+
 }
+
+
+.slick-track {
+    width: 100% !important;
+    transform: translate3d(0px, 0px, 0px) !important;
+    padding-top: 2px;
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.slick-list {
+position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.slick-slide {
+ width: 100%;
+ margin: 4%;
+
+}
+
+.slick-slider {
+ position: relative;
+
+}
+
+.slick-initialized {
+    
+}
+
+
 .card-number {
   position: absolute;
   bottom:0px;
+}
+
+.row {
+margin:10px !important;
+width: 97% !important;
 }
 
 .slick-arrow {
@@ -15,28 +66,36 @@
   border: none;
   outline: none;
   background: transparent;
+  position: absolute;
+
 }
 .slick-prev:before, .slick-next:before {
   position: absolute;
   top: 50%;
-  width: 20px;
-  height: 20px;
+  width: 50px;
+  height: 50px;
   background-color: #3494BA;
   border-radius: 50%;
   cursor: pointer;
-  font-size: 20px;
-  line-height: 1;
+  font-size: 33px;
+  line-height: 1.5;
   color: white;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+   
 }
 .slick-prev:before {
   content: '<';
-  left: -25px;
+  right: 20px;
+    top: 200px;
+ 
 }
 .slick-next:before {
   content: '>';
-  right: -25px;
+  left: 807px;
+  top: -6427px;
+
 }
 
 
@@ -70,6 +129,10 @@
   bottom:0px;
 }
 
+.p {
+margin: 0 0 .6em;
+}
+
 
 @media (--viewport-xs-only) {
 
@@ -80,11 +143,15 @@
     display: none;
   }
   .graphic {
-    width: 100%;
+    width: 95%;
   }
   .source {
     font-size: 10px;
     font-style: italic;
   }
+  .p {
+    font-size: 13px;
+}
+
 
 }
