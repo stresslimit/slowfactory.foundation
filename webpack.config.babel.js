@@ -28,7 +28,6 @@ let config = {
     new ExtractTextPlugin({
       filename: '[name]-[hash].css'
     }),
-    // this.hooks.done.tap()
     function() {
       this.plugin('done', stats => {
         fs.writeFileSync(path.join(__dirname, '_data', 'webpack.yml'),
