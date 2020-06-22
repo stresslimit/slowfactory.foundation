@@ -1,54 +1,18 @@
+
 .card-stack {
-
-  width: 80%;
-  height: 550px;
-  -webkit-box-shadow: 0 2px 15px 1px rgba(225, 225, 225, 0.5);
-   box-shadow: 0 1px 4px 1px rgba(0, 0, 0, 0.5); 
-   background: white;
-
+  /* height: 550px; */
+  box-shadow: 0 1px 4px 1px rgba(0, 0, 0, 0.5);
+  background: white;
+  position: relative;
 }
-
-
-.slick-track {
-    width: 100% !important;
-    transform: translate3d(0px, 0px, 0px) !important;
-    padding-top: 2px;
-    position: relative;
-    top: 0;
-    left: 0;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-
+.card {
+  padding: 3em 1em;
 }
-
-.slick-list {
-    position: relative;
-    display: block;
-    overflow: hidden !important;
-    margin: 0;
-    padding: 0;
-}
-
-
-
-.slick-slide {
- width: 100%;
- margin: 4%;
-
-}
-
-.slick-slider {
- position: relative;
-
-}
-
 
 .card-number {
   position: absolute;
-  bottom:0px;
+  bottom: 0px;
 }
-
 
 .slick-arrow {
   z-index: 10001;
@@ -58,8 +22,6 @@
   border: none;
   outline: none;
   background: transparent;
-  position: absolute;
-
 }
 .slick-prev:before, .slick-next:before {
   position: absolute;
@@ -74,20 +36,15 @@
   color: white;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
-   
 }
 .slick-prev:before {
   content: '<';
-  right: 20px;
-    top: 200px;
- 
+  left: -20px;
+
 }
 .slick-next:before {
   content: '>';
-  left: 807px;
-  top: -5975px;
-
+  right: -20px;
 }
 
 
@@ -139,7 +96,4 @@
     font-size: 10px;
     font-style: italic;
   }
-
-
-
 }
