@@ -342,17 +342,12 @@ body { font-size: 20px; }
 
 <script type="text/javascript">
   $(document).ready(function(){
-    console.log('slick init')
     $('.card-list').slick({
       slidesToShow: 1,
       slidesToScroll: 1,
       arrows: true,
       appendArrows: $('.card-stack')
     })
-
-    $('.card-list').on('init'), function () {
-      console.log('slick init')
-    }
 
     $('.card-list').on('beforeChange', function(event, slick, currentSlide, nextSlide) {
       // console.log(slick.$slides[nextSlide])
