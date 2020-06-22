@@ -23,9 +23,9 @@
 }
 
 .slick-list {
-position: relative;
+    position: relative;
     display: block;
-    overflow: hidden;
+    overflow: hidden !important;
     margin: 0;
     padding: 0;
 }
@@ -43,20 +43,12 @@ position: relative;
 
 }
 
-.slick-initialized {
-    
-}
-
 
 .card-number {
   position: absolute;
   bottom:0px;
 }
 
-.row {
-margin:10px !important;
-width: 97% !important;
-}
 
 .slick-arrow {
   z-index: 10001;
@@ -94,7 +86,7 @@ width: 97% !important;
 .slick-next:before {
   content: '>';
   left: 807px;
-  top: -6427px;
+  top: -5975px;
 
 }
 
@@ -129,9 +121,7 @@ width: 97% !important;
   bottom:0px;
 }
 
-.p {
-margin: 0 0 .6em;
-}
+
 
 
 @media (--viewport-xs-only) {
@@ -149,9 +139,7 @@ margin: 0 0 .6em;
     font-size: 10px;
     font-style: italic;
   }
-  .p {
-    font-size: 13px;
-}
+
 
 
 }

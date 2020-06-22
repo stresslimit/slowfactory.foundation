@@ -221,11 +221,11 @@ body { font-size: 20px; }
         </div>
 
         <div class="card">
-          <div>
+          
             <p class="title-card">Carbon Footprint of One (1) Bag </p>
             <img class="graphic" data-src="{{ 'images/landfills-as-museums/carbon.gif' | asset_url }}">
             <p class="source">Source: Agency, Environment. “Life Cycle Assessment of Supermarket Carrierbags: a Review of the Bags Available in 2006.” GOV.UK, GOV.UK, 25 July 2011, www.gov.uk/government/publications/life-cycle-assessment-of-supermarket-carrierbags-a-review-of-the-bags-available-in-2006.</p>
-          </div>
+          
           <p class="title-sm card-number">6</p>
         </div>
 
@@ -237,11 +237,11 @@ body { font-size: 20px; }
         </div>
 
         <div class="card">
-          <div>
+        
             <p class="title-sm">Usage of Bags Required to Break Even with the Environmental Impact of One (1) Plastic Bag</p>
             <img class="graphic" data-src="{{ 'images/landfills-as-museums/usage.gif' | asset_url }}">
             <p class="source">Source: Agency, Environment. “Life Cycle Assessment of Supermarket Carrierbags: a Review of the Bags Available in 2006.” GOV.UK, GOV.UK, 25 July 2011, www.gov.uk/government/publications/life-cycle-assessment-of-supermarket-carrierbags-a-review-of-the-bags-available-in-2006.</p>
-            </div>
+          
           <p class="title-sm card-number">8</p>
         </div>
 
@@ -343,12 +343,10 @@ body { font-size: 20px; }
 
 <script type="text/javascript">
   $(document).ready(function(){
-    $('.card').slick({
-      slidesToShow: 1,
-      slidesToScroll: 1,
+    $('.card-list').slick({
       arrows: true,
-      appendArrows: $('.card-list'),
-   
+      infinite: true,
+      appendArrows: $('.card-list')
     })
 
 

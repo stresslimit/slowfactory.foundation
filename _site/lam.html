@@ -25,8 +25,8 @@
 
  -->
 
-<link rel="stylesheet" href="/assets/css/style-88e6557d238f2c0f059b.css">
-<script src="/assets/js/app-88e6557d238f2c0f059b.js"></script>
+<link rel="stylesheet" href="/assets/css/style-840c9c6096cb75cea80a.css">
+<script src="/assets/js/app-840c9c6096cb75cea80a.js"></script>
 
 <link rel="icon" href="/assets/images/favicon-the-earth.png" type="image/x-icon">
 
@@ -376,11 +376,11 @@ body { font-size: 20px; }
         </div>
 
         <div class="card">
-          <div>
+          
             <p class="title-card">Carbon Footprint of One (1) Bag </p>
             <img class="graphic" data-src="/assets/images/landfills-as-museums/carbon.gif">
             <p class="source">Source: Agency, Environment. “Life Cycle Assessment of Supermarket Carrierbags: a Review of the Bags Available in 2006.” GOV.UK, GOV.UK, 25 July 2011, www.gov.uk/government/publications/life-cycle-assessment-of-supermarket-carrierbags-a-review-of-the-bags-available-in-2006.</p>
-          </div>
+          
           <p class="title-sm card-number">6</p>
         </div>
 
@@ -392,11 +392,11 @@ body { font-size: 20px; }
         </div>
 
         <div class="card">
-          <div>
+        
             <p class="title-sm">Usage of Bags Required to Break Even with the Environmental Impact of One (1) Plastic Bag</p>
             <img class="graphic" data-src="/assets/images/landfills-as-museums/usage.gif">
             <p class="source">Source: Agency, Environment. “Life Cycle Assessment of Supermarket Carrierbags: a Review of the Bags Available in 2006.” GOV.UK, GOV.UK, 25 July 2011, www.gov.uk/government/publications/life-cycle-assessment-of-supermarket-carrierbags-a-review-of-the-bags-available-in-2006.</p>
-            </div>
+          
           <p class="title-sm card-number">8</p>
         </div>
 
@@ -498,12 +498,10 @@ body { font-size: 20px; }
 
 <script type="text/javascript">
   $(document).ready(function(){
-    $('.card').slick({
-      slidesToShow: 1,
-      slidesToScroll: 1,
+    $('.card-list').slick({
       arrows: true,
-      appendArrows: $('.card-list'),
-   
+      infinite: true,
+      appendArrows: $('.card-list')
     })
 
 
