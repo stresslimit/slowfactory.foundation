@@ -1,12 +1,12 @@
-
 .card-stack {
   /* height: 550px; */
   box-shadow: 0 1px 4px 1px rgba(0, 0, 0, 0.5);
   background: white;
   position: relative;
 }
+
 .card {
-  padding: 3em 1em;
+  padding: 2em 1em;
 }
 
 .card-number {
@@ -40,13 +40,15 @@
 .slick-prev:before {
   content: '<';
   left: -20px;
+  top:260px;
 
 }
 .slick-next:before {
   content: '>';
-  right: -20px;
-}
+  left: 835px;
+  top:260px;
 
+}
 
 .card-text {
   font-size: 15px;
@@ -66,6 +68,7 @@
 }
 
 .graphic {
+  display: initial !important;
   width: 80%;
 }
 
@@ -75,7 +78,7 @@
 
 .card-number {
   position: absolute;
-  bottom:0px;
+
 }
 
 
@@ -83,17 +86,50 @@
 
 @media (--viewport-xs-only) {
 
-  .title-md, .title-alt-md {
+.drone {
+  height:600px;
+}
+
+
+.card-stack {   
+  width:75%;
+}
+
+.card {
+  padding: 2em 1em 2em 1em;
+}
+
+.block {
+  padding: 5em 1em 0em 1em;
+}
+
+.scale {
+    display: none !important;
+}
+
+.slick-next:before {
+  content: '>';
+  left: 405px;
+
+}
+
+.title-md, .title-alt-md {
     font-size: 1.2em;
   }
-  .scale {
+
+.scale {
     display: none;
   }
-  .graphic {
-    width: 95%;
+
+.graphic {
+    width: 100%;
   }
-  .source {
+  
+.source {
     font-size: 10px;
     font-style: italic;
   }
+
+
 }
+
