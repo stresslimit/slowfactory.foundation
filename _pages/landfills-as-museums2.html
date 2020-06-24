@@ -29,9 +29,11 @@ body { font-size: 20px; }
 
   </div>
 
-  <video class="drone" autoplay loop width="100%">
+  <div class="video-container drone"><iframe title="vimeo-player" src="https://player.vimeo.com/video/432001195?background=1" width="640" height="360" frameborder="0" allowfullscreen></iframe></div>
+
+  <!-- <video class="drone" autoplay loop width="100%">
     <source src="{{ 'images/landfills-as-museums/DroneDown_1.mp4' | asset_url }}" type="video/mp4">
-  </video>
+  </video> -->
 
 </div>
 
@@ -204,7 +206,7 @@ body { font-size: 20px; }
         <div class="text-center">
         <p class="title-card" style="text-align:left;">Let’s use shoppings bags as an example.</p>
           <p class="title-xs" style="text-align:left;"> Which bag do you think has a greater environmental impact: a plastic bag, a paper bag, or a cotton tote bag?</p>
-          <img class="graphic" data-src="{{ 'images/landfills-as-museums/bags.gif' | asset_url }}">
+          <a href="" class="js-slick-nextSlide"><img class="graphic" data-src="{{ 'images/landfills-as-museums/bags.gif' | asset_url }}"></a>
 
          </div>
         <p class="title-sm card-number">4</p>
@@ -340,7 +342,6 @@ body { font-size: 20px; }
 
 <script type="text/javascript">
   $(document).ready(function(){
-    console.log('slick init')
     $('.card-list').slick({
       slidesToShow: 1,
       slidesToScroll: 1,
@@ -348,14 +349,13 @@ body { font-size: 20px; }
       appendArrows: $('.card-stack')
     })
 
-    $('.card-list').on('init'), function () {
-      console.log('slick init')
-    }
+    $('.js-slick-nextSlide').click(function(e) {
+      e.preventDefault()
+      $('.card-list').slick('slickNext')
+    })
 
     $('.card-list').on('beforeChange', function(event, slick, currentSlide, nextSlide) {
-      // console.log(slick.$slides[nextSlide])
-      // console.log(nextSlide)
-      resetImages($(slick.$slides[nextSlide]))
+      resetImages( $(slick.$slides[nextSlide]) )
     })
 
     function resetImages($slide) {
