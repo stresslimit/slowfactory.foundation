@@ -61,7 +61,7 @@
 .video-container {
   position: relative;
   padding-bottom: 56.25%;
-  padding-top: 0px; 
+  padding-top: 0px;
   height: 0;
   overflow: hidden;
 }
@@ -74,5 +74,3 @@
   width: 100%;
   height: 100%;
 }
-
-/* LAM */

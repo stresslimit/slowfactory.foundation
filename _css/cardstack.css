@@ -4,6 +4,15 @@
   background: white;
   position: relative;
 }
+/* .card-stack::before {
+  display: block;
+  position: relative;
+  top: 1em;
+  right: 1em;
+  width: 100%;
+  height: 100%;
+  background: white;
+} */
 
 .card {
   padding: 2em 1em;
@@ -12,42 +21,6 @@
 .card-number {
   position: absolute;
   bottom: 0px;
-}
-
-.slick-arrow {
-  z-index: 10001;
-  outline: none;
-  font-size: 0;
-  line-height: 0;
-  border: none;
-  outline: none;
-  background: transparent;
-}
-.slick-prev:before, .slick-next:before {
-  position: absolute;
-  top: 50%;
-  width: 50px;
-  height: 50px;
-  background-color: #3494BA;
-  border-radius: 50%;
-  cursor: pointer;
-  font-size: 33px;
-  line-height: 1.5;
-  color: white;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-.slick-prev:before {
-  content: '<';
-  left: -20px;
-  top:260px;
-
-}
-.slick-next:before {
-  content: '>';
-  left: 835px;
-  top:260px;
-
 }
 
 .card-text {
@@ -78,7 +51,6 @@
 
 .card-number {
   position: absolute;
-
 }
 
 
@@ -86,49 +58,70 @@
 
 @media (--viewport-xs-only) {
 
-.drone {
-  height:600px;
-}
+  .drone {
+    height: 600px;
+  }
 
+  .card-stack {
+    width: 75%;
+  }
 
-.card-stack {
-  width:75%;
-}
+  .card {
+    padding: 2em 1em;
+  }
 
-.card {
-  padding: 2em 1em 2em 1em;
-}
+  .block {
+    padding: 5em 1em 0em 1em;
+  }
 
-.block {
-  padding: 5em 1em 0em 1em;
-}
-
-.scale {
+  .scale {
     display: none !important;
-}
+  }
 
-.slick-next:before {
-  content: '>';
-  left: 405px;
+  /* .slick-next:before {
+    content: '>';
+    left: 405px;
+  } */
 
-}
-
-.title-md, .title-alt-md {
+  .title-md, .title-alt-md {
     font-size: 1.2em;
   }
 
-.scale {
+  .scale {
     display: none;
   }
 
-.graphic {
+  .graphic {
     width: 100%;
   }
 
-.source {
+  .source {
     font-size: 10px;
     font-style: italic;
   }
 
+}
 
+
+/* Override Slick default theme
+*/
+.slick-dots {
+  bottom: -40px !important;
+  color: white !important;
+}
+.slick-dots li button:before {
+  font-size: 16px !important;
+}
+.slick-dots li.slick-active button:before {
+  color: white !important;
+}
+.slick-prev:before, .slick-next:before {
+  opacity: .9 !important;
+  font-size: 40px !important;
+}
+.slick-prev:hover:before, .slick-next:hover:before {
+  opacity: 1 !important;
+}
+.slick-prev {
+  left: -45px !important;
 }

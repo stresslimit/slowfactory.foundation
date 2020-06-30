@@ -15,6 +15,13 @@ hr {
   width: auto;
   vertical-align: bottom;
 }
+@media (--viewport-md) {
+  .img-float-right {
+    float: right;
+    padding:0 0 1em 1em;
+    max-width: 50%;
+  }
+}
 .nowrap {
   /*white-space: nowrap;*/
   flex-wrap: nowrap;
@@ -36,6 +43,13 @@ hr {
 }
 .align-center, .text-center {
   text-align: center;
+}
+
+@media (--viewport-md) {
+  .col-2 {
+    columns: 2;
+    column-gap: 60px;
+  }
 }
 
 @media (--viewport-xs-only) {

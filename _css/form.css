@@ -4,7 +4,7 @@
     width: 5em;
   }
   input {
-    width: 13em;
+    width: 17em;
   }
 }
 label {
@@ -22,7 +22,7 @@ input, select {
   box-sizing: border-box;
   border: 0;
   border-bottom: 5px solid #000;
-  padding: .5em 0 0 0;
+  padding: 0;
   @extend .title-sm;
 }
 input[type=submit] {
@@ -30,7 +30,7 @@ input[type=submit] {
 }
 .button, .btn {
   cursor: pointer;
-  display: block;
+  display: inline-block;
   padding: .6em;
   border: 3px solid var(--light-grey);
   background: white;
