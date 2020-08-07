@@ -78,11 +78,6 @@
     display: none !important;
   }
 
-  /* .slick-next:before {
-    content: '>';
-    left: 405px;
-  } */
-
   .title-md, .title-alt-md {
     font-size: 1.2em;
   }

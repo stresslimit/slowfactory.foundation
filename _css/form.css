@@ -14,15 +14,14 @@ label {
 input, select {
   display: inline-block;
   font-family: "Helvetica";
-  /* font-size: 1em; */
   color: var(--text-color);
   background: transparent;
-  /* margin: 0.5em 0 1.5em; */
   padding: 0.75em;
   box-sizing: border-box;
   border: 0;
   border-bottom: 5px solid #000;
   padding: 0;
+
   @extend .title-sm;
 }
 input[type=submit] {

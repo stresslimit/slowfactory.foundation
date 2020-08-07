@@ -1,0 +1,25 @@
+board:
+  - name: Céline Semaan
+    desc: Founder of Slow Factory and advocate for social and environmental justice
+    img: team-celine2.jpg
+  - name: Henrietta Gallina
+    desc: Creative Director and strategist, social commentator and advocate
+    img: team-henrietta.jpg
+  - name: Sophia Li
+    desc: Journalist and video director in fashion and cultural impact
+    img: team-sophia.jpg
+  - name: Marni Majorelle
+    desc: Environmentalist, urban horticulurist and community organizer
+    img: team-marni.jpg
+  - name: Aja Barber
+    desc: Writer and fashion consultant with a focus on race, intersectional feminism, sustainable and ethical fashion
+    img: team-aja.jpg
+  - name: Korina Emmerich
+    desc: Fashion designer and Native rights advocate
+    img: team-korina.jpg
+  # - name: Waris Ahluwalia
+  #   desc: Designer, actor and creative entrepreneur
+  #   img: team-waris.jpg
+  - name: Colin Vernon
+    desc: Founder of Slow Factory with a background in tech innovation, media platforms and cultural theory
+    img: team-colin2.jpg

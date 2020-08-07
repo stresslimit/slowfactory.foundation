@@ -6,6 +6,7 @@
   <div class="container">
 
     <div class="header">
+      <img src="{{ 'images/logo-SlowFactory-S-mark.png' | asset_url }}" class="sf-logo-S-mark">
 
       <div class="burger-menu js-show-mobile-menu burger-menu-placement">
         <span></span>
@@ -20,7 +21,11 @@
             <div class="dark-grey">Foundation</div>
           </div>
         </a>
-        {% if page.name != 'index.html' %}
+        {% if page.name == 'index.html' %}
+        <div class="title-lg on-dark-bg">
+          &nbsp;/
+        </div>
+        {% else %}
         <div class="title-lg">
           &nbsp;/
         </div>

@@ -6,6 +6,19 @@
   position: relative;
   padding-top: var(--unit);
 }
+.sf-logo-S-mark {
+  position: absolute;
+  top: 29px;
+  left: -29px;
+  width: 28px;
+}
+@media (--viewport-md) {
+  .sf-logo-S-mark {
+    top: 36px;
+    left: -37px;
+    width: 36px;
+  }
+}
 .dot {
   width: 4em;
   height: 4em;
@@ -162,10 +175,10 @@
 }
 
 
-/* Team
+/* About / Team
 */
-.card-team {
-  margin-bottom: 0.8em;
+.about-team {
+  margin-bottom: 2em;
 }
 .team-img {
   text-align: center;
