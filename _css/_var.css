@@ -5,16 +5,21 @@
 
 /* helvetica redesign */
 
+  --black: #000000;
   --dark-grey: #848484;
   --green: #449856;
   --light-green: #77b06e;
   --orange: #ef4623;
+  --bright-orange: #ff8400;
   --red: #d33027;
   --blue: #3d65af;
+  --bright-blue: #0027f5;
   --fuscia: #df3f8e;
-  --yellow: #f1b729;
+  --pink: #dba6cc;
+  --magenta: #e00d52;
   --purple: #7368af;
-  --black: #000000;
+  --yellow: #f1b729;
+  --bright-yellow: #fee63c;
 
 /* study hall NYT 2020 palette from Riposte */
 

@@ -1,4 +1,5 @@
 
+
 /* Helvetica redesign styles
 */
 .header {
@@ -8,13 +9,17 @@
 }
 .sf-logo-S-mark {
   position: absolute;
-  top: 29px;
+  top: 30px;
   left: -29px;
   width: 28px;
 }
+.sf-logo {
+  text-decoration: none;
+  line-height: 1.1;
+}
 @media (--viewport-md) {
   .sf-logo-S-mark {
-    top: 36px;
+    top: 39px;
     left: -37px;
     width: 36px;
   }
@@ -78,6 +83,7 @@
   z-index: -1;
   top: -3em;
 }
+
 
 /* Study Hall NYT 2020
  */
@@ -189,33 +195,4 @@
 .team-name {
   margin-bottom: 0;
   @extend .title-sm;
-}
-
-
-/* LAM
-*/
-
-.drone {
-  /* height: 1300px; */
-  object-fit: cover;
-}
-
-.overlay {
-  position: absolute;
-  top:70px;
-  z-index: 1;
-
-}
-
-.lam-btn {
-    cursor: pointer;
-    display: block;
-    padding: .7em .7em .6em;
-    border: 3px solid black;
-    background: none;
-    border-radius: 0;
-    width: 7em;
-    text-align: center;
-    text-decoration: none;
-    margin-bottom: 1em;
 }

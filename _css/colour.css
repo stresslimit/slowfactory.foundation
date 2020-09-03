@@ -6,17 +6,32 @@
 .green { color: var(--green); }
 .light-green { color: var(--light-green); }
 .orange { color: var(--orange); }
+.bright-orange { color: var(--bright-orange); }
 .red { color: var(--red); }
+.blue { color: var(--blue); }
+.bright-blue { color: var(--bright-blue); }
+.fuscia { color: var(--fuscia); }
+.pink { color: var(--pink); }
+.magenta { color: var(--magenta); }
 .purple { color: var(--purple); }
 .yellow { color: var(--yellow); }
+.bright-yellow { color: var(--bright-yellow); }
 
 .bg-black { background: var(--black); }
+.bg-dark-grey { background: var(--dark-grey); }
 .bg-green { background: var(--green); }
 .bg-light-green { background: var(--light-green); }
 .bg-orange { background: var(--orange); }
+.bg-bright-orange { background: var(--bright-orange); }
 .bg-red { background: var(--red); }
+.bg-blue { background: var(--blue); }
+.bg-bright-blue { background: var(--bright-blue); }
+.bg-fuscia { background: var(--fuscia); }
+.bg-pink { background: var(--pink); }
+.bg-magenta { background: var(--magenta); }
 .bg-purple { background: var(--purple); }
 .bg-yellow { background: var(--yellow); }
+.bg-bright-yellow { background: var(--bright-yellow); }
 /* .bg- { background: var(--); } */
 
 

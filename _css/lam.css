@@ -1,0 +1,84 @@
+
+/* General
+*/
+.lam-banner-overlay {
+  position: absolute;
+  top: 70px;
+  z-index: 1;
+}
+
+.lam-btn {
+    cursor: pointer;
+    display: block;
+    padding: .7em .7em .6em;
+    border: 3px solid black;
+    background: none;
+    border-radius: 0;
+    width: 7em;
+    text-align: center;
+    text-decoration: none;
+    margin-bottom: 1em;
+}
+
+
+/* People Illustrations blocks
+*/
+.lam-illus {
+  /* margin-bottom: 5em; */
+}
+.lam-illus--magenta {
+  background: linear-gradient( #fff, #fff 7em, var(--magenta) 7em, var(--magenta) 100%);
+}
+.lam-illus--orange {
+  background: linear-gradient( #fff, #fff 7em, var(--bright-orange) 7em, var(--bright-orange) 100%);
+}
+.lam-illus--yellow {
+  background: linear-gradient( #fff, #fff 7em, var(--bright-yellow) 7em, var(--bright-yellow) 100%);
+}
+.lam-illus--blue {
+  background: linear-gradient( #fff, #fff 7em, var(--bright-blue) 7em, var(--bright-blue) 100%);
+}
+.lam-illus--container {
+  position: relative;
+  max-width: 800px;
+}
+.lam-illus--quote {
+  max-width: 15em;
+  background: url(/assets/images/landfills-as-museums/text_bubble2.png) 50% 50% no-repeat;
+  background-size: contain;
+  padding: 3.5em 4em 3em 1.5em;
+}
+.lam-illus--quote-lg {
+  max-width: 17em;
+}
+.lam-illus--name {
+  padding-left: 1.5em;
+}
+.lam-illus--drawing {
+  max-width: 50%;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.lam-illus--right {
+  text-align: right;
+
+  .lam-illus--drawing {
+    left: 0;
+  }
+  .lam-illus--quote {
+    margin-left: auto;
+    background: url(/assets/images/landfills-as-museums/text_bubble1.png) 50% 50% no-repeat;
+    background-size: contain;
+    padding: 3.5em 1.5em 3em 4em;
+  }
+}
+@media (--viewport-xs-only) {
+  .lam-illus--drawing {
+    bottom: 0;
+    top: auto;
+  }
+  .lam-illus--quote {
+    font-size: .75em;
+  }
+}

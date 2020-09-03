@@ -18,7 +18,7 @@
 }
 
 body {
-  font-family: "Helvetica";
+  font-family: "Helvetica", sans-serif;
   font-size: 16px;
   color: var(--text-color);
   background: white;
@@ -39,6 +39,10 @@ li {
 }
 ul.tight li {
   margin-bottom: 0;
+}
+ul.bulletless {
+  padding-left: 0;
+  list-style: none;
 }
 
 a {
@@ -69,6 +73,12 @@ a:hover,
   font-size: .9em;
 }
 
+.color-tile {
+  width: 6em;
+  height: 6em;
+  display: inline-block;
+  margin: 0 1em 1em 0;
+}
 
 .title-xxl,
 .title-xl,
@@ -79,7 +89,7 @@ a:hover,
 .title-card
 {
   font-weight: 700;
-  line-height: 1.15;
+  line-height: 1.2;
 }
 .title-xxl, .title-alt-xxl {
   font-size: 10em;

@@ -63,6 +63,9 @@ hr {
   }
 }
 
+.video-banner {
+  object-fit: cover;
+}
 .video-container {
   position: relative;
   padding-bottom: 56.25%;
