@@ -24,6 +24,11 @@
         "type": 301
       },
       {
+        "source": "/lam",
+        "destination": "/landfills-as-museums",
+        "type": 301
+      },
+      {
         "source": "/onexone",
         "destination": "https://onexone.earth",
         "type": 301
