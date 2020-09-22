@@ -21,5 +21,10 @@ board:
   #   desc: Designer, actor and creative entrepreneur
   #   img: team-waris.jpg
   - name: Colin Vernon
-    desc: Founder of Slow Factory with a background in tech innovation, media platforms and cultural theory
+    desc: Founder of Slow Factory with a background in tech innovation, media production and cultural theory
     img: team-colin2.jpg
+
+advisors:
+  - name: Waris Ahluwalia
+    desc: Designer, actor, philanthropist and artist
+    img: team-waris.jpg

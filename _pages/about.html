@@ -5,25 +5,35 @@ permalink: /about
 ---
 
 
-<div class="section">
-  <div class="container">
+<div class="container">
 
-    <p class="title-lg">About the Foundation</p>
+  <p class="title-lg">About the Foundation</p>
 
-    <!-- <p>Slow Factory was founded in 2013 </p> -->
+  <!-- <p>Slow Factory was founded in 2013 </p> -->
 
 
-    <p class="title-md">Board of Directors</p>
-    <div class="row-xs valign-top">
-    {% for person in site.data.team.board %}
-      <div class="third about-team">
-        {% if person.img %}<p><img src="{{ person.img | prepend: 'images/team/' | asset_url }}" alt="{{ person.name }}"></p>{% endif %}
-        <div class="title-sm">{{ person.name }}</div>
-        <p>{{ person.desc }}</p>
-      </div>
-    {% endfor %}
+  <p class="title-md">Board of Directors</p>
+  <div class="row-xs valign-top">
+  {% for person in site.data.team.board %}
+    <div class="third about-team">
+      {% if person.img %}<p><img src="{{ person.img | prepend: 'images/team/' | asset_url }}" alt="{{ person.name }}"></p>{% endif %}
+      <div class="title-sm">{{ person.name }}</div>
+      <p>{{ person.desc }}</p>
     </div>
-
-
+  {% endfor %}
   </div>
+
+
+  <p class="title-md">Special Advisor</p>
+  <div class="row-xs valign-top">
+  {% for person in site.data.team.advisors %}
+    <div class="third about-team">
+      {% if person.img %}<p><img src="{{ person.img | prepend: 'images/team/' | asset_url }}" alt="{{ person.name }}"></p>{% endif %}
+      <div class="title-sm">{{ person.name }}</div>
+      <p>{{ person.desc }}</p>
+    </div>
+  {% endfor %}
+  </div>
+
+
 </div>

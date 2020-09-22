@@ -83,6 +83,11 @@ hr {
   height: 100%;
 }
 
+/* .sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+} */
 .clearfix:before, .clearfix:after, .cf:before, .cf:after { content:"\0020"; display:block; height:0; visibility:hidden; }
 .clearfix:after, .cf:after { clear:both; }
 .clearfix, .cf { min-height:0; }

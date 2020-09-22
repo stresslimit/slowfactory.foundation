@@ -24,11 +24,6 @@
     width: 36px;
   }
 }
-.dot {
-  width: 4em;
-  height: 4em;
-  border-radius: 2em;
-}
 .the-earth {
   background-size: contain;
 }
@@ -55,6 +50,28 @@
 .slash--left::before {
   transform: rotate(-7deg);
 }
+
+.dot-sticker {
+  width: 7em;
+  height: 7em;
+  border-radius: 3.5em;
+  text-align: center;
+  /* line-height: 7em; */
+  display: flex
+}
+.dot-sticker--superfund-phase {
+  position: absolute;
+  top: 0;
+  right: 0;
+  /* transform: rotate(45deg); */
+}
+/* deprecated? */
+.dot {
+  width: 4em;
+  height: 4em;
+  border-radius: 2em;
+}
+
 
 
 /* Helvetica list styles
