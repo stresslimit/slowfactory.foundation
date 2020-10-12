@@ -12,7 +12,7 @@ window.addEventListener('load', (e) => {
   initReactFastclick()
   mobile_menu()
   formAjax()
-  // revealAnimations()
+  revealAnimations()
   // videoScrubber()
 
 })

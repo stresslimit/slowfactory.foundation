@@ -2,7 +2,7 @@ import ScrollReveal from 'scrollreveal'
 
 export default () => {
 
-  if ( !document.querySelector('.js-reveal') ) return
+  if (!document.querySelector('.js-reveal')) return
 
   console.log('found js-reveal')
 
@@ -14,7 +14,10 @@ export default () => {
   }
   let slideUp = {
     delay: 100,
-    origin: 'bottom'
+    origin: 'bottom',
+    beforeReveal: () => {
+      console.log("hello")
+    }
   }
   ScrollReveal({
     debug: true,
@@ -28,8 +31,8 @@ export default () => {
       console.log('revealing', el)
     }
   })
-  ScrollReveal().reveal('.js-reveal.slideLeft', slideLeft)
-  ScrollReveal().reveal('.js-reveal.slideRight', slideRight)
-  ScrollReveal().reveal('.js-reveal.slideUp', slideUp)
+  ScrollReveal().reveal('.slideLeft', slideLeft)
+  ScrollReveal().reveal('.slideRight', slideRight)
+  ScrollReveal().reveal('.slideUp', slideUp)
 
 }
