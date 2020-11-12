@@ -5,16 +5,51 @@ permalink: /landfills-as-museums
 ---
 
 <style>
-html, body { max-width: 100%; overflow-x: hidden; }
-.main-content { font-size: 20px; }
-.footer { font-size: 16px; }
+  html,
+  body {
+    max-width: 100%;
+    background-color: white;
+    position: relative;
+  }
+
+  .main-content {
+    font-size: 20px;
+    background: white;
+  }
+
+  .footer {
+    font-size: 16px;
+  }
+
+  .section,
+  .section-lg {
+    background: white;
+  }
+
+  .bg-black {
+    background: black !important;
+  }
+
+  .title-xl,
+  .title-lg,
+  .title-md,
+  .title-sm,
+  .half p,
+  .lam-illus--container p,
+  .lam-illus--name p {
+    visibility: hidden;
+  }
+
 </style>
 
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js" crossorigin="anonymous"></script>
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.0.1/dist/ScrollToPlugin.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
 <!-- <script type="text/javascript" src="{{ 'vendor/easyScrollDots.min.js' | asset_url }}"></script> -->
-<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
 
 
 <!--
@@ -31,6 +66,26 @@ html, body { max-width: 100%; overflow-x: hidden; }
   <a href="#section-what-is">What is a Landfill</a>
 </div> -->
 
+<nav class="dot-nav">
+  <ul class="dot-nav--list list-unstyled">
+    <li class="dot-nav--item is-active" href="#section-intro"><a href="#section-intro" class="dot-nav--link">Intro</a>
+    </li>
+    <li class="dot-nav--item" href="#section-anatomy"><a href="#section-anatomy" class="dot-nav--link">Anatomy of a
+        Landfill</a>
+    </li>
+    <li class="dot-nav--item" href="#section-waste-problem"><a href="#section-waste-problem" class="dot-nav--link">Why
+        is Waste a
+        Problem?</a></li>
+    <li class="dot-nav--item" href="#section-linear-system"><a href="#section-linear-system" class="dot-nav--link">What
+        is a Linear
+        System?</a></li>
+    <li class="dot-nav--item" href="#section-circular-systems"><a href="#section-circular-systems"
+        class="dot-nav--link">Sustainable
+        Circular Systems</a></li>
+    <li class="dot-nav--item" href="#section-design"><a href="#section-design" class="dot-nav--link">Waste-Led
+        Design</a></li>
+  </ul>
+</nav>
 
 <div class="bg-black on-dark-bg scroll-indicator" id="section-intro" data-scroll-indicator-title="Welcome">
   <div class="container" style="position: relative;">
@@ -39,7 +94,9 @@ html, body { max-width: 100%; overflow-x: hidden; }
       <p class="title-lg">Landfills as Museums</p>
       <div class="row">
         <div class="two-thirds">
-          <p class="title-sm hidden-xs">Landfills as Museums is an educational initiative that challenges us to recognize landfills as sites of cultural importance, showing how waste can be incorporated into the product design process from the beginning in order to build sustainable circular systems.</p>
+          <p class="title-sm hidden-xs">Landfills as Museums is an educational initiative that challenges us to
+            recognize landfills as sites of cultural importance, showing how waste can be incorporated into the product
+            design process from the beginning in order to build sustainable circular systems.</p>
         </div>
       </div>
     </div>
@@ -47,30 +104,40 @@ html, body { max-width: 100%; overflow-x: hidden; }
   </div>
 
   <div class="video-container video-banner">
-    <iframe title="vimeo-player" src="https://player.vimeo.com/video/432001195?background=1" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+    <video id="v0" muted preload>
+      <source type='video/mp4;codecs="avc1.42E01E, mp4a.40.2"'
+        src="{{'images/landfills-as-museums/hero-video.mp4' | asset_url }}">
+      <p>Your user agent does not support the HTML5 Video element.</p>
+    </video>
+    <!-- <iframe title="vimeo-player" src="https://player.vimeo.com/video/432001195?background=1" width="640" height="360" frameborder="0" allowfullscreen></iframe> -->
   </div>
 
 </div>
 
 
 
-<div class="section bg-black on-dark-bg scroll-indicator" id="section-what-is" data-scroll-indicator-title="What is a Landfill?">
+<div class="section bg-black on-dark-bg scroll-indicator" id="section-what-is"
+  data-scroll-indicator-title="What is a Landfill?">
   <div class="container">
 
-    <p class="title-sm hidden-md">Landfills as Museums is an educational initiative that challenges us to recognize landfills as sites of cultural importance, showing how waste can be incorporated into the product design process from the beginning in order to build sustainable circular systems.</p>
+    <p class="title-sm hidden-md">Landfills as Museums is an educational initiative that challenges us to recognize
+      landfills as sites of cultural importance, showing how waste can be incorporated into the product design process
+      from the beginning in order to build sustainable circular systems.</p>
 
 
     <p class="title-lg">What is a Landfill?</p>
-      <div class="row valign-top">
-        <div class="half">
-          <p class="title-sm">Landfills are physical sites where waste is disposed of and contained. Unlike garbage “dumps,” landfills are run by waste management companies who employ different environmental stewardship practices.</p>
-       </div>
+    <div class="row valign-top">
+      <div class="half">
+        <p class="title-sm">Landfills are physical sites where waste is disposed of and contained. Unlike garbage
+          “dumps,” landfills are run by waste management companies who employ different environmental stewardship
+          practices.</p>
+      </div>
 
       <div class="half">
         <p class="title-sm">How Landfills Work</p>
-
-        <p>Modern, engineered landfills use different types of monitoring systems and technology to contain waste so it doesn’t leak toxins into the environment. As material decomposes it releases methane gas, which can be collected and burned to generate electricity. Water is also purified and put back into the ecosystem.</p>
-
+        <p>Modern, engineered landfills use different types of monitoring systems and technology to contain waste so it
+          doesn’t leak toxins into the environment. As material decomposes it releases methane gas, which can be
+          collected and burned to generate electricity. Water is also purified and put back into the ecosystem.</p>
       </div>
     </div>
 
@@ -87,7 +154,8 @@ html, body { max-width: 100%; overflow-x: hidden; }
   </div> -->
 
   <div class="video-container video-banner">
-    <iframe title="vimeo-player" src="https://player.vimeo.com/video/452254248?background=1" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+    <iframe title="vimeo-player" src="https://player.vimeo.com/video/452254248?background=1" width="640" height="360"
+      frameborder="0" allowfullscreen></iframe>
   </div>
 
 </div>
@@ -97,8 +165,10 @@ html, body { max-width: 100%; overflow-x: hidden; }
 <div class="section">
   <div class="container scroll-indicator" id="section-anatomy" data-scroll-indicator-title="Anatomy of a Landfill">
 
-    <p><img  src="{{  'images/landfills-as-museums/landfill_anatomyv6.jpg' | asset_url }}"></p>
-    <p class="title-sm">While landfills strive to efficiently manage waste and maximize the re-use of resources, they are still positioned at the end of the production system and they’re not a long term solution for human waste. Today most production systems are created using a linear method, which results in an abundance of waste.</p>
+    <p><img src="{{  'images/landfills-as-museums/landfill_anatomyv6.jpg' | asset_url }}"></p>
+    <p class="title-sm">While landfills strive to efficiently manage waste and maximize the re-use of resources, they
+      are still positioned at the end of the production system and they’re not a long term solution for human waste.
+      Today most production systems are created using a linear method, which results in an abundance of waste.</p>
 
   </div>
 </div>
@@ -107,32 +177,39 @@ html, body { max-width: 100%; overflow-x: hidden; }
 
 <div class="section-sm lam-illus lam-illus--magenta">
   <div class="container lam-illus--container">
-
-    <p class="lam-illus--quote js-reveal slideRight">“We’re working on our fourth landfill since I’ve been here. Through technology and reuse or recycling, I'd be happy to not build any more of these.”</p>
-
+    <p class="lam-illus--quote js-reveal slideRight">“We’re working on our fourth landfill since I’ve been here. Through
+      technology and reuse or recycling, I'd be happy to not build any more of these.”</p>
     <div class="lam-illus--name">
       <div class="title-sm">Bobby Jones</div>
       <p><i>District Manager<br>Waste Management</i></p>
     </div>
 
-    <p class="lam-illus--drawing js-reveal slideUp"><img src="{{ 'images/landfills-as-museums/bobby.png' | asset_url }}" alt="">
+    <p class="lam-illus--drawing js-reveal slideUp"><img src="{{ 'images/landfills-as-museums/bobby.png' | asset_url }}"
+        alt="">
   </div>
 </div>
 
 
 
-<div class="section-lg bg-image on-dark-bg scroll-indicator" style="background-image: url({{ 'images/landfills-as-museums/trash.jpg' | asset_url }})" id="section-waste-problem" data-scroll-indicator-title="Why is Waste a Problem?">
+<div class="section-lg bg-image on-dark-bg scroll-indicator"
+  style="background-image: url({{ 'images/landfills-as-museums/trash.jpg' | asset_url }})" id="section-waste-problem"
+  data-scroll-indicator-title="Why is Waste a Problem?">
   <div class="container">
 
-     <p class="title-md">Why is Waste a Problem?</p>
+    <p class="title-md">Why is Waste a Problem?</p>
 
     <div class="row valign-top">
       <div class="half">
-        <p>According to the United Nations we dump 2.12 billion tons of waste every year. In 2017, 52% of the waste generated by the US ended up in a landfill – that’s 139.6 million tons according to the EPA. In the Global South, waste often ends up in landfills lacking proper funding and legislation to implement effective waste management systems.</p>
+        <p>According to the United Nations we dump 2.12 billion tons of waste every year. In 2017, 52% of the waste
+          generated by the US ended up in a landfill – that’s 139.6 million tons according to the EPA. In the Global
+          South, waste often ends up in landfills lacking proper funding and legislation to implement effective waste
+          management systems.</p>
       </div>
 
       <div class="half">
-        <p> These landfills pollute the air, soil, and water creating a plethora of issues for vulnerable, at-risk communities. The greenhouse gases generated by the waste furthers the depletion of the ozone layer and increases respiratory diseases among other health issues.</p>
+        <p> These landfills pollute the air, soil, and water creating a plethora of issues for vulnerable, at-risk
+          communities. The greenhouse gases generated by the waste furthers the depletion of the ozone layer and
+          increases respiratory diseases among other health issues.</p>
       </div>
 
     </div>
@@ -144,37 +221,42 @@ html, body { max-width: 100%; overflow-x: hidden; }
 <div class="section-sm lam-illus lam-illus--right lam-illus--yellow">
   <div class="container lam-illus--container">
 
-    <p class="lam-illus--quote js-reveal slideLeft">“We have many students who are volunteering their time to be here, to learn about circular systems so that they can create, and that connection is really what we need.”</p>
+    <p class="lam-illus--quote js-reveal slideLeft">“We have many students who are volunteering their time to be here,
+      to learn about circular systems so that they can create, and that connection is really what we need.”</p>
 
     <div class="lam-illus--name">
       <div class="title-sm">Dr. Theanne Schiros</div>
       <p><i>Professor, Science & Sustainability<br>Fashion Institute of Technology</i></p>
     </div>
 
-    <p class="lam-illus--drawing js-reveal slideUp"><img src="{{ 'images/landfills-as-museums/theanne.png' | asset_url }}" alt="">
+    <p class="lam-illus--drawing js-reveal slideUp"><img
+        src="{{ 'images/landfills-as-museums/theanne.png' | asset_url }}" alt="">
   </div>
 </div>
 
 
 
-<div class="section">
+<div class="section" id="section-linear-system">
   <div class="container">
 
     <p class="title-md">What is a Linear System?</p>
 
     <div class="row valign-top">
       <div class="half">
-        <p>Linear production systems rely on the extraction of raw materials, which uses up the earth’s resources, expels more carbon and contributes to climate change.</p>
+        <p>Linear production systems rely on the extraction of raw materials, which uses up the earth’s resources,
+          expels more carbon and contributes to climate change.</p>
       </div>
       <div class="half">
-        <p>Starting from design to product creation, marketing and sales, many companies do not consider a product’s end of life, which often causes the item to be discarded and end up in a landfill.</p>
+        <p>Starting from design to product creation, marketing and sales, many companies do not consider a product’s end
+          of life, which often causes the item to be discarded and end up in a landfill.</p>
       </div>
     </div>
 
     <div class="">
       <p class="text-center">
         <img class="hidden-xs" src="{{ 'images/landfills-as-museums/lca_line.png' | asset_url }}">
-        <img class="hidden-md" style="max-height:1000px;width:auto" src="{{ 'images/landfills-as-museums/lca_line-vertical.png' | asset_url }}">
+        <img class="hidden-md" style="max-height:1000px;width:auto"
+          src="{{ 'images/landfills-as-museums/lca_line-vertical.png' | asset_url }}">
       </p>
     </div>
 
@@ -184,19 +266,25 @@ html, body { max-width: 100%; overflow-x: hidden; }
 
 
 <div class="video-container video-banner">
-  <iframe title="vimeo-player" src="https://player.vimeo.com/video/452676415?background=1" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+  <iframe title="vimeo-player" src="https://player.vimeo.com/video/452676415?background=1" width="640" height="360"
+    frameborder="0" allowfullscreen></iframe>
 </div>
 
 
 
-<div class="section-lg">
+<div class="section-lg" id="section-circular-systems">
   <div class="container">
 
     <p class="title-md">Sustainable Circular Systems</p>
 
     <div class="row valign-top">
       <div class="half">
-        <p class="">Through a sustainable circular system, we can reduce extraction and the buildup of waste. Reframing linear systems as circular ones relies on identifying all the steps at which elements can be recycled, reused, and remanufactured in a way that allows for a closed loop system that regenerates itself. Through this framework waste is no longer the last stage of an object’s life. Instead waste becomes a core part of the object’s creation process and helps extend the circularity of the production system. Waste becomes food rather than poison.</p>
+        <p class="">Through a sustainable circular system, we can reduce extraction and the buildup of waste. Reframing
+          linear systems as circular ones relies on identifying all the steps at which elements can be recycled, reused,
+          and remanufactured in a way that allows for a closed loop system that regenerates itself. Through this
+          framework waste is no longer the last stage of an object’s life. Instead waste becomes a core part of the
+          object’s creation process and helps extend the circularity of the production system. Waste becomes food rather
+          than poison.</p>
       </div>
       <div class="half">
         <img class="" src="{{ 'images/landfills-as-museums/lca_full_circle.png' | asset_url }}">
@@ -208,7 +296,8 @@ html, body { max-width: 100%; overflow-x: hidden; }
 
 
 
-<div class="section-lg bg-image" style="background-image: url({{ 'images/landfills-as-museums/IMG_0338.JPG' | asset_url }})">
+<div class="section-lg bg-image"
+  style="background-image: url({{ 'images/landfills-as-museums/IMG_0338.JPG' | asset_url }})">
   <div class="container">
 
     <p class="title-lg on-dark-bg">It’s time to rethink our relationship with waste and see it as a resource.</p>
@@ -222,30 +311,38 @@ html, body { max-width: 100%; overflow-x: hidden; }
 <div class="section-sm lam-illus lam-illus--blue">
   <div class="container lam-illus--container">
 
-    <p class="lam-illus--quote js-reveal slideRight">“I just expected to see a bunch of steamy, wet garbage. And I was so pleasantly surprised to see how beautiful, honestly, it was, and how well it’s maintained.”</p>
+    <p class="lam-illus--quote js-reveal slideRight">“I just expected to see a bunch of steamy, wet garbage. And I was
+      so pleasantly surprised to see how beautiful, honestly, it was, and how well it’s maintained.”</p>
 
     <div class="lam-illus--name on-dark-bg">
       <div class="title-sm">Shiara Robinson</div>
       <p><i>adidas Runners NYC Team Captain<br>Founder of LaSette</i></p>
     </div>
 
-    <p class="lam-illus--drawing js-reveal slideUp"><img src="{{ 'images/landfills-as-museums/jessica.png' | asset_url }}" alt="">
+    <p class="lam-illus--drawing js-reveal slideUp"><img
+        src="{{ 'images/landfills-as-museums/jessica.png' | asset_url }}" alt="">
   </div>
 </div>
 
 
 
-<div class="section-lg bg-image" style="background-image: url({{ 'images/landfills-as-museums/waste_circle_orbit1.gif' | asset_url }}); background-size: contain;">
+<div class="section-lg bg-image" id="section-design"
+  style="background-image: url({{ 'images/landfills-as-museums/waste_circle_orbit1.gif' | asset_url }}); background-size: contain;">
   <div class="container">
 
     <p class="title-xl" style="z-index: 1;">Meet Waste-Led Design</p>
-    <p class="title-sm">Waste-led design is a new circular approach that prioritizes waste as a core part of the design process.</p>
+    <p class="title-sm">Waste-led design is a new circular approach that prioritizes waste as a core part of the design
+      process.</p>
     <div class="row valign-top">
       <div class="half">
-        <p>Waste issues and linear systems impact human life and biodiversity. When a product’s end of life is considered at the beginning, it allows us to reduce its environmental impact later on. With a sustainable, circular system we can do less extraction and create less waste.</p>
+        <p>Waste issues and linear systems impact human life and biodiversity. When a product’s end of life is
+          considered at the beginning, it allows us to reduce its environmental impact later on. With a sustainable,
+          circular system we can do less extraction and create less waste.</p>
       </div>
       <div class="half">
-        <p>The practice challenges us to see a product’s end of life as a consideration equal to functionality, material, and print and pattern. By doing this waste becomes a part of the production system rather than an afterthought, which minimizes the amount of debris that winds up in a landfill.</p>
+        <p>The practice challenges us to see a product’s end of life as a consideration equal to functionality,
+          material, and print and pattern. By doing this waste becomes a part of the production system rather than an
+          afterthought, which minimizes the amount of debris that winds up in a landfill.</p>
       </div>
     </div>
 
@@ -258,7 +355,7 @@ html, body { max-width: 100%; overflow-x: hidden; }
 
 <div class="section-lg bg-yellow">
 
-  <div class="card-stack container-md" >
+  <div class="card-stack container-md">
 
     <div class="card-list">
 
@@ -266,7 +363,9 @@ html, body { max-width: 100%; overflow-x: hidden; }
         <p class="title-md">What is a waste-led design system?</p>
         <div class="row valign-top">
           <div class="half">
-            <p class="card-text">Waste-led design is a practice in which a product's end of life is considered from the beginning of the design process rather than the end. This allows for waste to be a core part of the process just as functionality, material, and comfort are.</p>
+            <p class="card-text">Waste-led design is a practice in which a product's end of life is considered from the
+              beginning of the design process rather than the end. This allows for waste to be a core part of the
+              process just as functionality, material, and comfort are.</p>
           </div>
           <div class="half">
             <img src="{{ 'images/landfills-as-museums/lca_open.png' | asset_url }}">
@@ -277,7 +376,9 @@ html, body { max-width: 100%; overflow-x: hidden; }
 
       <div class="card">
         <div>
-          <p class="title-sm">Understanding the waste streams that exist in a linear system requires measuring their impact before developing a more circular system. Life-cycle Assessment is the tool we use to identify the total environmental impact of the product, which helps us figure out how to make changes.</p>
+          <p class="title-sm">Understanding the waste streams that exist in a linear system requires measuring their
+            impact before developing a more circular system. Life-cycle Assessment is the tool we use to identify the
+            total environmental impact of the product, which helps us figure out how to make changes.</p>
         </div>
         <p class="title-sm card-number">2</p>
       </div>
@@ -285,7 +386,10 @@ html, body { max-width: 100%; overflow-x: hidden; }
       <div class="card">
         <div>
           <p class="title-card">Life Cycle Assesment</p>
-          <p class="card-text">A method used to quantify the environmental impact of a product from raw material to acquisition through end of life disposal; usually used to inform strategies for reducing the environmental footprint. The LCA can provide critical information such as carbon footprint, energy required, toxic emissions and the amount of water used at every step of an object’s life-cycle. </p>
+          <p class="card-text">A method used to quantify the environmental impact of a product from raw material to
+            acquisition through end of life disposal; usually used to inform strategies for reducing the environmental
+            footprint. The LCA can provide critical information such as carbon footprint, energy required, toxic
+            emissions and the amount of water used at every step of an object’s life-cycle. </p>
           <img src="{{ 'images/landfills-as-museums/lca_puzzle.png' | asset_url }}">
         </div>
         <p class="title-sm card-number">3</p>
@@ -293,11 +397,13 @@ html, body { max-width: 100%; overflow-x: hidden; }
 
       <div class="card">
         <div class="text-center">
-        <p class="title-card" style="text-align:left;">Let’s use shoppings bags as an example.</p>
-          <p class="title-xs" style="text-align:left;"> Which bag do you think has a greater environmental impact: a plastic bag, a paper bag, or a cotton tote bag?</p>
-          <a href="" class="js-slick-nextSlide"><img class="graphic" data-src="{{ 'images/landfills-as-museums/bags.gif' | asset_url }}"></a>
+          <p class="title-card" style="text-align:left;">Let’s use shoppings bags as an example.</p>
+          <p class="title-xs" style="text-align:left;"> Which bag do you think has a greater environmental impact: a
+            plastic bag, a paper bag, or a cotton tote bag?</p>
+          <a href="" class="js-slick-nextSlide"><img class="graphic"
+              data-src="{{ 'images/landfills-as-museums/bags.gif' | asset_url }}"></a>
 
-         </div>
+        </div>
         <p class="title-sm card-number">4</p>
       </div>
 
@@ -312,7 +418,10 @@ html, body { max-width: 100%; overflow-x: hidden; }
         <div>
           <p class="title-card">Carbon Footprint of 1 Bag </p>
           <img class="graphic" data-src="{{ 'images/landfills-as-museums/carbon.gif' | asset_url }}">
-          <p class="source">Source: Agency, Environment. “Life Cycle Assessment of Supermarket Carrierbags: a Review of the Bags Available in 2006.” GOV.UK, GOV.UK, 25 July 2011, www.gov.uk/government/publications/life-cycle-assessment-of-supermarket-carrierbags-a-review-of-the-bags-available-in-2006.</p>
+          <p class="source">Source: Agency, Environment. “Life Cycle Assessment of Supermarket Carrierbags: a Review of
+            the Bags Available in 2006.” GOV.UK, GOV.UK, 25 July 2011,
+            www.gov.uk/government/publications/life-cycle-assessment-of-supermarket-carrierbags-a-review-of-the-bags-available-in-2006.
+          </p>
         </div>
         <p class="title-sm card-number">6</p>
       </div>
@@ -320,7 +429,10 @@ html, body { max-width: 100%; overflow-x: hidden; }
       <div class="card block">
         <p class="title-card">Water Footprint of 1 Bag</p>
         <img class="graphic" data-src="{{ 'images/landfills-as-museums/water.gif' | asset_url }}">
-        <p class="source">Source: Agency, Environment. “Life Cycle Assessment of Supermarket Carrierbags: a Review of the Bags Available in 2006.” GOV.UK, GOV.UK, 25 July 2011, www.gov.uk/government/publications/life-cycle-assessment-of-supermarket-carrierbags-a-review-of-the-bags-available-in-2006.</p>
+        <p class="source">Source: Agency, Environment. “Life Cycle Assessment of Supermarket Carrierbags: a Review of
+          the Bags Available in 2006.” GOV.UK, GOV.UK, 25 July 2011,
+          www.gov.uk/government/publications/life-cycle-assessment-of-supermarket-carrierbags-a-review-of-the-bags-available-in-2006.
+        </p>
         <p class="title-sm card-number">7</p>
       </div>
 
@@ -328,8 +440,11 @@ html, body { max-width: 100%; overflow-x: hidden; }
         <div>
           <p class="title-sm">Usage of Bags Required to Break Even with the Environmental Impact of 1 Plastic Bag</p>
           <img class="graphic" data-src="{{ 'images/landfills-as-museums/usage.gif' | asset_url }}">
-          <p class="source">Source: Agency, Environment. “Life Cycle Assessment of Supermarket Carrierbags: a Review of the Bags Available in 2006.” GOV.UK, GOV.UK, 25 July 2011, www.gov.uk/government/publications/life-cycle-assessment-of-supermarket-carrierbags-a-review-of-the-bags-available-in-2006.</p>
-          </div>
+          <p class="source">Source: Agency, Environment. “Life Cycle Assessment of Supermarket Carrierbags: a Review of
+            the Bags Available in 2006.” GOV.UK, GOV.UK, 25 July 2011,
+            www.gov.uk/government/publications/life-cycle-assessment-of-supermarket-carrierbags-a-review-of-the-bags-available-in-2006.
+          </p>
+        </div>
         <p class="title-sm card-number">8</p>
       </div>
 
@@ -337,8 +452,14 @@ html, body { max-width: 100%; overflow-x: hidden; }
         <p class="title-md">In the Long Term, Waste Makes the Difference</p>
         <div class="row valign-top">
           <div class="half">
-            <p class="card-text">The circulation of disposable plastic bags is an extremely wasteful system, so comparing a reusable vs. a disposable bag is a false equivalency.</p>
-            <p class="card-text">Although the environmental impact of one cotton bag is much greater than a single plastic bag when looking at the overall life cycle impact of the bags, the cotton tote bag is the more sustainable option. Not only do we as a society consume many more plastic bags than tote bags, at the end of their life cotton tote bags may be upcycled and repurposed into different products. Only 1% of plastic bags get recycled, while the rest end up deeply disturbing the ecosystems of our oceans and forests and never truly decompose.</p>
+            <p class="card-text">The circulation of disposable plastic bags is an extremely wasteful system, so
+              comparing a reusable vs. a disposable bag is a false equivalency.</p>
+            <p class="card-text">Although the environmental impact of one cotton bag is much greater than a single
+              plastic bag when looking at the overall life cycle impact of the bags, the cotton tote bag is the more
+              sustainable option. Not only do we as a society consume many more plastic bags than tote bags, at the end
+              of their life cotton tote bags may be upcycled and repurposed into different products. Only 1% of plastic
+              bags get recycled, while the rest end up deeply disturbing the ecosystems of our oceans and forests and
+              never truly decompose.</p>
           </div>
           <div class="half">
             <img class="scale" src="{{ 'images/landfills-as-museums/scale.png' | asset_url }}">
@@ -357,21 +478,25 @@ html, body { max-width: 100%; overflow-x: hidden; }
 <div class="section-sm lam-illus lam-illus--orange">
   <div class="container lam-illus--container">
 
-    <p class="lam-illus--quote lam-illus--quote-lg js-reveal slideRight">“Fashion is glamorous, but it’s an actual product. Consider the lifespan, where you want your garment to be in 50 years. As a designer, I commit to mindful design and a mindful appropriation of materials.”</p>
+    <p class="lam-illus--quote lam-illus--quote-lg js-reveal slideRight">“Fashion is glamorous, but it’s an actual
+      product. Consider the lifespan, where you want your garment to be in 50 years. As a designer, I commit to mindful
+      design and a mindful appropriation of materials.”</p>
 
     <div class="lam-illus--name">
       <div class="title-sm">Lexie Lerman</div>
       <p><i>Student, Systems & Collections<br>Parsons School of Design</i></p>
     </div>
 
-    <p class="lam-illus--drawing js-reveal slideUp"><img src="{{ 'images/landfills-as-museums/lexie.png' | asset_url }}" alt="">
+    <p class="lam-illus--drawing js-reveal slideUp"><img src="{{ 'images/landfills-as-museums/lexie.png' | asset_url }}"
+        alt="">
   </div>
 </div>
 
 
 
 <div class="video-container video-banner">
-  <iframe class="lazyload" title="vimeo-player" src="https://player.vimeo.com/video/453517690?background=1" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+  <iframe class="lazyload" title="vimeo-player" src="https://player.vimeo.com/video/453517690?background=1" width="640"
+    height="360" frameborder="0" allowfullscreen></iframe>
 </div>
 
 
@@ -379,9 +504,18 @@ html, body { max-width: 100%; overflow-x: hidden; }
 <div class="section">
   <div class="container">
 
-    <p class="col-2 section">It’s imperative that we consider the long term environmental impact of objects when designing, producing, and purchasing them. What is the waste generated by an object at every stage of its life? What happens to something when you throw it “away” in the garbage? Where is “away”? Will it end up in a landfill? Viewing waste as a resource, rather than something that belongs in a landfill, is an Indigenous practice we must apply in order to be good to the Earth and good to the people. The Seventh Generation Principle is based on ancient Iroquois philosophy that believes the decisions we make now should yield a sustainable world seven generations into the future. Sustainable circular systems are rooted in this concept, requiring us to reuse, mend, and upcycle to sustain our planet.</p>
+    <p class="col-2 section">It’s imperative that we consider the long term environmental impact of objects when
+      designing, producing, and purchasing them. What is the waste generated by an object at every stage of its life?
+      What happens to something when you throw it “away” in the garbage? Where is “away”? Will it end up in a landfill?
+      Viewing waste as a resource, rather than something that belongs in a landfill, is an Indigenous practice we must
+      apply in order to be good to the Earth and good to the people. The Seventh Generation Principle is based on
+      ancient Iroquois philosophy that believes the decisions we make now should yield a sustainable world seven
+      generations into the future. Sustainable circular systems are rooted in this concept, requiring us to reuse, mend,
+      and upcycle to sustain our planet.</p>
 
-    <p class="title-sm">Launched in 2019, Landfills as Museums is an immersive educational initiative by the Slow Factory Foundation with support from adidas in which groups of designers, students and activists are taken to active landfills in the New York City area. Watch the video below to get a glimpse of our experience. </p>
+    <p class="title-sm">Launched in 2019, Landfills as Museums is an immersive educational initiative by the Slow
+      Factory Foundation with support from adidas in which groups of designers, students and activists are taken to
+      active landfills in the New York City area. Watch the video below to get a glimpse of our experience. </p>
 
   </div>
 </div>
@@ -391,16 +525,18 @@ html, body { max-width: 100%; overflow-x: hidden; }
 <div class="section">
   <div class="container">
 
-    <p>Watch “Landfills as Museums — A Waste Study”, directed by <a href="http://instagram.com/sophfei">Sophia Li</a></p>
+    <p>Watch “Landfills as Museums — A Waste Study”, directed by <a href="http://instagram.com/sophfei">Sophia Li</a>
+    </p>
 
-    <p class="video-container"><iframe title="vimeo-player" src="https://player.vimeo.com/video/388864835" width="1000" height="563" frameborder="0" allowfullscreen></iframe></p>
+    <p class="video-container"><iframe title="vimeo-player" src="https://player.vimeo.com/video/388864835" width="1000"
+        height="563" frameborder="0" allowfullscreen></iframe></p>
 
   </div>
 </div>
 
 
 
-<div class="container row grow | shrink">
+<div class="container row grow | shrink" style="background: white;">
 
   <img class="third" src="{{ 'images/landfills-as-museums/gallery11.jpg' | asset_url }}">
 
@@ -418,15 +554,15 @@ html, body { max-width: 100%; overflow-x: hidden; }
 
   <img class="third" src="{{ 'images/landfills-as-museums/gallery9.jpg' | asset_url }}">
 
-   <img class="third" src="{{ 'images/landfills-as-museums/gallery1.jpg' | asset_url }}">
+  <img class="third" src="{{ 'images/landfills-as-museums/gallery1.jpg' | asset_url }}">
 
- </div>
+</div>
 
 
- <div class="section">
+<div class="section">
   <div class="container">
 
-      <p class="title-lg ">Everything you make
+    <p class="title-lg ">Everything you make
       returns to the Earth either as food or poison.</p>
 
   </div>
@@ -439,7 +575,7 @@ html, body { max-width: 100%; overflow-x: hidden; }
 
     <p class="title-lg">Keep learning more with our sustainability crash course.</p>
 
-      <div class="lam-btn">Crash Course</div>
+    <div class="lam-btn">Crash Course</div>
 
   </div>
 </div>
@@ -448,38 +584,240 @@ html, body { max-width: 100%; overflow-x: hidden; }
 
 <script type="text/javascript">
 
-$(document).ready(function(){
-
-  // Slick slider
-  $('.card-list').slick({
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    dots: true,
-    arrows: true,
-    appendArrows: $('.card-stack')
-  })
-
-  $('.js-slick-nextSlide').click(function(e) {
-    e.preventDefault()
-    $('.card-list').slick('slickNext')
-  })
-
-  $('.card-list').on('beforeChange', function(event, slick, currentSlide, nextSlide) {
-    resetImages( $(slick.$slides[nextSlide]) )
-  })
-
-  function resetImages($slide) {
-    $slide.find('img').each(function (i) {
-      let s = $(this).data('src')
-      $(this).attr('src', s)
-    })
+  if ('scrollRestoration' in window.history) {
+    window.history.scrollRestoration = 'manual'
   }
 
-  // In-page navigation
-  // easyScrollDots({
-  //   'fixedNav': false
-  // })
+  //Play Hero Video on Scroll
+  const scrollOnPlay = (bound, video) => {
+    bound = document.querySelector(bound);
+    video = document.querySelector(video);
+    const scrollVideo = () => {
+      if (video.duration) {
+        const distanceFromTop = window.scrollY + bound.getBoundingClientRect().top;
+        const rawPercentScrolled = (window.scrollY + distanceFromTop) / (bound.scrollHeight - window.innerHeight);
+        const percentScrolled = Math.min(Math.max(rawPercentScrolled, 0), 1);
 
-})
+        // console.log(rawPercentScrolled, percentScrolled);
+
+        video.currentTime = video.duration * percentScrolled;
+      }
+      requestAnimationFrame(scrollVideo);
+    }
+    requestAnimationFrame(scrollVideo);
+  }
+
+  scrollOnPlay("#section-intro", "#v0");
+
+  $(document).ready(function () {
+
+    // Slick slider
+    $('.card-list').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      dots: true,
+      arrows: true,
+      appendArrows: $('.card-stack')
+    })
+
+    $('.js-slick-nextSlide').click(function (e) {
+      e.preventDefault()
+      $('.card-list').slick('slickNext')
+    })
+
+    $('.card-list').on('beforeChange', function (event, slick, currentSlide, nextSlide) {
+      resetImages($(slick.$slides[nextSlide]))
+    })
+
+    function resetImages($slide) {
+      $slide.find('img').each(function (i) {
+        let s = $(this).data('src')
+        $(this).attr('src', s)
+      })
+    }
+
+    // In-page navigation
+    // easyScrollDots({
+    //   'fixedNav': false
+    // })
+
+    //Page Animations
+    // gsap.registerPlugin(ScrollTrigger);
+    // gsap.registerPlugin(ScrollToPlugin);
+
+    ScrollTrigger.batch(".title-xl", {
+      onEnter: batch => {
+        gsap.set(batch, { autoAlpha: 1 });
+        gsap.fromTo(batch, {
+          y: 100,
+          opacity: 0,
+          force3D: true
+        },
+          {
+            y: 0,
+            opacity: 1,
+            ease: Power2.easeOut
+          })
+      },
+      start: "top 75%",
+      once: true
+    })
+
+    ScrollTrigger.batch(".title-lg", {
+      onEnter: batch => {
+        gsap.set(batch, { autoAlpha: 1 });
+        gsap.fromTo(batch, {
+          y: 100,
+          opacity: 0,
+          force3D: true
+        },
+          {
+            y: 0,
+            opacity: 1,
+            ease: Power2.easeOut
+          })
+      },
+      start: "top 75%",
+      once: true
+    })
+
+    ScrollTrigger.batch(".title-md", {
+      onEnter: batch => {
+        gsap.set(batch, { autoAlpha: 1 });
+        gsap.fromTo(batch, {
+          y: 100,
+          opacity: 0,
+          force3D: true
+        },
+          {
+            y: 0,
+            opacity: 1,
+            duration: 0.2,
+            ease: Power2.easeOut
+          })
+      },
+      start: "top 75%",
+      once: true
+    })
+
+    ScrollTrigger.batch(".title-sm", {
+      onEnter: batch => {
+        gsap.set(batch, { autoAlpha: 1 });
+        gsap.fromTo(batch, {
+          y: 100,
+          opacity: 0,
+          force3D: true
+        },
+          {
+            y: 0,
+            opacity: 1,
+            duration: 0.2,
+            ease: Power2.easeOut
+          })
+      },
+      start: "top 75%",
+      once: true
+    })
+
+    ScrollTrigger.batch(".col-2", {
+      onEnter: batch => {
+        gsap.set(batch, { autoAlpha: 1 });
+        gsap.fromTo(batch, {
+          y: 100,
+          opacity: 0,
+          force3D: true
+        },
+          {
+            y: 0,
+            opacity: 1,
+            duration: 0.2,
+            ease: Power2.easeOut
+          })
+      },
+      start: "top 75%",
+      once: true
+    })
+
+    ScrollTrigger.batch(".half p", {
+      onEnter: batch => {
+        gsap.set(batch, { autoAlpha: 1 });
+        gsap.fromTo(batch, {
+          y: 100,
+          opacity: 0,
+          force3D: true
+        },
+          {
+            y: 0,
+            opacity: 1,
+            duration: 0.3,
+            ease: Power2.easeOut
+          })
+      },
+      start: "top 75%",
+      once: true
+    })
+
+    ScrollTrigger.batch(".lam-illus--container p", {
+      onEnter: batch => {
+        gsap.set(batch, { autoAlpha: 1 });
+        gsap.fromTo(batch, {
+          y: 100,
+          opacity: 0,
+          force3D: true
+        },
+          {
+            y: 0,
+            opacity: 1,
+            duration: 0.2,
+            ease: Power2.easeOut,
+            stagger: 0.2
+          })
+      },
+      start: "top 75%",
+      once: true
+    })
+
+    ScrollTrigger.batch(".lam-illus--name p", {
+      onEnter: batch => {
+        gsap.set(batch, { autoAlpha: 1 });
+        gsap.fromTo(batch, {
+          y: 100,
+          opacity: 0,
+          force3D: true
+        },
+          {
+            y: 0,
+            opacity: 1,
+            duration: 0.2,
+            ease: Power2.easeOut
+          })
+      },
+      start: "top 75%",
+      once: true
+    })
+
+    //Dot Navigation
+    $('.dot-nav--item').on('click', function (e) {
+      e.preventDefault();
+      $this = $(this),
+        $siblings = $this.siblings();
+
+      $this.addClass('is-active');
+      $siblings.removeClass('is-active');
+
+      // var scrollTo = $this.attr('data-scroll');
+
+      console.log(e.target.getAttribute("href"));
+
+      gsap.to(window, {
+        duration: 1,
+        scrollTo: {
+          y: e.target.getAttribute("href"),
+        },
+        ease: Power2.easeInOut
+      });
+    })
+
+  });
 
 </script>
