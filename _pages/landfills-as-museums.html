@@ -21,14 +21,19 @@ permalink: /landfills-as-museums
     font-size: 16px;
   }
 
+  .bg-image {
+    background-size: cover;
+  }
+
   .section,
   .section-lg {
-    background: white;
+    background-color: white;
   }
 
   .bg-black {
-    background: black !important;
+    background-color: black !important;
   }
+
 
   .title-xl,
   .title-lg,
@@ -104,7 +109,7 @@ permalink: /landfills-as-museums
   </div>
 
   <div class="video-container video-banner">
-    <video id="v0" muted preload>
+    <video id="v0" muted buffer preload>
       <source type='video/mp4;codecs="avc1.42E01E, mp4a.40.2"'
         src="{{'images/landfills-as-museums/hero-video.mp4' | asset_url }}">
       <p>Your user agent does not support the HTML5 Video element.</p>
@@ -584,9 +589,9 @@ permalink: /landfills-as-museums
 
 <script type="text/javascript">
 
-  if ('scrollRestoration' in window.history) {
-    window.history.scrollRestoration = 'manual'
-  }
+  // if ('scrollRestoration' in window.history) {
+  //   window.history.scrollRestoration = 'manual'
+  // }
 
   //Play Hero Video on Scroll
   const scrollOnPlay = (bound, video) => {
@@ -595,7 +600,7 @@ permalink: /landfills-as-museums
     const scrollVideo = () => {
       if (video.duration) {
         const distanceFromTop = window.scrollY + bound.getBoundingClientRect().top;
-        const rawPercentScrolled = (window.scrollY + distanceFromTop) / (bound.scrollHeight - window.innerHeight);
+        const rawPercentScrolled = (window.scrollY - distanceFromTop) / (window.innerHeight - bound.scrollHeight);
         const percentScrolled = Math.min(Math.max(rawPercentScrolled, 0), 1);
 
         // console.log(rawPercentScrolled, percentScrolled);

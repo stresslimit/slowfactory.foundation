@@ -4,5 +4,4 @@ config.yml
 yarn.lock
 Gemfile.lock
 vendor
-*.mp4
 _site
