@@ -589,30 +589,22 @@ permalink: /landfills-as-museums
 
 <script type="text/javascript">
 
-  // if ('scrollRestoration' in window.history) {
-  //   window.history.scrollRestoration = 'manual'
-  // }
-
-  //Play Hero Video on Scroll
-  const scrollOnPlay = (bound, video) => {
-    bound = document.querySelector(bound);
-    video = document.querySelector(video);
-    const scrollVideo = () => {
-      if (video.duration) {
-        const distanceFromTop = window.scrollY + bound.getBoundingClientRect().top;
-        const rawPercentScrolled = (window.scrollY - distanceFromTop) / (window.innerHeight - bound.scrollHeight);
-        const percentScrolled = Math.min(Math.max(rawPercentScrolled, 0), 1);
-
-        // console.log(rawPercentScrolled, percentScrolled);
-
-        video.currentTime = video.duration * percentScrolled;
-      }
-      requestAnimationFrame(scrollVideo);
-    }
-    requestAnimationFrame(scrollVideo);
+  if ('scrollRestoration' in window.history) {
+    window.history.scrollRestoration = 'manual'
   }
 
-  scrollOnPlay("#section-intro", "#v0");
+  //Play Hero Video on Scroll
+  const video = document.querySelector('#v0');
+  var playOnScroll = () => {
+    const scrollVideo = () => {
+      if (video.duration) {
+        video.currentTime = video.duration * (window.pageYOffset / 1500);
+      }
+      requestAnimationFrame(scrollVideo);
+    };
+    requestAnimationFrame(scrollVideo);
+  };
+  playOnScroll();
 
   $(document).ready(function () {
 
