@@ -594,19 +594,53 @@ permalink: /landfills-as-museums
   }
 
   //Play Hero Video on Scroll
-  const video = document.querySelector('#v0');
-  var playOnScroll = () => {
-    const scrollVideo = () => {
-      if (video.duration) {
-        video.currentTime = video.duration * (window.pageYOffset / 1500);
+  function initVideoScroll() {
+    if (window.innerWidth >= 800) {
+      const scrollOnPlay = (bound, video) => {
+        bound = document.querySelector(bound);
+        video = document.querySelector(video);
+        const scrollVideo = () => {
+          if (video.duration) {
+            const distanceFromTop = window.pageYOffset + (bound.getBoundingClientRect().top);
+            const rawPercentScrolled = (window.scrollY - distanceFromTop) / (window.innerHeight - (bound.scrollHeight) + 800);
+            const percentScrolled = Math.min(Math.max(rawPercentScrolled, 0), 1);
+
+            // console.log(rawPercentScrolled, percentScrolled);
+            video.currentTime = video.duration * percentScrolled;
+          }
+          requestAnimationFrame(scrollVideo);
+        }
+        requestAnimationFrame(scrollVideo);
       }
-      requestAnimationFrame(scrollVideo);
-    };
-    requestAnimationFrame(scrollVideo);
-  };
-  playOnScroll();
+      scrollOnPlay("#section-intro", "#v0");
+    } else {
+      const scrollOnPlay = (bound, video) => {
+        bound = document.querySelector(bound);
+        video = document.querySelector(video);
+        const scrollVideo = () => {
+          if (video.duration) {
+            const distanceFromTop = window.pageYOffset + (bound.getBoundingClientRect().top - 200);
+            const rawPercentScrolled = (window.scrollY - distanceFromTop) / (window.innerHeight - (bound.scrollHeight + 200));
+            const percentScrolled = Math.min(Math.max(rawPercentScrolled, 0), 1);
+
+            // console.log(rawPercentScrolled, percentScrolled);
+            video.currentTime = video.duration * percentScrolled;
+          }
+          requestAnimationFrame(scrollVideo);
+        }
+        requestAnimationFrame(scrollVideo);
+      }
+      scrollOnPlay("#section-intro", "#v0");
+    }
+  }
+
+  initVideoScroll();
 
   $(document).ready(function () {
+    //Recalculate Video Scroll Rate Based on Viewport width (Mobile vs. Desktop)
+    $(window).on('resize', function () {
+      initVideoScroll()
+    });
 
     // Slick slider
     $('.card-list').slick({
