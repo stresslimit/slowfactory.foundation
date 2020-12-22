@@ -1,70 +1,183 @@
-
 /* Helvetica redesign */
 
-.on-dark-bg { color: white; }
-.dark-grey { color: var(--dark-grey); }
-.green { color: var(--green); }
-.light-green { color: var(--light-green); }
-.orange { color: var(--orange); }
-.bright-orange { color: var(--bright-orange); }
-.red { color: var(--red); }
-.blue { color: var(--blue); }
-.bright-blue { color: var(--bright-blue); }
-.fuscia { color: var(--fuscia); }
-.pink { color: var(--pink); }
-.magenta { color: var(--magenta); }
-.purple { color: var(--purple); }
-.yellow { color: var(--yellow); }
-.bright-yellow { color: var(--bright-yellow); }
+.on-dark-bg {
+  color: white;
+}
+.dark-grey {
+  color: var(--dark-grey);
+}
+.green {
+  color: var(--green);
+}
+.light-green {
+  color: var(--light-green);
+}
+.orange {
+  color: var(--orange);
+}
+.bright-orange {
+  color: var(--bright-orange);
+}
+.red {
+  color: var(--red);
+}
+.blue {
+  color: var(--blue);
+}
+.bright-blue {
+  color: var(--bright-blue);
+}
+.fuscia {
+  color: var(--fuscia);
+}
+.pink {
+  color: var(--pink);
+}
+.magenta {
+  color: var(--magenta);
+}
+.purple {
+  color: var(--purple);
+}
+.yellow {
+  color: var(--yellow);
+}
+.bright-yellow {
+  color: var(--bright-yellow);
+}
 
-.bg-black { background: var(--black); }
-.bg-dark-grey { background: var(--dark-grey); }
-.bg-green { background: var(--green); }
-.bg-light-green { background: var(--light-green); }
-.bg-orange { background: var(--orange); }
-.bg-bright-orange { background: var(--bright-orange); }
-.bg-red { background: var(--red); }
-.bg-blue { background: var(--blue); }
-.bg-bright-blue { background: var(--bright-blue); }
-.bg-fuscia { background: var(--fuscia); }
-.bg-pink { background: var(--pink); }
-.bg-magenta { background: var(--magenta); }
-.bg-purple { background: var(--purple); }
-.bg-yellow { background: var(--yellow); }
-.bg-bright-yellow { background: var(--bright-yellow); }
+.bg-black {
+  background: var(--black) !important;
+}
+.bg-dark-grey {
+  background: var(--dark-grey) !important;
+}
+.bg-green {
+  background: var(--green) !important;
+}
+.bg-light-green {
+  background: var(--light-green) !important;
+}
+.bg-orange {
+  background: var(--orange) !important;
+}
+.bg-bright-orange {
+  background: var(--bright-orange) !important;
+}
+.bg-red {
+  background: var(--red) !important;
+}
+.bg-blue {
+  background: var(--blue) !important;
+}
+.bg-bright-blue {
+  background: var(--bright-blue) !important;
+}
+.bg-fuscia {
+  background: var(--fuscia) !important;
+}
+.bg-pink {
+  background: var(--pink) !important;
+}
+.bg-magenta {
+  background: var(--magenta) !important;
+}
+.bg-purple {
+  background: var(--purple) !important;
+}
+.bg-yellow {
+  background: var(--yellow) !important;
+}
+.bg-bright-yellow {
+  background: var(--bright-yellow) !important;
+}
 /* .bg- { background: var(--); } */
 
-
 /* NYT 2020  */
-.nyt-blue { color: var(--nyt-blue); }
-.nyt-light-blue { color: var(--nyt-light-blue); }
-.nyt-pink { color: var(--nyt-pink); }
-.nyt-orange { color: var(--nyt-orange); }
-.nyt-green { color: var(--nyt-green); }
-.nyt-brown { color: var(--nyt-brown); }
-.nyt-beige { color: var(--nyt-beige); }
+.nyt-blue {
+  color: var(--nyt-blue);
+}
+.nyt-light-blue {
+  color: var(--nyt-light-blue);
+}
+.nyt-pink {
+  color: var(--nyt-pink);
+}
+.nyt-orange {
+  color: var(--nyt-orange);
+}
+.nyt-green {
+  color: var(--nyt-green);
+}
+.nyt-brown {
+  color: var(--nyt-brown);
+}
+.nyt-beige {
+  color: var(--nyt-beige);
+}
 
-.bg-nyt-blue { background: var(--nyt-blue); }
-.bg-nyt-light-blue { background: var(--nyt-light-blue); }
-.bg-nyt-pink { background: var(--nyt-pink); }
-.bg-nyt-orange { background: var(--nyt-orange); }
-.bg-nyt-salmon { background: var(--nyt-salmon); }
-.bg-nyt-green { background: var(--nyt-green); }
-.bg-nyt-brown { background: var(--nyt-brown); }
-.bg-nyt-beige { background: var(--nyt-beige); }
-
+.bg-nyt-blue {
+  background: var(--nyt-blue);
+}
+.bg-nyt-light-blue {
+  background: var(--nyt-light-blue);
+}
+.bg-nyt-pink {
+  background: var(--nyt-pink);
+}
+.bg-nyt-orange {
+  background: var(--nyt-orange);
+}
+.bg-nyt-salmon {
+  background: var(--nyt-salmon);
+}
+.bg-nyt-green {
+  background: var(--nyt-green);
+}
+.bg-nyt-brown {
+  background: var(--nyt-brown);
+}
+.bg-nyt-beige {
+  background: var(--nyt-beige);
+}
 
 /* Original Study Hall colours: mostly for cities events-big-menu */
-.salmon { color: var(--salmon); }
-.lime { color: var(--lime); }
-.light-grey { color: var(--light-grey); }
-.light-grey-blue { color: var(--light-grey-blue); }
-.medium-grey-blue { color: var(--medium-grey-blue); }
-.dark-grey-blue { color: var(--dark-grey-blue); }
-.light-peach { color: var(--light-peach); }
-.dark-peach { color: var(--dark-peach); }
-.fuscia { color: var(--fuscia); }
-.blue { color: var(--blue); }
-.light-purple { color: var(--light-purple); }
-.gold { color: var(--gold); }
-.mustard { color: var(--mustard); }
+.salmon {
+  color: var(--salmon);
+}
+.lime {
+  color: var(--lime);
+}
+.light-grey {
+  color: var(--light-grey);
+}
+.light-grey-blue {
+  color: var(--light-grey-blue);
+}
+.medium-grey-blue {
+  color: var(--medium-grey-blue);
+}
+.dark-grey-blue {
+  color: var(--dark-grey-blue);
+}
+.light-peach {
+  color: var(--light-peach);
+}
+.dark-peach {
+  color: var(--dark-peach);
+}
+.fuscia {
+  color: var(--fuscia);
+}
+.blue {
+  color: var(--blue);
+}
+.light-purple {
+  color: var(--light-purple);
+}
+.gold {
+  color: var(--gold);
+}
+.mustard {
+  color: var(--mustard);
+}
