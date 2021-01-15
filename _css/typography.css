@@ -83,6 +83,7 @@ a:hover,
 .title-xxl,
 .title-xl,
 .title-lg,
+.title-md-lg,
 .title-md,
 .title-sm,
 .title-xs,
@@ -103,6 +104,9 @@ p.title-xl, p.title-lg {
 
 .title-lg, .title-alt-lg {
   font-size: 4em;
+}
+.title-md-lg, .title-alt-md-lg {
+  font-size: 3.5em;
 }
 .title-md, .title-alt-md {
   font-size: 2.5em;
@@ -127,6 +131,9 @@ p.title-xl, p.title-lg {
   }
   .title-lg, .title-alt-lg {
     font-size: 2.5em;
+  }
+  .title-md-lg, .title-alt-md-lg {
+    font-size: 2.1em;
   }
   .title-md, .title-alt-md {
     font-size: 1.8em;

@@ -5,8 +5,64 @@ permalink: /open-education
 ---
 
 
-<div class="">
+<div class="container">
+
+  <div class="row valign-top">
+    <div class="two-thirds">
+      <p class="title-md-lg">Equity-Centered Education for Black, Brown, Indigenous and minority ethnic communities taught by Black, Brown, Indigenous and minority ethnic scholars, thinkers and&nbsp;educators</p>
+    </div>
+    <div class="third">
+      <p class="title-sm">Keep it free! Support&nbsp;us</p>
+      <iframe allowpaymentrequest="" frameborder="0" height="900px" name="donorbox" scrolling="no" seamless="seamless" src="https://donorbox.org/embed/open-education?default_interval=m&amount=50" style="max-width: 500px; min-width: 310px; max-height:none!important" width="100%"></iframe>
+    </div>
+  </div>
+
+
+
+
+</div>
+
+
+<div class="section bg-pink" style="background: #dba6cc url('{{ 'images/open-education/balloon.gif' | asset_url }}') 100% 0% no-repeat; background-size: 30%;">
   <div class="container">
+
+    <!-- <div class="row ">
+      <div class="half">
+        <p class="title-md" style="margin-bottom: .4em">Winter/Spring 2021 Semester</p>
+        <p class="title-sm">Classes start September 18, 2020</p>
+      </div>
+      <div>
+        <img src="{{ 'images/open-education/squiggle.gif' | asset_url }}" style="width:5em">
+      </div>
+      <div class="third">
+        <p>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSfUaPK4nt94fiNmpzmSrBliE8e2HnsVaUVmp-WfbhytNokeOw/viewform" class="button">🖇 Register now 🖇</a></p>
+      </div>
+    </div> -->
+
+    <p class="title-md" style="margin-bottom: .4em">Winter/Spring 2021 Semester</p>
+    <p class="title-sm">Sign up to be notified when admissions open</p>
+    {% assign newsletter_button_text = '🖇 Sign Up to be Notified 🖇' %}
+    {% include newsletter-signup.liquid %}
+    {% assign newsletter_button_text = false %}
+
+  </div>
+</div>
+
+
+
+<div class="section">
+  <div class="container">
+
+    <p class="title-sm">Fall 2020 Semester Classes:</p>
+
+    <div class="row">
+    {% for course in site.data.openeducation.courses %}
+      <div class="half">
+        <p class="video-container"><iframe title="vimeo-player" src="https://player.vimeo.com/video/{{ course.vimeo_id }}?byline=0" width="1000" height="563" frameborder="0" allowfullscreen></iframe></p>
+      </div>
+    {% endfor %}
+    </div>
 
     <div class="row valign-top">
       <div class="half">
@@ -19,36 +75,8 @@ permalink: /open-education
 
   </div>
 </div>
-<br>
 
 
-
-<div class="section bg-pink" style="background: #dba6cc url('{{ 'images/open-education/balloon.gif' | asset_url }}') 100% 0% no-repeat; background-size: 30%;">
-  <div class="container">
-
-
-    <div class="row ">
-      <div class="half">
-        <p class="title-md" style="margin-bottom: .4em">Admissions now open!</p>
-        <p class="title-sm">Classes start September 18, 2020</p>
-      </div>
-      <div>
-        <img src="{{ 'images/open-education/squiggle.gif' | asset_url }}" style="width:5em">
-      </div>
-      <div class="third">
-        <p>
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLSfUaPK4nt94fiNmpzmSrBliE8e2HnsVaUVmp-WfbhytNokeOw/viewform" class="button">🖇 Register now 🖇</a></p>
-      </div>
-    </div>
-
-    <!-- <p class="title-md">Sign up to be notified when admissions open:</p>
-    <p>To be announced September 10</p>
-    {% assign newsletter_button_text = 'Let me know!' %}
-    {% include newsletter-signup.liquid %}
-    {% assign newsletter_button_text = false %} -->
-
-  </div>
-</div>
 
 
 
@@ -56,7 +84,7 @@ permalink: /open-education
   <div class="container">
     <div class="row valign-top">
       <div class="two-thirds">
-        <p class="title-sm">All classes 12pm noon NYC time</p>
+        <p class="title-sm">Fall 2020 Classes</p>
         <p><img src="{{ 'images/open-education/2Calendar-3.jpg' | asset_url }}"></p>
       </div>
       <div class="third">
@@ -64,10 +92,10 @@ permalink: /open-education
         <p class="title-sm">Love it? Support us!</p>
         <iframe allowpaymentrequest="" frameborder="0" height="900px" name="donorbox" scrolling="no" seamless="seamless" src="https://donorbox.org/embed/open-education?default_interval=m&amount=50" style="max-width: 500px; min-width: 310px; max-height:none!important" width="100%"></iframe>
 
-        <p class="title-sm">Is this related to your work?</p>
+        <!-- <p class="title-sm">Is this related to your work?</p>
 
         <p><a href="#brands" class="btn--yellow-pill"><span class="title-sm">Brands Solidarity</span></a></p>
-        <br>
+        <br> -->
 
 
       </div>
@@ -78,14 +106,12 @@ permalink: /open-education
 
 <div class="section">
   <div class="container">
-    <p class="title-lg">Equity-Centered Education for Black, Brown, Indigenous and minority ethnic communities taught by Black, Brown, Indigenous and minority ethnic scholars, thinkers and&nbsp;educators</p>
+
+    <p class="title-md">Background</p>
 
     <div class="section container-sm">
       <p class="text-lg"><i><b>Equity-Centered Education</b>: education that acknowledges power structures and historical social context as a key driver of any topic. Focusing on free and open accessibility, ECE initiatives are typically offered without academic admission requirements and distributed online. Open education broadens access to learning and training traditionally offered through formal education systems or corporate programs that are inaccessible to most people.</i></p>
     </div>
-
-
-    <p class="title-md">Background</p>
 
     <p class="text-lg">In April 2020, Slow Factory hosted a 4-part “crash course” in Sustainability Literacy. We annouced on a Monday, and on Friday 1,500 people tuned in, engaged and learned about sustainability at the intersection of environmental and social justice.</p>
     <!-- <p class="text-lg">.</p> -->
@@ -151,13 +177,14 @@ permalink: /open-education
     </div> -->
 
 
-    <div id="brands"></div><br><br><br><br><br>
+    <!-- <div id="brands"></div><br><br><br><br><br> -->
 
   </div>
 </div>
 
 
 
+{% comment %}
 <div class="section bg-light-green">
   <div class="container">
 
@@ -217,10 +244,11 @@ permalink: /open-education
       </div>
     </div>
 
-
   </div>
 
 </div>
+{% endcomment %}
+
 
 
 <div class="section">
