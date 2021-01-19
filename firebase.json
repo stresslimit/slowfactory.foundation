@@ -9,6 +9,11 @@
         "type": 301
       },
       {
+        "source": "/donate",
+        "destination": "/superfund",
+        "type": 301
+      },
+      {
         "source": "/r/study-hall-nyc-2020-media-assets",
         "destination": "https://www.dropbox.com/sh/2l3cj6i85hpp0re/AABUbiYtwtwlwom02RlTsf57a?dl=0",
         "type": 301
