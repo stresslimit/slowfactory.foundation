@@ -4,110 +4,25 @@ title: "Open Education"
 permalink: /open-education
 ---
 
-
 <div class="container">
-
   <div class="row valign-top">
-    <div class="two-thirds">
-      <p class="title-md-lg">Equity-Centered Education for Black, Brown, Indigenous and minority ethnic communities taught by Black, Brown, Indigenous and minority ethnic scholars, thinkers and&nbsp;educators</p>
-    </div>
-    <div class="third">
-      <p class="title-sm">Keep it free! Support&nbsp;us</p>
-      <iframe allowpaymentrequest="" frameborder="0" height="900px" name="donorbox" scrolling="no" seamless="seamless" src="https://donorbox.org/embed/open-education?default_interval=m&amount=50" style="max-width: 500px; min-width: 310px; max-height:none!important" width="100%"></iframe>
-    </div>
+    <p class="title-md-lg">Equity-Centered Education for Black, Brown, Indigenous and minority ethnic communities taught by Black, Brown, Indigenous and minority ethnic scholars, thinkers and&nbsp;educators</p>
   </div>
-
-
-
-
 </div>
 
-
-<div class="section bg-pink" style="background: #dba6cc url('{{ 'images/open-education/balloon.gif' | asset_url }}') 100% 0% no-repeat; background-size: 30%;">
-  <div class="container">
-
-    <!-- <div class="row ">
-      <div class="half">
-        <p class="title-md" style="margin-bottom: .4em">Winter/Spring 2021 Semester</p>
-        <p class="title-sm">Classes start September 18, 2020</p>
-      </div>
-      <div>
-        <img src="{{ 'images/open-education/squiggle.gif' | asset_url }}" style="width:5em">
-      </div>
-      <div class="third">
-        <p>
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLSfUaPK4nt94fiNmpzmSrBliE8e2HnsVaUVmp-WfbhytNokeOw/viewform" class="button">🖇 Register now 🖇</a></p>
-      </div>
-    </div> -->
-
-    <p class="title-md" style="margin-bottom: .4em">Winter/Spring 2021 Semester</p>
+<div class="section">
+  <div class="container open-education-notification">
+    <p class="title-md">Winter/Spring 2021 Semester</p>
     <p class="title-sm">Sign up to be notified when admissions open</p>
-    {% assign newsletter_button_text = '🖇 Sign Up to be Notified 🖇' %}
+    {% assign newsletter_button_text = 'Sign Up to be Notified' %}
     {% include newsletter-signup.liquid %}
     {% assign newsletter_button_text = false %}
-
   </div>
 </div>
 
-
-
-<div class="section">
+<div class="section email-education-background-section">
   <div class="container">
-
-    <p class="title-sm">Fall 2020 Semester Classes:</p>
-
-    <div class="row">
-    {% for course in site.data.openeducation.courses %}
-      <div class="half">
-        <p class="video-container"><iframe title="vimeo-player" src="https://player.vimeo.com/video/{{ course.vimeo_id }}?byline=0" width="1000" height="563" frameborder="0" allowfullscreen></iframe></p>
-      </div>
-    {% endfor %}
-    </div>
-
-    <div class="row valign-top">
-      <div class="half">
-        <p><img src="{{ 'images/open-education/open-edu-poster.jpg' | asset_url }}"></p>
-      </div>
-      <div class="half">
-        <p><img src="{{ 'images/open-education/open-edu-instructors.jpg' | asset_url }}"></p>
-      </div>
-    </div>
-
-  </div>
-</div>
-
-
-
-
-
-<div class="section">
-  <div class="container">
-    <div class="row valign-top">
-      <div class="two-thirds">
-        <p class="title-sm">Fall 2020 Classes</p>
-        <p><img src="{{ 'images/open-education/2Calendar-3.jpg' | asset_url }}"></p>
-      </div>
-      <div class="third">
-
-        <p class="title-sm">Love it? Support us!</p>
-        <iframe allowpaymentrequest="" frameborder="0" height="900px" name="donorbox" scrolling="no" seamless="seamless" src="https://donorbox.org/embed/open-education?default_interval=m&amount=50" style="max-width: 500px; min-width: 310px; max-height:none!important" width="100%"></iframe>
-
-        <!-- <p class="title-sm">Is this related to your work?</p>
-
-        <p><a href="#brands" class="btn--yellow-pill"><span class="title-sm">Brands Solidarity</span></a></p>
-        <br> -->
-
-
-      </div>
-  </div>
-</div>
-
-
-
-<div class="section">
-  <div class="container">
-
-    <p class="title-md">Background</p>
+    <h2 class="title-md">Background</h2>
 
     <div class="section container-sm">
       <p class="text-lg"><i><b>Equity-Centered Education</b>: education that acknowledges power structures and historical social context as a key driver of any topic. Focusing on free and open accessibility, ECE initiatives are typically offered without academic admission requirements and distributed online. Open education broadens access to learning and training traditionally offered through formal education systems or corporate programs that are inaccessible to most people.</i></p>
@@ -128,7 +43,6 @@ permalink: /open-education
 
     <p class="title-sm">You can help us continue this work!</p>
 
-
     <p class="text-lg">We are fundraising to allow us to run community-centric Open Education programs taught in collaboration with
       <!-- <a href=""></a>, -->
       <a href="https://www.tejuadisafarrar.com/">Teju Adisa-Farar</a>,
@@ -144,8 +58,34 @@ permalink: /open-education
       <a href="https://www.celinecelines.com/">Céline Semaan</a>
       and the Slow Factory team of experts. This initiative is part of our core mission at Slow Factory Foundation.
     </p>
+  </div>
+</div>
 
+<div class="section">
+  <div class="container">
+    <h2 class="title-md text-center">Fall 2020 Semester Classes</h2>
+    <div class="row">
+    {% for course in site.data.openeducation.courses %}
+      <div class="half">
+        <p class="video-container"><iframe title="vimeo-player" src="https://player.vimeo.com/video/{{ course.vimeo_id }}?byline=0" width="1000" height="563" frameborder="0" allowfullscreen></iframe></p>
+      </div>
+    {% endfor %}
+    </div>
+  </div>
+</div>
 
+<div class="section">
+  <div class="container">
+    <div class="row valign-top">
+      <div class="two-thirds">
+        <h2 class="title-md">Fall 2020 Classes</h2>
+        <p><img src="{{ 'images/open-education/2Calendar-3.jpg' | asset_url }}"></p>
+      </div>
+  </div>
+</div>
+
+<div class="section">
+  <div class="container">
     <div class="row section valign-top">
       <div class="half">
         <p><img src="{{ 'images/open-education/open_education_initiative.jpg' | asset_url }}"></p>
@@ -154,40 +94,13 @@ permalink: /open-education
         <p class="title-md">Launched to the public in September 2020 — funding supports the instructors to build and teach the curriculum to participants.</p>
       </div>
     </div>
-
-
-
-    <!-- <div class="row section valign-top">
-      <div class="two-thirds">
-        <p class="title-lg">Sustainability Literacy: Exploring solutions around Race, Equity and Climate Positive frameworks</p>
-      </div>
-      <div class="third">
-        <p class="title-sm">Skill training curriculum will include:</p>
-        <ul class="text-md">
-          <li>Journalism</li>
-          <li>Food</li>
-          <li>Agriculture</li>
-          <li>Fashion design</li>
-          <li>Modeling</li>
-          <li>Sourcing & Manufacturing</li>
-          <li>Design</li>
-          <li>Jewelry Design</li>
-        </ul>
-      </div>
-    </div> -->
-
-
-    <!-- <div id="brands"></div><br><br><br><br><br> -->
-
   </div>
 </div>
 
-
-
 {% comment %}
+
 <div class="section bg-light-green">
   <div class="container">
-
     <p class="title-lg">Brands, It’s Time to Support Equity-Centered Education</p>
     <div class="row valign-top">
       <div class="two-thirds">
@@ -207,15 +120,12 @@ permalink: /open-education
       <div class="third">
         <iframe allowpaymentrequest="" frameborder="0" height="300px" name="donorbox" scrolling="no" seamless="seamless" src="https://donorbox.org/embed/open-education-brand?amount=5000" style="max-width: 500px; min-width: 310px; max-height:none!important" width="100%"></iframe>
         <p>Contributions of $5000 and over will be recognized with public thanks during the programs.</p>
-
       </div>
     </div>
-
 
     <div class="row">
       <div class="two-thirds">
         <p class="text-lg">For larger commitments and direct involvement, please get in touch:</p>
-
         <form id="js-brands-form" class="brands-form">
           <p>
             <label for="company">Company:</label>
@@ -243,17 +153,13 @@ permalink: /open-education
         <p><img src="{{ 'images/open-education/equity-centered-education.jpg' | asset_url }}"></p>
       </div>
     </div>
-
   </div>
-
 </div>
+
 {% endcomment %}
-
-
 
 <div class="section">
   <div class="container">
-
     <div class="row section valign-top">
       <div class="third">
         <p class="title-sm">Support Equity-Centered Education</p>
@@ -263,8 +169,15 @@ permalink: /open-education
         <p><img src="{{ 'images/open-education/long-term-investment.jpg' | asset_url }}"></p>
       </div>
     </div>
+  </div>
+</div>
 
-
-
+<div class="section">
+  <div class="container open-education-notification">
+    <p class="title-md">Winter/Spring 2021 Semester</p>
+    <p class="title-sm">Sign up to be notified when admissions open</p>
+    {% assign newsletter_button_text = 'Sign Up to be Notified' %}
+    {% include newsletter-signup.liquid %}
+    {% assign newsletter_button_text = false %}
   </div>
 </div>
