@@ -17,7 +17,7 @@ let config = {
   },
   output: {
     path: path.resolve(__dirname, 'assets' ),
-    filename: '[name]-[hash].js'
+    filename: '[name].js'
   },
   plugins: [
     new webpack.LoaderOptionsPlugin({
@@ -26,7 +26,7 @@ let config = {
       options: {}
     }),
     new ExtractTextPlugin({
-      filename: '[name]-[hash].css'
+      filename: '[name].css'
     }),
     function() {
       this.plugin('done', stats => {
