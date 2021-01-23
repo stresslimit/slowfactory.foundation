@@ -4,6 +4,26 @@ title: "Open Education"
 permalink: /open-education
 ---
 
+<!--
+
+Yes, we can pull the list of courses, and then cross-reference to get series and instructor metadata
+
+ -->
+
+
+<!-- {% for course in site.data.openedu %}
+  <p>{{ course.title }}</p>
+
+  {% assign all_series = site.data.openedu_meta.series | where_exp: "item", "item.name == course.series" %}
+  {% assign series = all_series[0] %}
+
+  {% assign instructors = site.data.openedu_meta.instructors | where_exp: "item", "item.name == course.instructor" %}
+  {% assign instructor = instructors[0] %}
+
+  <p>{{ series.name }} == {{ course.series }}: {{ series.color }}</p>
+  <p>{{ instructor.name }} == {{ course.instructor }}</p>
+  <br>
+{% endfor %} -->
 
 <div class="container">
 

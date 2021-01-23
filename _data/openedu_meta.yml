@@ -1,0 +1,11 @@
+series:
+  - name: "Fashion And ..."
+    color: red
+  - name: History of ...
+    color: blue
+instructors:
+  - name: Korina Emmerich
+  - name: Céline Semaan
+    photo_bw: ''
+    photo_kid: ''
+  - name: Tracy Reese
