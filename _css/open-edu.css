@@ -1,0 +1,212 @@
+/* Header */
+.open-education-header{
+  background-color: #6C63A3;
+  color:white;
+}
+.open-education-header p{
+  margin: 0;
+}
+.open-education-header__bar{
+  height: 6px;
+  background-color: white;
+  width: 60%;
+}
+.open-education-header__part1{
+  display: block;
+  max-width: 80%;
+  padding-top: 20px;
+}
+.open-education-header__part2{
+  padding-top: 60px;
+  display: block;
+  max-width: 80%;
+  padding-left: 20%;
+}
+
+/* Register */
+.open-education-register{
+  background-color: #F2F4F5;
+  text-align: center;
+}
+
+.open-education-register .button{
+  font-size: 24px;
+  border: 2px solid black;
+  height: 68px;
+  line-height: 68px;
+  padding: 0 25px;
+  border-radius: 50px;
+  background-color: transparent;
+}
+.open-education-register .button:hover{
+  text-decoration: none;
+  background:rgba(255,255,255,.3)
+}
+
+/* Calendar */
+.open-education-2021-classes h2{
+  padding-bottom: 32px;
+}
+.open-education-2021-classes__calendar{
+  width: 100%;
+}
+
+.open-education-2021-classes__calendar .cell{
+  padding: 62px 62px 0 62px;
+  width: 50%;
+  box-sizing: border-box;
+  height:610px;
+}
+.open-education-2021-classes__calendar .cell_1{
+  background-color: #FCF1D0;
+}
+.open-education-2021-classes__calendar .cell_1 .teacher{
+  color: #A67C00;
+}
+.open-education-2021-classes__calendar .cell_2{
+  background-color: #C9E3E2;
+}
+.open-education-2021-classes__calendar .cell_2 .teacher{
+  color: #5C7A79;
+}
+.open-education-2021-classes__calendar .cell_3{
+  background-color: #FAD7D7;
+}
+.open-education-2021-classes__calendar .cell_3 .teacher{
+  color: #995151;
+}
+.open-education-2021-classes__calendar .cell_4{
+  text-align:center;
+  color:white;
+  background-color: #4260A4;
+  padding-top: 200px;
+}
+.open-education-2021-classes__calendar .cell_4 h3{
+ margin-bottom: 16px;
+}
+.open-education-2021-classes__calendar .button{
+  font-size: 24px;
+  border: 2px solid white;
+  height: 68px;
+  line-height: 68px;
+  padding: 0 25px;
+  border-radius: 50px;
+  background-color: transparent;
+  color:white;
+}
+.open-education-2021-classes__calendar .button:hover{
+  text-decoration: none;
+  background:rgba(255,255,255,.3)
+}
+
+.open-education-2021-classes__calendar .bar{
+  height: 6px;
+  width: 60%;
+  background-color: black;
+  margin-bottom: 16px;
+}
+
+.open-education-2021-classes__calendar ul{
+  margin: 0;
+  padding: 16px 0 0 0; 
+  list-style: none;
+}
+.open-education-2021-classes__calendar li{
+  margin: 0;
+  padding: 0 0 8px; 
+  font-size: 18px;
+  display: flex;
+}
+.open-education-2021-classes__calendar .date{
+  width: 25%;
+}
+.open-education-2021-classes__calendar .info{
+  width: 60%;
+}
+.open-education-2021-classes__calendar .title{
+font-weight: bold;
+line-height: 18px;
+}
+.open-education-2021-classes__calendar .teacher{
+  font-size: 14px;
+}
+
+.open-education-2020-classes{
+}
+.open-education-2020-classes .course{
+  display: flex;
+   border-bottom: 2px solid #DCDCDC;
+   padding: 32px 0;
+   width: 100%;
+}
+.open-education-2020-classes .video{
+  width: 50%;
+}
+.open-education-2020-classes .info{
+  padding: 16px 0 0 16px;
+  width: 50%;
+}
+.open-education-2020-classes .title{
+  font-weight: 18px;
+  font-weight: bold;
+  padding-bottom: 16px;
+}
+.open-education-2020-classes .instructor{
+  font-size: 14px;
+}
+.open-education-2020-classes .series{
+  background-color: #EAF5FF;
+  font-size: 14px;
+  color: #466D8C;
+  font-weight: bold;
+  padding: 8px 16px;
+  border-radius: 2px;
+  display: inline-block;
+  margin-bottom: 16px;
+}
+/* Background */
+.open-education-background{
+  background-color: #D54685;
+  color:white;
+}
+.open-education-background .bar{
+background-color:white;
+margin-bottom: 16px;
+height: 6px;
+width: 20%;
+}
+.open-education-background h2{
+margin-bottom: 16px;
+}
+.open-education-background .content{
+  display: flex;
+}
+.open-education-background .text{
+  padding-right: 32px;
+  width: 35%;
+}
+.open-education-background .video{
+  display: flex;
+  align-items: start;
+  width: 65%;
+}
+
+.open-education-donation .content{
+  display: flex;
+}
+.open-education-donation h2{
+  padding-bottom: 32px;
+}
+.open-education-donation .info{
+  width: 50%;
+  padding-right: 32px;
+}
+.open-education-donation .form{
+  width: 50%;
+}
+.open-education-donation p span{
+  background-color: #EDE8C2;
+}
+.open-education-donation p a{
+  font-weight: bold;
+}
