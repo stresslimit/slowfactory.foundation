@@ -4,6 +4,49 @@ title: "Open Education"
 permalink: /open-education
 ---
 
+<!--
+
+Yes, we can query both ways, and associate series.name to course.title, etc
+
+-->
+
+
+<!--
+List all series, with their courses
+-->
+<!-- {% for series in site.data.openedu_meta.series %}
+ <div style="border: 1px solid grey;padding:3em 0;">
+   <p>{{ series.name }}: {{ series.color }}</p>
+
+   {% assign courses = site.data.openedu | where_exp: "item", "item.series == series.name" %}
+   {% for course in courses %}
+     <p>{{ course.title }} by {{ course.instructor }}</p>
+   {% endfor %}
+
+ </div>
+ <br>
+{% endfor %} -->
+
+
+<!--
+List all courses, with their series metadata
+ -->
+<!-- {% for course in site.data.openedu %}
+  <div style="border: 1px solid grey;padding:3em 0;">
+    <p>{{ course.title }}</p>
+
+    {% assign all_series = site.data.openedu_meta.series | where_exp: "item", "item.name == course.series" %}
+    {% assign series = all_series[0] %}
+
+    {% assign instructors = site.data.openedu_meta.instructors | where_exp: "item", "item.name == course.instructor" %}
+    {% assign instructor = instructors[0] %}
+
+    <p>{{ series.name }} == {{ course.series }}: {{ series.color }}</p>
+    <p>{{ instructor.name }} == {{ course.instructor }}</p>
+  </div>
+  <br>
+{% endfor %} -->
+
 
 <div class="container">
 
