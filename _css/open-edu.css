@@ -91,7 +91,7 @@
 .open-education-2021-classes__calendar .cell_4{
   text-align:center;
   color:white;
-  background-color: #4260A4;
+  background: url(/assets/images/open-education/register_bg.png) repeat #4260A4;
 }
 .open-education-2021-classes__calendar .cell_4 h3{
  margin-bottom: 16px;
@@ -147,6 +147,15 @@ line-height: 18px;
    border-bottom: 2px solid #DCDCDC;
    padding: 32px 0;
    width: 100%;
+}
+.open-education-2020-classes .button{
+  font-size: 24px;
+  border: 2px solid black;
+  height: 55px;
+  line-height: 55px;
+  padding: 0 25px;
+  border-radius: 50px;
+  background-color: transparent;
 }
 .open-education-2020-classes .video{
   width: 50%;
