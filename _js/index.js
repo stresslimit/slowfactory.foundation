@@ -1,7 +1,7 @@
 import initReactFastclick from 'react-fastclick'
 import formAjax from './form-ajax'
 import revealAnimations from './lam-reveal-animations'
-// import videoScrubber from './video-scrubber'
+import animator from './animator'
 import { init as mobile_menu, close_mobile_menu } from './mobile-menu'
 // import sticky from './sticky'
 
@@ -12,8 +12,7 @@ window.addEventListener('load', (e) => {
   initReactFastclick()
   mobile_menu()
   formAjax()
-  // revealAnimations()
-  // videoScrubber()
+  animator()
 
 })
 
