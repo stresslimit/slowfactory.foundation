@@ -5,5 +5,5 @@ yarn.lock
 Gemfile.lock
 vendor
 _site
-.jekyll-cache
+.jekyll-cache*
 assets
