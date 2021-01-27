@@ -1,0 +1,24 @@
+---
+layout: default
+title: "Open Education"
+permalink: /open-education/library
+hero_title: "Open Education Knowledge Library"
+hero_bg_color: "bg-turquoise"
+---
+
+{% include hero.liquid %}
+
+
+<div class="section-lg open-education-classes">
+  <div class="container">
+    {% for course in site.data.openeducation.courses %}
+      {% include open-edu-course.liquid %}
+    {% endfor %}
+  </div>
+</div>
+
+{% include open-edu-register.liquid %}
+
+{% include background.liquid %}
+
+{% include footer-donation.liquid %}

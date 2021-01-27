@@ -2,49 +2,40 @@
 layout: default
 title: "Open Education"
 permalink: /open-education
+hero_title: "Equity-Centered Education for Black, Brown, Indigenous and minority ethnic communities <span>taught by Black, Brown, Indigenous and minority ethnic scholars, thinkers and educators.</span>"
+hero_bg_color: "bg-brown"
 ---
-<div class="section open-education-header">
-  <div class="container">
-    <div class="row valign-top">
-      <div class="open-education-header__bar"></div>
-      <p class="title-md-lg"><span class="open-education-header__part1">Equity-Centered Education for Black, Brown, Indigenous and minority ethnic communities</span> <span class="open-education-header__part2">taught by Black, Brown, Indigenous and minority ethnic scholars, thinkers and educators</span></p>
-    </div>
-  </div>
-</div>
 
-<div class="section open-education-register">
-  <div class="container">
-    <a class="button" href="https://docs.google.com/forms/d/1HVHR6hWmqw8ncmUnlS40nqIpIDUXeFCod_meZcXREyg/viewform?edit_requested=true">Register for the class</a>
-  </div>
-</div>
+{% include hero.liquid %}
+
+{% include open-edu-register.liquid %}
 
 <div class="section open-education-2021-classes">
   <div class="container">
     <h2 class="title-md text-center">Fall 2021 Semester Classes</h2>
     <div class="open-education-2021-classes__calendar">
-      <div class="row">
-        {% for series in site.data.openedu_meta.series %}
-        <div class="cell cell_{{forloop.index}}">
-          <div class="bar"></div>
-          <h3 class="title-sm">{{series.name}}</h3>
-          <ul>
-            {% assign courses = site.data.openedu | where_exp: "item", "item.series == series.name" %}
-            {% for course in courses %}
-            <li>
-              <div class="date">{{ course.date }}</div>
-              <div class="info">
-                <div class="title">{{ course.title }}</div>
-                <div class="teacher">{{ course.instructor }}</div>
-              </div>
-            </li>
-            {% endfor %}
-          </ul>
-        </div>
-        {% endfor %}
-        <div class="cell cell_4">
-          <h3 class="title-md">Start now!</h3>
-          <a class="button" href="https://docs.google.com/forms/d/1HVHR6hWmqw8ncmUnlS40nqIpIDUXeFCod_meZcXREyg/viewform?edit_requested=true">Register for the class</a>
-        </div>
+      {% for series in site.data.openedu_meta.series %}
+      <div class="cell cell_{{forloop.index}}">
+        <div class="bar"></div>
+        <h3 class="title-sm">{{series.name}}</h3>
+        <ul>
+          {% assign courses = site.data.openedu | where_exp: "item", "item.series == series.name" %}
+          {% for course in courses %}
+          <li>
+            <div class="date">{{ course.date }}</div>
+            <div class="info">
+              <div class="title">{{ course.title }}</div>
+              <div class="teacher">{{ course.instructor }}</div>
+            </div>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+      {% endfor %}
+      <div class="cell cell_4">
+        {% include earth-logo.liquid %}
+        <h3 class="title-md">Start now!</h3>
+        <a class="button" href="https://docs.google.com/forms/d/1HVHR6hWmqw8ncmUnlS40nqIpIDUXeFCod_meZcXREyg/viewform?edit_requested=true">Register for the class</a>
       </div>
     </div>
   </div>
@@ -52,141 +43,16 @@ permalink: /open-education
 
 <div class="section open-education-2020-classes">
   <div class="container">
-    <div class="row">
-      <h2 class="title-md">More Open Education Classes</h2>
-      {% for course in site.data.openeducation.courses limit:3 %}
-        <div class="course">
-          <div class="video"><iframe title="vimeo-player" src="https://player.vimeo.com/video/{{ course.vimeo_id }}?title=0&byline=0&portrait=0" width="100%" height="300" frameborder="0" allowfullscreen></iframe></div>
-          <div class="info">
-            <div class="title title-sm">{{course.title}}</div>
-            <div class="series">{{course.series}}</div>
-            <div class="instructor">{{course.instructor}}</div>
-          </div>
-        </div>
-      {% endfor %}
-      <div class="button-container text-center">
-        <a href="/open-education-classes" class="button">View all courses</a>
-      </div>
+    <h2 class="title-md">More Open Education Classes</h2>
+    {% for course in site.data.openeducation.courses limit:3 %}
+      {% include open-edu-course.liquid %}
+    {% endfor %}
+    <div class="button-container text-center">
+      <a href="/open-education/library" class="button">View all courses</a>
     </div>
   </div>
 </div>
 
-<div class="section open-education-background">
-  <div class="container">
-    <div class="row">
-      <div>
-        <div class="bar"></div>
-        <h2 class="title-md">Background</h2>
-      </div>
-      <div class="content">
-        <div class="text">
-          <p class="text-md"><b>Equity-Centered Education</b>: education that acknowledges power structures and historical social context as a key driver of any topic. Focusing on free and open accessibility, ECE initiatives are typically offered without academic admission requirements and distributed online. Open education broadens access to learning and training traditionally offered through formal education systems or corporate programs that are inaccessible to most people.</p>
-        </div> 
-        <div class="video">
-          <iframe title="vimeo-player" src="https://player.vimeo.com/video/429400658" width="100%" height="300" frameborder="0" allowfullscreen></iframe>
-        </div>
-      </div>
-      <p class="text-md">In April 2020, Slow Factory hosted a 4-part “crash course” in Sustainability Literacy. We annouced on a Monday, and on Friday 1,500 people tuned in, engaged and learned about sustainability at the intersection of environmental and social justice.</p>
-    </div>
-  </div>
-</div>
+{% include background.liquid %}
 
-<div class="donate-sticky">
-  <div class="container">
-    <p class="text-lg">Support Equity-Centered Education <br />You can help us continue this work</p>
-    <button class="button" name="button" data-toggle="modal">Donate now</button>
-  </div>
-</div>
-
-<div class="modal" tabindex="-1" role="dialog" aria-hidden="true">
-  <div class="modal-dialog">
-      <div class="modal-content">
-          <div class="modal-header">
-              <h5 class="modal-title title-md">You can help us continue this work!</h5>
-              <button type="button" data-close aria-label="Close">
-                  <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-x" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                      <path fill-rule="evenodd" d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
-                  </svg>
-              </button>
-          </div>
-          <div class="modal-body">
-            <div class="content">
-              <div class="info">
-                <p class="text-md">We are fundraising to allow us to run community-centric Open Education programs taught in collaboration with
-                  <a href="https://www.tejuadisafarrar.com/">Teju Adisa-Farar</a>,
-                  <a href="https://www.mayalhassen.com/">Maytha Alhassen</a>,
-                  <a href="https://www.instagram.com/ha.w.a/">Hawa Arsala</a>,
-                  <a href="https://www.patreon.com/AjaBarber">Aja Barber</a>,
-                  <a href="https://www.instagram.com/tahairy/?hl=en">Tahirah Hairston</a>,
-                  <a href="https://www.sophfei.com/">Sophia Li</a>,
-                  <a href="https://www.emmerichny.com/">Korina Emmerich</a>,
-                  <a href="https://www.nicolemclaughlin.net/">Nicole Mclaughlin</a>,
-                  <a href="https://www.shoplulah.com/">Ibada Wadud</a>,
-                  <a href="https://www.sonicasarna.com/">Sonica Sarna</a>,
-                  <a href="https://www.celinecelines.com/">Céline Semaan</a>
-                  and the Slow Factory team of experts. This initiative is part of our core mission at Slow Factory Foundation.
-                </p>
-                <p class="text-md"><span>This initiative is part of our core mission at Slow Factory Foundation.</span></p>
-              </div>
-              <div class="form">
-                <iframe allowpaymentrequest="" frameborder="0" height="520" name="donorbox" scrolling="no" seamless="seamless" src="https://donorbox.org/embed/open-education?default_interval=m&amount=50" style="max-width: 500px; min-width: 310px; max-height:none!important" width="100%"></iframe>
-             </div>
-            </div>
-          </div>
-      </div>
-  </div>
-</div>
-<script type="text/javascript">
-  class Modal {
-      constructor(modal, target) {
-          this.isOpen = false;
-          this.modal = modal;
-          this.target = target;
-          this.closeModal = modal.querySelectorAll('[data-close]');
-      } 
-      open() {
-          this.modal.classList.add('show-modal');
-          const context = this;
-          setTimeout(function () {
-              context.animateIn();
-          }, 10);
-      }
-      close() {
-          this.animateOut();
-          const context = this;
-          setTimeout(function () {
-              context.modal.classList.remove('show-modal');
-          }, 250);
-      }
-      init() {
-          const modal = this;
-          this.target.addEventListener('click', function (e) {
-              if (modal.isOpen) {
-                modal.close();
-              } else {
-                modal.open();
-              }
-          });
-          this.closeModal.forEach(function (item) {
-              item.addEventListener('click', function (e) {
-                  modal.close();
-              });
-          });
-      }
-      animateIn() {
-          this.modal.classList.add('animate-modal');
-      }
-      animateOut() {
-          this.modal.classList.remove('animate-modal');
-      }
-  }
-
-  const modal = new Modal(
-      // Grab the modal element
-      document.querySelector('.modal'),
-      // Grab the element that triggers the modal
-      document.querySelector('[data-toggle="modal"]')
-  );
-  // Add the event listeners
-  modal.init();
-</script>
+{% include footer-donation.liquid %}

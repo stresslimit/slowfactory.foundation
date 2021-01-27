@@ -1,32 +1,3 @@
-/* Header */
-@media (--viewport-md) {
-  .open-education-header__part1{
-    max-width: 80%;
-  }
-  .open-education-header__part2{
-    padding-top: 60px;
-    display: block;
-    max-width: 80%;
-    padding-left: 20%;
-  }
-}
-.open-education-header{
-  background-color: #6C63A3;
-  color:white;
-}
-.open-education-header p{
-  margin: 0;
-}
-.open-education-header__bar{
-  height: 6px;
-  background-color: white;
-  width: 60%;
-}
-.open-education-header__part1{
-  display: block;
-  padding-top: 20px;
-}
-
 /* Register */
 .open-education-register{
   text-align: center;
@@ -51,8 +22,15 @@
 .open-education-2021-classes h2{
   padding-bottom: 32px;
 }
+.open-education-2021-classes .earth-logo path{
+  fill: black;
+  stroke: black;
+}
 .open-education-2021-classes__calendar{
   width: 100%;
+display: flex;
+  align-content: flex-start;
+  flex-wrap:wrap;
 }
 
 .open-education-2021-classes__calendar .cell{
@@ -65,6 +43,7 @@
     width: 50%;
     padding: 64px 64px 0 64px;
     height:610px;
+    box-sizing: border-box;
   }
   .open-education-2021-classes__calendar .bar{
     width: 60%;
@@ -81,34 +60,33 @@
   color: #A67C00;
 }
 .open-education-2021-classes__calendar .cell_2{
-  background-color: #C9E3E2;
+  background-color: #FBFCD0;
 }
 .open-education-2021-classes__calendar .cell_2 .teacher{
   color: #5C7A79;
 }
 .open-education-2021-classes__calendar .cell_3{
-  background-color: #FAD7D7;
+  background-color: #FCE2D0;
 }
 .open-education-2021-classes__calendar .cell_3 .teacher{
   color: #995151;
 }
 .open-education-2021-classes__calendar .cell_4{
   text-align:center;
-  color:white;
-  background: url(/assets/images/open-education/register_bg.png) repeat #4260A4;
+  background: url(/assets/images/open-education/register_bg.png) repeat #F3E12D;
 }
 .open-education-2021-classes__calendar .cell_4 h3{
  margin-bottom: 16px;
 }
 .open-education-2021-classes__calendar .button{
   font-size: 24px;
-  border: 2px solid white;
+  border: 2px solid black;
   height: 68px;
   line-height: 68px;
   padding: 0 25px;
   border-radius: 50px;
   background-color: transparent;
-  color:white;
+  color:black;
 }
 .open-education-2021-classes__calendar .button:hover{
   text-decoration: none;
@@ -146,12 +124,7 @@ line-height: 18px;
 .open-education-2021-classes__calendar .teacher{
   font-size: 14px;
 }
-.open-education-2020-classes .course{
-  display: flex;
-   border-bottom: 2px solid #DCDCDC;
-   padding: 32px 0;
-   width: 100%;
-}
+
 .open-education-2020-classes .button{
   margin-top: 32px;
   font-size: 24px;
@@ -169,13 +142,7 @@ line-height: 18px;
   text-decoration: none;
   background:rgba(255,255,255,.3)
 }
-.open-education-2020-classes .video{
-  width: 50%;
-}
-.open-education-2020-classes .info{
-  padding: 16px 0 0 16px;
-  width: 50%;
-}
+
 .open-education-2020-classes .title{
   font-weight: 18px;
   font-weight: bold;
@@ -194,39 +161,7 @@ line-height: 18px;
   display: inline-block;
   margin-bottom: 16px;
 }
-/* Background */
-@media (--viewport-md) {
-  .open-education-background .content{
-    display: flex;
 
-  }
-  .open-education-background .text{
-    padding-right: 32px;
-    width: 35%;
-  }
-  .open-education-background .video{
-    display: flex;
-    align-items: start;
-    width: 65%;
-  }
-}
-
-.open-education-background{
-  background-color: #D54685;
-  color:white;
-}
-.open-education-background .bar{
-  background-color:white;
-  margin-bottom: 16px;
-  height: 6px;
-  width: 80%;
-}
-.open-education-background h2{
-  margin-bottom: 16px;
-}
-.open-education-background .content{
-  padding-bottom: 32px;
-}
 
 /* Footer donate sticky */
 .donate-sticky{
@@ -293,8 +228,6 @@ line-height: 18px;
   text-decoration: none;
   background:rgba(255,255,255,.9)
 }
-
-
 .modal-content {
   position: relative;
   display: -ms-flexbox;
@@ -364,7 +297,6 @@ line-height: 18px;
   transform: translateY(0);
 }
 
-
 /*  Donation */
 @media (--viewport-md) {
   .modal .content{
@@ -395,7 +327,21 @@ line-height: 18px;
 .modal p a{
   font-weight: bold;
 }
-.open-education-classes h2{
-  margin-bottom: 32px;
-}
 
+/* Course */
+.open-edu-course h1{
+  padding-bottom: calc(var(--unit) / 2);
+}
+.open-edu-course .series{
+  background-color: lightgray;
+  padding: 8px 10px;
+  font-size: 13px;
+  display: inline-block;
+}
+.open-edu-course hr{
+  height: 2px;
+  background-color: #DCDCDC;
+  width: 100%;
+  border: 0;
+  margin: var(--unit) 0;
+}

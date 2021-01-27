@@ -72,8 +72,6 @@
   border-radius: 2em;
 }
 
-
-
 /* Helvetica list styles
 */
 .impact-list-item {
@@ -281,9 +279,6 @@
 }
 .footer-contact .content{
   width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
 }
 .footer-contact .title-md{
   margin: 0;
@@ -295,6 +290,7 @@
 }
 .footer-contact input[type="email"]{
   width: 40%;
+  margin-bottom: calc(var(--unit) / 2);
 }
 .footer-contact input[type="submit"]{
   font-size: 24px;
@@ -345,14 +341,48 @@
   }
 }
 
-.good-earth-logo{
+.earth-logo{
   position: relative;
   top: -15px;
   width: 117px;
   height: 117px;
-  -webkit-animation: rotating 50s linear infinite;
-  -moz-animation: rotating 50s linear infinite;
-  -ms-animation: rotating 50s linear infinite;
-  -o-animation: rotating 50s linear infinite;
-  animation: rotating 50s linear infinite;
+  -webkit-animation: rotating 30s linear infinite;
+  -moz-animation: rotating 30s linear infinite;
+  -ms-animation: rotating 30s linear infinite;
+  -o-animation: rotating 30s linear infinite;
+  animation: rotating 30s linear infinite;
+}
+
+/* Hero */
+@media (--viewport-md) {
+  .hero p{
+    max-width: 80%;
+  }
+  .hero p span{
+    padding-top: calc(var(--unit) * 2);
+    display: block;
+    position: relative;
+    left: 20%;
+  }
+}
+
+.hero-bar{
+  height: 6px;
+  background-color: white;
+  width: 60%;
+  margin-bottom: var(--unit);
+}
+
+/* Background */
+.background{
+  background-color: #DF742B;
+}
+.background .bar{
+  background-color:white;
+  margin-bottom: 16px;
+  height: 6px;
+  width: 20%;
+}
+.background h2{
+  margin-bottom: 16px;
 }
