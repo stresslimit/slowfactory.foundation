@@ -235,6 +235,7 @@ line-height: 18px;
   left:0;
   right: 0;
   height: 150px;
+  z-index:10;
   background-color:#F9F9F9;
   background-image: url(/assets/images/open-education/pen_icon.png), url(/assets/images/open-education/pen_icon_1.png), url(/assets/images/open-education/pen_icon_2.png);
   -webkit-animation: snow 1000s linear infinite;
@@ -252,11 +253,13 @@ line-height: 18px;
   display: flex;
   height: 100%;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
 }
 .donate-sticky p{
   margin: 0;
+  padding-right: 32px;
 }
+
 @keyframes snow {
   0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
   100% {background-position: 50000px 50000px, 10000px 20000px, -10000px 15000px;}          
@@ -277,17 +280,18 @@ line-height: 18px;
   100% {background-position: 50000px 50000px, 10000px 20000px, -10000px 15000px;}          
 }   
 .donate-sticky .button{
-  font-size: 24px;
+  font-size: 18px;
   border: 2px solid black;
-  height: 68px;
-  line-height: 68px;
+  height: 50px;
+  line-height: 50px;
   padding: 0 25px;
   border-radius: 50px;
-  background-color: rgba(255,255,255,.8)
+  background-color: rgba(255,255,255,.3);
+  transition: all .3s ease-in-out;
 }
 .donate-sticky .button:hover{
   text-decoration: none;
-  background:rgba(255,255,255,.3)
+  background:rgba(255,255,255,.9)
 }
 
 

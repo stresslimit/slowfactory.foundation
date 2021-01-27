@@ -218,11 +218,17 @@
 .footer-info{
   background-color: #F3F6F9;
 }
+.footer-info .flex{
+  align-items: flex-start;
+}
 .footer-info h1{
-  margin-bottom:32px;
+  margin-bottom:64px;
+  border-left:2px solid black;
+  padding-left: 32px;
+  margin-left: 32px;
 }
 .footer-info h2{
-  margin-bottom:16px;
+  margin-bottom: 16px;
 }
 .footer-info .bar{
   height:6px;
@@ -231,7 +237,7 @@
   margin-bottom:16px;
 }
 .footer-we-are{
-  background-color: #95C6CE;
+  background-color: #C9E3E2;
   color: black;
   padding: 16px 32px;
 }
@@ -270,19 +276,26 @@
   font-size: 19px;
   font-weight: bold;
 }
+.footer-contact p{
+  margin-bottom: 8px;
+}
 .footer-contact .content{
-  /* width: 100%;
+  width: 100%;
   display: flex;
-  align-items: center; */
+  align-items: center;
+  justify-content: space-between;
 }
 .footer-contact .title-md{
-  /* width: 50%; */
+  margin: 0;
+  padding: 0 32px 0 0;
 }
 .footer-contact label,
 .footer-contact input{
   font-size: 19px !important;
 }
-
+.footer-contact input[type="email"]{
+  width: 40%;
+}
 .footer-contact input[type="submit"]{
   font-size: 24px;
   border: 2px solid black;
@@ -301,4 +314,45 @@
   margin: 0;
   font-size:14px;
   font-weight: normal;
+}
+
+@-webkit-keyframes rotating /* Safari and Chrome */ {
+  from {
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotating {
+  from {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+.good-earth-logo{
+  position: relative;
+  top: -15px;
+  width: 117px;
+  height: 117px;
+  -webkit-animation: rotating 50s linear infinite;
+  -moz-animation: rotating 50s linear infinite;
+  -ms-animation: rotating 50s linear infinite;
+  -o-animation: rotating 50s linear infinite;
+  animation: rotating 50s linear infinite;
 }
