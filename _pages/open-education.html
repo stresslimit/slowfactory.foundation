@@ -35,7 +35,7 @@ hero_bg_color: "bg-brown"
       <div class="cell cell_4">
         {% include earth-logo.liquid %}
         <h3 class="title-md">Start now!</h3>
-        <a class="button" href="https://docs.google.com/forms/d/1HVHR6hWmqw8ncmUnlS40nqIpIDUXeFCod_meZcXREyg/viewform?edit_requested=true">Register for the class</a>
+        {% include components/button.liquid href="https://docs.google.com/forms/d/1HVHR6hWmqw8ncmUnlS40nqIpIDUXeFCod_meZcXREyg/viewform?edit_requested=true" text="Register for the class" %}
       </div>
     </div>
   </div>
@@ -48,7 +48,7 @@ hero_bg_color: "bg-brown"
       {% include open-edu-course.liquid %}
     {% endfor %}
     <div class="button-container text-center">
-      <a href="/open-education/library" class="button">View all courses</a>
+      {% include components/button.liquid href="/open-education/library" text="View all courses" %}
     </div>
   </div>
 </div>

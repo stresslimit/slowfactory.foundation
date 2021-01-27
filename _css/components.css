@@ -1,0 +1,30 @@
+/* Button */
+.component-button{
+    display: inline-block;
+    margin-top: 32px;
+    font-size: 24px;
+    border: 2px solid black;
+    height: 55px;
+    line-height: 55px;
+    padding: 0 25px;
+    border-radius: 50px;
+    background-color: transparent;
+    transition: all .3s ease-in-out;
+    text-decoration: none;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all .2s ease-out;
+}
+.component-button:hover{
+    background-color: rgba(255,255,255,.5);
+}
+.component-button.md{
+    font-size: 20px;
+    height: 40px;
+    line-height: 40px;
+}
+.component-button.sm{
+    font-size: 18px;
+    height: 30px;
+    line-height: 30px;
+}
