@@ -4,7 +4,11 @@
         <h1 class="title-sm">{{course.title}}</h1>
         <div class="series">{{course.series}}</div>
         <p class="description">{{course.description}}</p>
-        <div class="instructor">{{course.instructor}}</div>
+        <p class="instructor">{{course.instructor}}</p>
+        {% if course.logo %}
+          <p>in partnership with </p>
+          <p><img src="{{ 'images/logos/' | append: course.logo | asset_url }}" style="max-width:12rem"></p>
+        {% endif %}
     </div>
     <div class="grow">
         <hr />

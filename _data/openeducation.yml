@@ -3,16 +3,19 @@ courses:
     instructor: Céline Semaan
     description: ""
     series: From Food to Fashion
+    logo: brightland.png
     vimeo_id: 496953526
   - title: Regenerative Agriculture with Fibershed
     instructor: Teju Adisa-Farrar
     description: ""
     series: From Food to Fashion
+    logo: fibershed.png
     vimeo_id: 495917531
   - title: Socially & Environmentally Responsible Cocoa Production with Tony's Chocolonely
     instructor: Céline Semaan
     description: ""
     series: From Food to Fashion
+    logo: logo-tonys.png
     vimeo_id: 496998498
   - title: Equity-Centered Design & Design Justice
     instructor: Ibada Wadud
