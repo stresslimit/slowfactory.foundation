@@ -5,17 +5,17 @@ permalink: /open-education-classes
 ---
 
 
-<div class="section">
+<div class="section open-education-classes">
   <div class="container">
     <h2 class="title-md text-center">Fall 2020 Semester Classes</h2>
     <div class="row">
-    {% for course in site.courses %}
+    {% for course in site.data.openeducation.courses %}
       <div class="half">
-        {{ course.instructor }}
+        <h3 class="title-sm">{{ course.title }}</h3>
+        <h3 class="title-xs">{{ course.instructor }}</h3>
         {{ course.description }}
         {{ course.series }}
-        {{ course.title }}
-        <p class="video-container"><iframe title="vimeo-player" src="https://player.vimeo.com/video/{{ course.vimeo_id }}?byline=0" width="1000" height="563" frameborder="0" ></iframe></p>
+        <p class="video-container"><iframe title="vimeo-player" src="https://player.vimeo.com/video/{{ course.vimeo_id }}?title=0&byline=0&portrait=0" width="1000" height="563" frameborder="0" ></iframe></p>
       </div>
     {% endfor %}
     </div>

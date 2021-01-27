@@ -3,6 +3,8 @@ series:
     color: red
   - name: History of ...
     color: blue
+  - name: Master Class Series
+    color: green
 instructors:
   - name: Korina Emmerich
   - name: Céline Semaan

@@ -1,4 +1,15 @@
 /* Header */
+@media (--viewport-md) {
+  .open-education-header__part1{
+    max-width: 80%;
+  }
+  .open-education-header__part2{
+    padding-top: 60px;
+    display: block;
+    max-width: 80%;
+    padding-left: 20%;
+  }
+}
 .open-education-header{
   background-color: #6C63A3;
   color:white;
@@ -13,20 +24,13 @@
 }
 .open-education-header__part1{
   display: block;
-  max-width: 80%;
   padding-top: 20px;
-}
-.open-education-header__part2{
-  padding-top: 60px;
-  display: block;
-  max-width: 80%;
-  padding-left: 20%;
 }
 
 /* Register */
 .open-education-register{
-  background-color: #F2F4F5;
   text-align: center;
+  background: url(/assets/images/open-education/register_bg.png) repeat #F2F4F5;
 }
 
 .open-education-register .button{
@@ -149,6 +153,7 @@ line-height: 18px;
    width: 100%;
 }
 .open-education-2020-classes .button{
+  margin-top: 32px;
   font-size: 24px;
   border: 2px solid black;
   height: 55px;
@@ -156,6 +161,13 @@ line-height: 18px;
   padding: 0 25px;
   border-radius: 50px;
   background-color: transparent;
+}
+.button-container{
+  width: 100%;
+}
+.open-education-2020-classes .button:hover{
+  text-decoration: none;
+  background:rgba(255,255,255,.3)
 }
 .open-education-2020-classes .video{
   width: 50%;
@@ -183,56 +195,203 @@ line-height: 18px;
   margin-bottom: 16px;
 }
 /* Background */
+@media (--viewport-md) {
+  .open-education-background .content{
+    display: flex;
+
+  }
+  .open-education-background .text{
+    padding-right: 32px;
+    width: 35%;
+  }
+  .open-education-background .video{
+    display: flex;
+    align-items: start;
+    width: 65%;
+  }
+}
+
 .open-education-background{
   background-color: #D54685;
   color:white;
 }
 .open-education-background .bar{
-background-color:white;
-margin-bottom: 16px;
-height: 6px;
-width: 20%;
+  background-color:white;
+  margin-bottom: 16px;
+  height: 6px;
+  width: 80%;
 }
 .open-education-background h2{
-margin-bottom: 16px;
+  margin-bottom: 16px;
 }
 .open-education-background .content{
+  padding-bottom: 32px;
+}
+
+/* Footer donate sticky */
+.donate-sticky{
+  position:fixed;
+  bottom:0;
+  left:0;
+  right: 0;
+  height: 150px;
+  background-color:#F9F9F9;
+  background-image: url(/assets/images/open-education/pen_icon.png), url(/assets/images/open-education/pen_icon_1.png), url(/assets/images/open-education/pen_icon_2.png);
+  -webkit-animation: snow 1000s linear infinite;
+  -moz-animation: snow 1000s linear infinite;
+  -ms-animation: snow 1000s linear infinite;
+  animation: snow 1000s linear infinite;
+  -webkit-transform: translate3d(0,0,0);
+  -moz-transform: translate3d(0,0,0);
+  -ms-transform: translate3d(0,0,0);
+  -o-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+  font-weight: bold;
+}
+.donate-sticky .container{
   display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: space-around;
 }
-.open-education-background .text{
-  padding-right: 32px;
-  width: 35%;
+.donate-sticky p{
+  margin: 0;
 }
-.open-education-background .video{
+@keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  100% {background-position: 50000px 50000px, 10000px 20000px, -10000px 15000px;}          
+}
+
+@-moz-keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  100% {background-position: 50000px 50000px, 10000px 20000px, -10000px 15000px;}          
+}
+
+@-webkit-keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  100% {background-position: 50000px 50000px, 10000px 20000px, -10000px 15000px;}          
+}
+
+@-ms-keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  100% {background-position: 50000px 50000px, 10000px 20000px, -10000px 15000px;}          
+}   
+.donate-sticky .button{
+  font-size: 24px;
+  border: 2px solid black;
+  height: 68px;
+  line-height: 68px;
+  padding: 0 25px;
+  border-radius: 50px;
+  background-color: rgba(255,255,255,.8)
+}
+.donate-sticky .button:hover{
+  text-decoration: none;
+  background:rgba(255,255,255,.3)
+}
+
+
+.modal-content {
+  position: relative;
+  display: -ms-flexbox;
   display: flex;
-  align-items: start;
-  width: 65%;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  max-width:800px;
+  pointer-events: auto;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 4px solid rgba(0,0,0);
+  border-radius: .3rem;
+  outline: 0;
+  margin: 0 auto;
 }
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1050;
+  display: none;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  outline: 0;
+}
+.modal-header {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 1rem 1rem;
+}
+.modal-title {
+  margin: 0;
+  line-height: 1.5;
+  color: black;
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-weight: bold;
+}
+.modal-header button {
+  font-size: 2rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.show-modal.modal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.modal-dialog {
+  margin: auto 1rem;
+  opacity: 0;
+  transform: translateY(-100px);
+  transition: 300ms opacity ease-out,
+              300ms transform ease-out;
+}
+.modal.animate-modal .modal-dialog {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 
 /*  Donation */
 @media (--viewport-md) {
-  .open-education-donation .content{
+  .modal .content{
     display: flex;
   }
-  .open-education-donation .info{
+  .modal .info{
     padding-right: 32px;
   }
-  .open-education-donation .info,
-  .open-education-donation .form{
+  .modal .info,
+  .modal .form{
     width: 50%;
   }
 }
 
-.open-education-donation .info{
+.modal .content{
+  padding: 16px;
+}
+.modal .info{
   padding-bottom: 32px;
 }
-.open-education-donation h2{
+.modal h2{
   padding-bottom: 32px;
 }
 
-.open-education-donation p span{
+.modal p span{
   background-color: #EDE8C2;
 }
-.open-education-donation p a{
+.modal p a{
   font-weight: bold;
 }
+.open-education-classes h2{
+  margin-bottom: 32px;
+}
+

@@ -42,6 +42,8 @@
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
     "react-fastclick": "^3.0.2",
+    "sass": "^1.32.5",
+    "sass-loader": "^10.1.1",
     "scrollreveal": "^4.0.7",
     "superagent-webpack-client": "^1.3.0",
     "underscore": "^1.8.3",

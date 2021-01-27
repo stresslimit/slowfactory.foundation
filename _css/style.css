@@ -213,3 +213,92 @@
   margin-bottom: 0;
   @extend .title-sm;
 }
+
+/* Footer */
+.footer-info{
+  background-color: #F3F6F9;
+}
+.footer-info h1{
+  margin-bottom:32px;
+}
+.footer-info h2{
+  margin-bottom:16px;
+}
+.footer-info .bar{
+  height:6px;
+  background-color: black;
+  width: 60%;
+  margin-bottom:16px;
+}
+.footer-we-are{
+  background-color: #95C6CE;
+  color: black;
+  padding: 16px 32px;
+}
+.footer-info ul,
+.footer-info li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer-we-are ul{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom:32px;
+}
+.footer-we-are li{
+  width: 30%;
+}
+.footer-we-fund h2{
+  padding-right: 32px;
+}
+.footer-we-fund{
+  display: flex;
+  padding-top: 32px;
+}
+.footer-we-fund li{
+  display: inline;
+}
+.footer-we-fund p{
+  width: 100%;
+  display: block;
+  margin-top: 16px;
+}
+.footer-contact{
+  padding-bottom: 200px;
+  font-size: 19px;
+  font-weight: bold;
+}
+.footer-contact .content{
+  /* width: 100%;
+  display: flex;
+  align-items: center; */
+}
+.footer-contact .title-md{
+  /* width: 50%; */
+}
+.footer-contact label,
+.footer-contact input{
+  font-size: 19px !important;
+}
+
+.footer-contact input[type="submit"]{
+  font-size: 24px;
+  border: 2px solid black;
+  height:50px;
+  line-height: 50px;
+  padding: 0 25px;
+  border-radius: 50px;
+  background-color: transparent;
+}
+.footer-contact input[type="submit"]:hover{
+  text-decoration: none;
+  background:rgba(255,255,255,.3)
+}
+.footer-contact  .copyright{
+  padding: 32px 0 0 ;
+  margin: 0;
+  font-size:14px;
+  font-weight: normal;
+}
