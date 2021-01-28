@@ -1,5 +1,5 @@
 {% if include.href %}
 <a href="{{ include.href }}" class="component-button {{ include.size }}">{{ include.text }}</a>
 {% else %}
-<button class="component-button {{ include.size }}" data-toggle="{{include.data-toggle}}">{{ include.text }}</button>
+<button class="component-button {{ include.size }}" data-toggle="{{include.data-toggle}}" data-id={{include.data-id}}>{{ include.text }}</button>
 {% endif %}

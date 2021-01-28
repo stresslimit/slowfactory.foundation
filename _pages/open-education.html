@@ -6,7 +6,7 @@ hero_title: "Equity-Centered Education for Black, Brown, Indigenous and minority
 hero_bg_color: "bg-brown"
 ---
 
-{% include hero.liquid %}
+{% include components/hero.liquid %}
 
 {% include open-education/register.liquid %}
 
@@ -15,27 +15,31 @@ hero_bg_color: "bg-brown"
     <h2 class="title-md text-center">Fall 2021 Semester Classes</h2>
     <div class="open-education-2021-classes__calendar">
       {% for series in site.data.openedu_meta.series %}
-      <div class="cell cell_{{forloop.index}}">
-        <div class="bar"></div>
-        <h3 class="title-sm">{{series.name}}</h3>
-        <ul>
-          {% assign courses = site.data.openedu | where_exp: "item", "item.series == series.name" %}
-          {% for course in courses %}
-          <li>
-            <div class="date">{{ course.date }}</div>
-            <div class="info">
-              <div class="title">{{ course.title }}</div>
-              <div class="teacher">{{ course.instructor }}</div>
-            </div>
-          </li>
-          {% endfor %}
-        </ul>
-      </div>
+      {% assign index1 = forloop.index %}
+        <div class="cell cell_{{index1}}">
+          <div class="bar"></div>
+          <h3 class="title-sm">{{series.name}}</h3>
+          <ul>
+            {% assign courses = site.data.openedu | where_exp: "item", "item.series == series.name" %}
+            {% for course in courses %}
+              {% assign id = 'course-' | append: index1 | append: '-' | append: index2 %}
+              <li data-toggle="modal" data-id="{{id}}">
+                {% assign index2 = forloop.index %}
+                <div class="date">{{ course.date }}</div>
+                <div class="info">
+                  <div class="title">{{ course.title }}</div>
+                  <div class="teacher">{{ course.instructor }}</div>
+                </div>
+              </li>
+              {% include open-education/course-modal.liquid id=id series_name=series.name title=course.title instructor=course.instructor description=course.description  %}
+            {% endfor %}
+          </ul>
+        </div>
       {% endfor %}
       <div class="cell cell_4">
         {% include earth-logo.liquid %}
         <h3 class="title-md">Start now!</h3>
-        {% include components/button.liquid data-toggle="modal-register" text="Register for the class" %}
+        {% include components/button.liquid data-toggle="modal" data-id="register" text="Register for the class" %}
       </div>
     </div>
   </div>
@@ -58,3 +62,39 @@ hero_bg_color: "bg-brown"
 {% include footer-donation.liquid %}
 
 {% include open-education/register-modal.liquid %}
+
+<script type="text/javascript">
+  const open = (element) => {
+    element.classList.add('show-modal');
+    setTimeout(() => {
+        element.classList.add('animate-modal');
+    }, 10);
+  };
+
+  const close = (element) => {
+    element.classList.remove('animate-modal');
+    setTimeout(() => {
+        element.classList.remove('show-modal');
+    }, 255);
+  };
+     
+  document.querySelectorAll('[data-toggle="modal"]').forEach(item => {
+    item.addEventListener('click', function (e) {
+      const modal = document.querySelector(`#${this.dataset.id}`);
+      const closeButtons = modal.querySelectorAll('[data-close]');
+      console.log(modal)
+      open(modal);
+      modal.addEventListener('click', function (e) {
+        e.stopPropagation();
+      });
+      closeButtons.forEach(button => {
+          button.addEventListener('click', function (e) {
+          e.stopPropagation();
+          close(modal);
+        });
+      });
+
+    });
+  })
+</script>
+

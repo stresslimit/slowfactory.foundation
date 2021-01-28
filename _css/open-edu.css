@@ -4,20 +4,6 @@
   background: url(/assets/images/open-education/register_bg.png) repeat #F2F4F5;
 }
 
-/* .open-education-register .button{
-  font-size: 24px;
-  border: 2px solid black;
-  height: 68px;
-  line-height: 68px;
-  padding: 0 25px;
-  border-radius: 50px;
-  background-color: transparent;
-}
-.open-education-register .button:hover{
-  text-decoration: none;
-  background:rgba(255,255,255,.3)
-} */
-
 /* Calendar */
 .open-education-2021-classes h2{
   padding-bottom: 32px;
@@ -109,6 +95,7 @@ display: flex;
   margin: 0;
   padding: 0 0 8px; 
   font-size: 18px;
+  cursor: pointer;
   display: flex;
 }
 .open-education-2021-classes__calendar .date{
@@ -228,6 +215,10 @@ line-height: 18px;
   text-decoration: none;
   background:rgba(255,255,255,.9)
 }
+
+
+
+/*  modal */
 .modal-content {
   position: relative;
   display: -ms-flexbox;
@@ -243,8 +234,7 @@ line-height: 18px;
   outline: 0;
   margin: 0 auto;
 }
-.modal,
-.modal-register {
+.modal{
   position: fixed;
   top: 0;
   left: 0;
@@ -255,15 +245,6 @@ line-height: 18px;
   overflow: hidden;
   outline: 0;
 }
-.modal-header {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-align: start;
-  align-items: flex-start;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  padding: 1rem 1rem;
-}
 .modal-title {
   margin: 0;
   line-height: 1.5;
@@ -272,15 +253,14 @@ line-height: 18px;
   font-weight: 400;
   font-weight: bold;
 }
+.modal-header {
+  padding-bottom: 16px;
+}
 .modal-header button {
-  font-size: 2rem;
-  background: none;
-  border: none;
   cursor: pointer;
 }
 
-.show-modal.modal,
-.show-modal.modal-register {
+.show-modal.modal{
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -294,49 +274,43 @@ line-height: 18px;
   transition: 300ms opacity ease-out,
               300ms transform ease-out;
 }
-.modal.animate-modal .modal-dialog,
-.modal-register.animate-modal .modal-dialog{
+.modal.animate-modal .modal-dialog{
   opacity: 1;
   transform: translateY(0);
 }
 
-/*  Donation */
-@media (--viewport-md) {
-  .modal .content,
-  .modal-register .content{
-    display: flex;
-  }
-  .modal .info,
-  .modal-register .info{
-    padding-right: 32px;
-  }
-  .modal .info,
-  .modal .form,
-  .modal-register .info,
-  .modal-register .form{
-    width: 50%;
-  }
+.modal .modal-content{
+  padding: 32px;
 }
-
-.modal .content,
-.modal-register .content{
-  padding: 16px;
+.modal .modal-close{
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 30px;
+  height: 30px;
+  background-color:black;
+  border-radius: 50px;
+  border: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.modal .info,
-.modal-register .info{
+.modal .modal-close svg {
+  width: 25px;
+  height: 25px;
+}
+.modal .modal-close svg path{
+  fill: white;
+  stroke: white;
+}
+.modal h2{
   padding-bottom: 32px;
 }
-.modal h2,
-.modal-register h2{
-  padding-bottom: 32px;
-}
-
-.modal p span,
-.modal-register p span{
+.modal .highlight{
   background-color: #EDE8C2;
 }
-.modal p a,
-.modal-register p a{
+.modal p a{
   font-weight: bold;
 }
 
