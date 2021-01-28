@@ -4,7 +4,7 @@
   background: url(/assets/images/open-education/register_bg.png) repeat #F2F4F5;
 }
 
-.open-education-register .button{
+/* .open-education-register .button{
   font-size: 24px;
   border: 2px solid black;
   height: 68px;
@@ -16,7 +16,7 @@
 .open-education-register .button:hover{
   text-decoration: none;
   background:rgba(255,255,255,.3)
-}
+} */
 
 /* Calendar */
 .open-education-2021-classes h2{
@@ -243,7 +243,8 @@ line-height: 18px;
   outline: 0;
   margin: 0 auto;
 }
-.modal {
+.modal,
+.modal-register {
   position: fixed;
   top: 0;
   left: 0;
@@ -278,7 +279,8 @@ line-height: 18px;
   cursor: pointer;
 }
 
-.show-modal.modal {
+.show-modal.modal,
+.show-modal.modal-register {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -292,39 +294,49 @@ line-height: 18px;
   transition: 300ms opacity ease-out,
               300ms transform ease-out;
 }
-.modal.animate-modal .modal-dialog {
+.modal.animate-modal .modal-dialog,
+.modal-register.animate-modal .modal-dialog{
   opacity: 1;
   transform: translateY(0);
 }
 
 /*  Donation */
 @media (--viewport-md) {
-  .modal .content{
+  .modal .content,
+  .modal-register .content{
     display: flex;
   }
-  .modal .info{
+  .modal .info,
+  .modal-register .info{
     padding-right: 32px;
   }
   .modal .info,
-  .modal .form{
+  .modal .form,
+  .modal-register .info,
+  .modal-register .form{
     width: 50%;
   }
 }
 
-.modal .content{
+.modal .content,
+.modal-register .content{
   padding: 16px;
 }
-.modal .info{
+.modal .info,
+.modal-register .info{
   padding-bottom: 32px;
 }
-.modal h2{
+.modal h2,
+.modal-register h2{
   padding-bottom: 32px;
 }
 
-.modal p span{
+.modal p span,
+.modal-register p span{
   background-color: #EDE8C2;
 }
-.modal p a{
+.modal p a,
+.modal-register p a{
   font-weight: bold;
 }
 

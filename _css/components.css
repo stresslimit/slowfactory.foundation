@@ -1,11 +1,10 @@
 /* Button */
 .component-button{
     display: inline-block;
-    margin-top: 32px;
     font-size: 24px;
     border: 2px solid black;
-    height: 55px;
-    line-height: 55px;
+    height: 70px;
+    line-height: 70px;
     padding: 0 25px;
     border-radius: 50px;
     background-color: transparent;
@@ -14,6 +13,7 @@
     font-weight: bold;
     text-decoration: none;
     transition: all .2s ease-out;
+    cursor:pointer;
 }
 .component-button:hover{
     background-color: rgba(255,255,255,.5);

@@ -8,7 +8,7 @@ hero_bg_color: "bg-brown"
 
 {% include hero.liquid %}
 
-{% include open-edu-register.liquid %}
+{% include open-education/register.liquid %}
 
 <div class="section open-education-2021-classes">
   <div class="container">
@@ -35,7 +35,7 @@ hero_bg_color: "bg-brown"
       <div class="cell cell_4">
         {% include earth-logo.liquid %}
         <h3 class="title-md">Start now!</h3>
-        {% include components/button.liquid href="https://docs.google.com/forms/d/1HVHR6hWmqw8ncmUnlS40nqIpIDUXeFCod_meZcXREyg/viewform?edit_requested=true" text="Register for the class" %}
+        {% include components/button.liquid data-toggle="modal-register" text="Register for the class" %}
       </div>
     </div>
   </div>
@@ -45,7 +45,7 @@ hero_bg_color: "bg-brown"
   <div class="container">
     <h2 class="title-md">More Open Education Classes</h2>
     {% for course in site.data.openeducation.courses limit:3 %}
-      {% include open-edu-course.liquid %}
+      {% include open-education/course.liquid %}
     {% endfor %}
     <div class="button-container text-center">
       {% include components/button.liquid href="/open-education/library" text="View all courses" %}
@@ -56,3 +56,5 @@ hero_bg_color: "bg-brown"
 {% include background.liquid %}
 
 {% include footer-donation.liquid %}
+
+{% include open-education/register-modal.liquid %}

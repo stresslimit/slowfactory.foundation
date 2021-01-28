@@ -12,12 +12,12 @@ hero_bg_color: "bg-turquoise"
 <div class="section-lg open-education-classes">
   <div class="container">
     {% for course in site.data.openeducation.courses %}
-      {% include open-edu-course.liquid %}
+      {% include open-education/course.liquid %}
     {% endfor %}
   </div>
 </div>
 
-{% include open-edu-register.liquid %}
+{% include open-education/register.liquid %}
 
 {% include background.liquid %}
 
