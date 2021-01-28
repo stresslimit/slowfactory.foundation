@@ -104,6 +104,11 @@ display: flex;
   width: 60%;
 }
 
+.open-education-2021-classes__instructor-photo {
+  width: 3em;
+  height: 3em;
+  border-radius: 50%;
+}
 .open-education-2020-classes .button{
   margin-top: 32px;
   font-size: 24px;

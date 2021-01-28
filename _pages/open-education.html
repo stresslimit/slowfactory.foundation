@@ -14,15 +14,17 @@ hero_bg_color: "bg-brown"
   <div class="container">
     <h2 class="title-md">Winter/Spring 2021 Semester</h2>
     <div class="open-education-2021-classes__calendar">
-      {% for series in site.data.openedu_meta.series %}
+      {% for series in site.data.openedu_series %}
       {% assign index1 = forloop.index %}
         <div class="cell cell_{{index1}}">
           <div class="bar"></div>
-          <h3 class="title-sm">{{series.name}}</h3>
+          <h3 class="title-sm">{{ series.name }}</h3>
           <ul>
             {% assign courses = site.data.openedu | where_exp: "item", "item.series == series.name" %}
             {% for course in courses %}
               {% assign id = 'course-' | append: index1 | append: '-' | append: index2 %}
+              {% assign instructors = site.data.openedu_instructors | where_exp: "item", "item.name == course.instructor" %}
+              {% assign instructor = instructors[0] %}
               <li data-toggle="modal" data-id="{{id}}">
                 {% assign index2 = forloop.index %}
                 <div class="date">{{ course.date }}</div>
@@ -31,7 +33,7 @@ hero_bg_color: "bg-brown"
                   <div class="text-sm teacher">{{ course.instructor }}</div>
                 </div>
               </li>
-              {% include open-education/course-modal.liquid id=id series_name=series.name title=course.title instructor=course.instructor description=course.description  %}
+              {% include open-education/course-modal.liquid id=id series_name=series.name title=course.title instructor=instructor instructor=instructor description=course.description  %}
             {% endfor %}
           </ul>
         </div>
