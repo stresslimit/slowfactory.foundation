@@ -88,13 +88,12 @@ display: flex;
 
 .open-education-2021-classes__calendar ul{
   margin: 0;
-  padding: 16px 0 0 0; 
+  padding: 16px 0 0 0;
   list-style: none;
 }
 .open-education-2021-classes__calendar li{
   margin: 0;
-  padding: 0 0 8px; 
-  font-size: 18px;
+  padding: 0 0 8px;
   cursor: pointer;
   display: flex;
 }
@@ -103,13 +102,6 @@ display: flex;
 }
 .open-education-2021-classes__calendar .info{
   width: 60%;
-}
-.open-education-2021-classes__calendar .title{
-font-weight: bold;
-line-height: 18px;
-}
-.open-education-2021-classes__calendar .teacher{
-  font-size: 14px;
 }
 
 .open-education-2020-classes .button{
@@ -184,23 +176,23 @@ line-height: 18px;
 
 @keyframes snow {
   0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
-  100% {background-position: 50000px 50000px, 10000px 20000px, -10000px 15000px;}          
+  100% {background-position: 50000px 50000px, 10000px 20000px, -10000px 15000px;}
 }
 
 @-moz-keyframes snow {
   0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
-  100% {background-position: 50000px 50000px, 10000px 20000px, -10000px 15000px;}          
+  100% {background-position: 50000px 50000px, 10000px 20000px, -10000px 15000px;}
 }
 
 @-webkit-keyframes snow {
   0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
-  100% {background-position: 50000px 50000px, 10000px 20000px, -10000px 15000px;}          
+  100% {background-position: 50000px 50000px, 10000px 20000px, -10000px 15000px;}
 }
 
 @-ms-keyframes snow {
   0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
-  100% {background-position: 50000px 50000px, 10000px 20000px, -10000px 15000px;}          
-}   
+  100% {background-position: 50000px 50000px, 10000px 20000px, -10000px 15000px;}
+}
 .donate-sticky .button{
   font-size: 18px;
   border: 2px solid black;

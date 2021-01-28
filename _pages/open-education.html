@@ -12,7 +12,7 @@ hero_bg_color: "bg-brown"
 
 <div class="section open-education-2021-classes">
   <div class="container">
-    <h2 class="title-md text-center">Fall 2021 Semester Classes</h2>
+    <h2 class="title-md">Winter/Spring 2021 Semester</h2>
     <div class="open-education-2021-classes__calendar">
       {% for series in site.data.openedu_meta.series %}
       {% assign index1 = forloop.index %}
@@ -27,8 +27,8 @@ hero_bg_color: "bg-brown"
                 {% assign index2 = forloop.index %}
                 <div class="date">{{ course.date }}</div>
                 <div class="info">
-                  <div class="title">{{ course.title }}</div>
-                  <div class="teacher">{{ course.instructor }}</div>
+                  <div class="title-xs">{{ course.title }}</div>
+                  <div class="text-sm teacher">{{ course.instructor }}</div>
                 </div>
               </li>
               {% include open-education/course-modal.liquid id=id series_name=series.name title=course.title instructor=course.instructor description=course.description  %}
@@ -77,7 +77,7 @@ hero_bg_color: "bg-brown"
         element.classList.remove('show-modal');
     }, 255);
   };
-     
+
   document.querySelectorAll('[data-toggle="modal"]').forEach(item => {
     item.addEventListener('click', function (e) {
       const modal = document.querySelector(`#${this.dataset.id}`);
@@ -96,4 +96,3 @@ hero_bg_color: "bg-brown"
     });
   })
 </script>
-
