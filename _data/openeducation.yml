@@ -1,4 +1,19 @@
 courses:
+  - title: Designing for the Real World
+    instructor: Wing Yau & Bliss Lau
+    description: ""
+    series: Manufacturing & Demanufacturing
+    vimeo_id: 505491112
+  - title: Upcycling Workshop
+    instructor: Nicole McLaughin & Akilah Stewart
+    description: ""
+    series: Manufacturing & Demanufacturing
+    vimeo_id: 505491118
+  - title: Waste-Led Design
+    instructor: Céline Semaan
+    description: ""
+    series: Manufacturing & Demanufacturing
+    vimeo_id: 505490413
   - title: The Environmental Design of Olive Oil
     instructor: Céline Semaan
     description: ""

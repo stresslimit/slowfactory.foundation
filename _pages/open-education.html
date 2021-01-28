@@ -82,7 +82,6 @@ hero_bg_color: "bg-brown"
     item.addEventListener('click', function (e) {
       const modal = document.querySelector(`#${this.dataset.id}`);
       const closeButtons = modal.querySelectorAll('[data-close]');
-      console.log(modal)
       open(modal);
       modal.addEventListener('click', function (e) {
         e.stopPropagation();
