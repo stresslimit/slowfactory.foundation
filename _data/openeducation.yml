@@ -1,37 +1,55 @@
 courses:
+  - title: Designing for the Real World
+    instructor: Wing Yau & Bliss Lau
+    description: "Do you actually know where your jewelry it's from? or who made it, from stone to finish? Do all brands truthfully disclose that information? Co-taught by Bliss Lau and Wing Yau, this class introduces the concept of provenance-based design, a sustainable approach to the creative process, putting supply chains first and a look at each designer's journey to transparent and conscious jewelry design."
+    series: Manufacturing & Demanufacturing
+    vimeo_id: 505491112
+  - title: Upcycling Workshop
+    instructor: Nicole McLaughin & Akilah Stewart
+    description: "This class is an upcycling workshop highlighting the notion of waste as a resource and ridding the stereotype of waste being the end of a product’s life. Akilah Stewart, designer and founder of fashion brand FATRA and Nicole McLaughlin, freelance upcycling creative, will tell you about their work in upcycling, walk through the materials for this workshop, and do a step-by-step workshop to design a product from waste!"
+    series: Manufacturing & Demanufacturing
+    vimeo_id: 505491118
+  - title: Waste-Led Design
+    instructor: Céline Semaan
+    description: "Where do things go when we throw them “away”? And how bad is our waste issue as a society? This class explores waste-led design, which is an approach that considers the end of life of materials at the beginning of the design process. Céline Semaan also talks about how to implement circular design methodology and adopt sustainability thinking methods within product design processes to reduce the burden placed on landfills by overconsumption and waste, and how we can redistribute waste responsibly."
+    series: Manufacturing & Demanufacturing
+    vimeo_id: 505490413
   - title: The Environmental Design of Olive Oil
     instructor: Céline Semaan
-    description: ""
+    description: "How much do you actually know about the olive oil sitting in your pantry? In partnership with Fibershed, this class dives into the origins of olive oil and its colonial history and the impact of regenerative agriculture on olive oil and the connection between soil to fashion. Guest speaker Dr. Arielle Johnson introduces us to the flavor chemistry of olives and chef DeVonn Francis talks equity in food and fashion."
     series: From Food to Fashion
+    logo: brightland.png
     vimeo_id: 496953526
   - title: Regenerative Agriculture with Fibershed
     instructor: Teju Adisa-Farrar
-    description: ""
+    description: "This class is an introduction to regenerative agriculture and how it can create pathways to more sustainable and equitable fiber systems. In partnership with Fibershed, Teju Adisa-Farrar looks at their approach to regenerative agriculture and how it transforms apparel supply chains."
     series: From Food to Fashion
+    logo: fibershed.png
     vimeo_id: 495917531
   - title: Socially & Environmentally Responsible Cocoa Production with Tony's Chocolonely
     instructor: Céline Semaan
-    description: ""
+    description: "The entire business model of a chocolate company is established on exploitation and free labor. Do you know where your cocoa products/chocolate come from? In partnership with Tony's Chocolonely, this class unpacks the realities behind the chocolate that we consume and the ways in which to produce cocoa in a socially and environmentally responsible way."
     series: From Food to Fashion
+    logo: logo-tonys.png
     vimeo_id: 496998498
   - title: Equity-Centered Design & Design Justice
     instructor: Ibada Wadud
-    description: ""
+    description: "Have you ever considered that oppression, injustices and inequalities are by design? Systems were designed with oppression as the goal, and instructor Ibada Wadud presents an overview of the function of design justice and the importance of equity-centered design in dismantling systems of oppression and empowering Black, Brown, Indigenous and marginalized communities."
     series: Labor & Racial Justice
     vimeo_id: 497031845
-  - title: Greenwashing, Wokewashing and Why You Avoid Both
+  - title: "Greenwashing, Wokewashing and Why You Avoid Both"
     instructor: Aja Barber
-    description: ""
+    description: "What is greenwashing? What is wokewashing? How do these relate to fast fashion? Do “sustainable” brands do this? How do we avoid them? Writer and critic Aja Barber answers all these questions and more to empower our community with the history and tools to know when and how they are being fooled."
     series: Labor & Racial Justice
     vimeo_id: 497032036
   - title: Cultural Appropriation’s Negative Impact on North American Indigenous Peoples
     instructor: Korina Emmerich
-    description: ""
+    description: "This roundtable of designers, artists, activists and fashion writers tackles the nuanced topic of cultural appropriation, specifically pertaining to their cultures. Moderated by Korina Emmerich, the discussion includes Chris Allaire, Jamie Okuma, Tania Larsson and Dr. Adrienne Keene."
     series: Labor & Racial Justice
     vimeo_id: 497031288
   - title: Deconstructing Greenwash Myths
     instructor: Sophia Li
-    description: ""
+    description: "Transparency and greenwashing have become buzzwords that almost every business has come to use and claim in 2020. Sophia Li tackles all of the myths that we may have fell for as a society in politics, consumerism and beyond and the kind of tools we can use to measure an object's environmental impact."
     series: Labor & Racial Justice
     vimeo_id: 497032044
   - title: Sustainable Literacy Class 1

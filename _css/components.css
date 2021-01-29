@@ -1,0 +1,59 @@
+/* Button */
+.component-button{
+  display: inline-block;
+  font-size: 18px;
+  border: 2px solid black;
+  height: 50px;
+  line-height: 50px;
+  padding: 0 25px;
+  border-radius: 50px;
+  background-color: transparent;
+  transition: all .3s ease-in-out;
+  text-decoration: none;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all .2s ease-out;
+  cursor:pointer;
+  width: max-content;
+}
+@media (--viewport-md) {
+  .component-button{
+    font-size: 24px;
+    height: 70px;
+    line-height: 70px;
+  }
+}
+.component-button:hover{
+  background-color: rgba(255,255,255,.5);
+}
+.component-button.md{
+  font-size: 20px;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 20px;
+}
+.component-button.sm{
+  font-size: 18px;
+  height: 30px;
+  line-height: 30px;
+  padding: 0 15px;
+}
+
+/* Instructor */
+.instructor{
+  display: inline-flex;
+  margin-bottom: 16px; 
+  align-items: center;
+}
+.instructor-photo{
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  padding: 0;
+  margin: 0 8px 0 0;
+}
+.instructor-name{
+  font-weight: bold;
+  padding: 0;
+  margin: 0; 
+}

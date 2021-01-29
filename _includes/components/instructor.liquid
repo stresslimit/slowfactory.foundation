@@ -1,0 +1,6 @@
+<div class="instructor">
+  {% if include.photo_bw and include.photo_bw != '' %}
+    <img class="instructor-photo" src="{{ 'images/open-education/instructors/' | append: include.photo_bw | asset_url }}">
+  {% endif %}
+  <p class="instructor-name text-sm">{{ include.name }}</p>
+</div>

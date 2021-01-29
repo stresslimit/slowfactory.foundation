@@ -7,21 +7,29 @@
   position: relative;
   padding-top: var(--unit);
 }
-.sf-logo-S-mark {
-  position: absolute;
-  top: 30px;
-  left: -29px;
-  width: 28px;
+.sf-logo{
+  margin-left: -19px;
 }
-.sf-logo {
-  text-decoration: none;
-  line-height: 1.1;
+.slow-factory-logo{
+  height: 25px;
+  width: 103px;
+}
+.open-education-logo{
+  height: 25px;
+  width: 100px;
 }
 @media (--viewport-md) {
-  .sf-logo-S-mark {
-    top: 39px;
-    left: -37px;
-    width: 36px;
+  .sf-logo{
+    margin-right: 7px;
+    margin-left: -32px;
+  }
+  .slow-factory-logo{
+    height: 43px;
+    width: 170px;
+  }
+  .open-education-logo{
+    height: 50px;
+    width: 210px;
   }
 }
 .the-earth {
@@ -71,8 +79,6 @@
   height: 4em;
   border-radius: 2em;
 }
-
-
 
 /* Helvetica list styles
 */
@@ -212,4 +218,190 @@
 .team-name {
   margin-bottom: 0;
   @extend .title-sm;
+}
+
+/* Footer */
+.footer-info{
+  background-color: #F3F6F9;
+}
+.footer-info .flex{
+  align-items: flex-start;
+}
+.footer-info h1{
+  margin-bottom:64px;
+  border-left:2px solid black;
+  padding-left: 32px;
+  margin-left: 32px;
+}
+.footer-info h2{
+  margin-bottom: 16px;
+}
+.footer-info .bar{
+  height:6px;
+  background-color: black;
+  width: 60%;
+  margin-bottom:16px;
+}
+.footer-we-are{
+  background-color: #C9E3E2;
+  color: black;
+  padding: 16px;
+}
+
+@media (--viewport-md) {
+  .footer-we-are{
+    padding: 0;
+  }
+  .footer-we-are h2{
+    padding: 30px 30px 0;
+  }
+  .footer-we-are p{
+    padding: 0 30px 30px;
+  }
+}
+.footer-info ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer-we-are ul{
+  /* display: flex; */
+  /* justify-content: space-between; */
+  /* margin-bottom:32px; */
+}
+.footer-we-are li{
+  /* width: 30%; */
+}
+.footer-we-fund h2{
+  padding-right: 32px;
+}
+.footer-we-fund{
+  display: flex;
+  padding-top: 32px;
+}
+.footer-we-fund li{
+  display: inline;
+}
+.footer-we-fund p{
+  width: 100%;
+  display: block;
+  margin-top: 16px;
+}
+.footer-contact{
+  padding-bottom: 200px;
+  font-size: 19px;
+  font-weight: bold;
+}
+.footer-contact p{
+  margin-bottom: 8px;
+}
+.footer-contact .content{
+  width: 100%;
+}
+.footer-contact .title-md{
+  margin: 0;
+  padding: 0 32px 0 0;
+}
+.footer-contact label,
+.footer-contact input{
+  font-size: 19px !important;
+}
+.footer-contact input[type="email"]{
+  width: 40%;
+  margin-bottom: calc(var(--unit) / 2);
+}
+.footer-contact input[type="submit"]{
+  font-size: 24px;
+  border: 2px solid black;
+  height:50px;
+  line-height: 50px;
+  padding: 0 25px;
+  border-radius: 50px;
+  background-color: transparent;
+}
+.footer-contact input[type="submit"]:hover{
+  text-decoration: none;
+  background:rgba(255,255,255,.3)
+}
+.footer-contact  .copyright{
+  padding: 32px 0 0 ;
+  margin: 0;
+  font-size:14px;
+  font-weight: normal;
+}
+
+@-webkit-keyframes rotating /* Safari and Chrome */ {
+  from {
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotating {
+  from {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+.earth-logo{
+  position: relative;
+  top: -15px;
+  width: 117px;
+  height: 117px;
+  -webkit-animation: rotating 30s linear infinite;
+  -moz-animation: rotating 30s linear infinite;
+  -ms-animation: rotating 30s linear infinite;
+  -o-animation: rotating 30s linear infinite;
+  animation: rotating 30s linear infinite;
+}
+
+/* Hero */
+@media (--viewport-md) {
+  .hero p{
+    max-width: 80%;
+  }
+  .hero p span{
+    padding-top: calc(var(--unit) * 2);
+    display: block;
+    position: relative;
+    left: 20%;
+  }
+}
+
+.hero-bar{
+  height: 6px;
+  background-color: white;
+  width: 60%;
+  margin-bottom: var(--unit);
+}
+
+/* Background */
+.background{
+  background-color: #DF742B;
+}
+.background .bar{
+  background-color:white;
+  margin-bottom: 16px;
+  height: 6px;
+  width: 20%;
+}
+.background h2{
+  margin-bottom: 16px;
 }

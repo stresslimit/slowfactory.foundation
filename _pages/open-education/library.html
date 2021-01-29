@@ -1,0 +1,63 @@
+---
+layout: default
+title: "Open Education"
+permalink: /open-education/library
+hero_title: "Open Education Knowledge Library"
+hero_bg_color: "bg-turquoise"
+---
+
+{% include components/hero.liquid %}
+
+
+<div class="section-lg open-education-classes">
+  <div class="container">
+    {% for course in site.data.openeducation.courses %}
+      {% include open-education/course.liquid %}
+    {% endfor %}
+  </div>
+</div>
+
+{% include open-education/register.liquid %}
+
+{% include background.liquid %}
+
+{% include footer-donation.liquid %}
+
+{% include open-education/register-modal.liquid %}
+
+
+<script type="text/javascript">
+  const open = (element) => {
+    element.classList.add('show-modal');
+    setTimeout(() => {
+        element.classList.add('animate-modal');
+    }, 10);
+  };
+
+  const close = (element) => {
+    element.classList.remove('animate-modal');
+    setTimeout(() => {
+        element.classList.remove('show-modal');
+    }, 255);
+  };
+     
+  document.querySelectorAll('[data-toggle="modal"]').forEach(item => {
+    item.addEventListener('click', function (e) {
+      const modal = document.querySelector(`#${this.dataset.id}`);
+      const closeButtons = modal.querySelectorAll('[data-close]');
+      open(modal);
+      modal.addEventListener('click', function (e) {
+        e.stopPropagation();
+      });
+      closeButtons.forEach(button => {
+          button.addEventListener('click', function (e) {
+          e.stopPropagation();
+          close(modal);
+        });
+      });
+
+    });
+  })
+</script>
+
+

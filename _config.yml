@@ -21,3 +21,9 @@ exclude: [
   yarn.lock
 ]
 permalink: /:title/
+
+collections:
+  - courses
+collections_dir: collections
+
+

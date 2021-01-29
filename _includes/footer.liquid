@@ -1,72 +1,59 @@
 
-<div class="footer section slash">
+<section class="footer-info">
   <div class="container">
+    <div class="flex">
+      {% include earth-logo.liquid %}
+      <h1 class="title-md">Good for the Earth,
+        <br>
+        Good for the People
+      </h1>
+    </div>
 
-    <h1 class="title-xl">Good for the Earth,
-      <br>
-      Good for the People
-    </h1>
-
-
-    <!-- this will be the new one -->
-      <div class="row valign-top title-sm">
-        <div class="half">
-          <p>We Are</p>
-          <p>📚 an open education institute</p>
-          <p>🗣️ an independent research lab & new media platform</p>
-          <p>🔍 a granting & empowerment fund</p>
-
-          <p>catalyzing systemic change and climate positive solutions for regenerative social and environmental justice.</p>
-
-        </div>
-        <div class="half">
-          <p>We Fund</p>
-          <p>🌐 organizations</p>
-          <p>💥 changemakers</p>
-          <p>❤️ small brands</p>
-          <p>in disrupting exploitative human rights and environmental practices.</p>
-        </div>
+    <div class="valign-top footer-we-are">
+      <h2 class="title-xs">We Are</h2>
+      <ul class="title-sm row valign-top">
+        <li class="third"><div class="bar"></div>an open education institute</li>
+        <li class="third"><div class="bar"></div>an independent research lab & new media platform</li>
+        <li class="third"><div class="bar"></div>a granting & empowerment fund</li>
+      </ul>
+      <p>catalyzing systemic change and climate positive solutions for regenerative social and environmental justice.</p>
+    </div>
+    <div class="valign-top footer-we-fund">
+      <h2 class="title-xs">We Fund</h2>
+      <div>
+        <ul class="title-xs">
+          <li>🌐 organizations</li>
+          <li>💥 changemakers</li>
+          <li>❤️ small brands</li>
+        </ul>
+        <p>in disrupting exploitative human rights and environmental practices.</p>
       </div>
+    </div>
 
-
-      <!-- remove this old one -->
-      <!-- <p class="title-md">
-        Slow Factory Foundation is dedicated to improving <a href="/sustainability-literacy">sustainability literacy</a> in fashion.
-      </p>
-      <p class="title-md">
-        Using a holistic, human-centered approach, we bridge science, human rights, technology, fashion & culture to develop products, resources and certifications for industry and consumers alike.
-      </p> -->
-
-
-
-
-      <p class="title-md">Connect with us:</p>
-
-      <p class="title-sm">
-        <a href="mailto:services@slowfactory.com">By email</a>
-      </p>
-
-      <p class="title-sm">
-        <a href="https://www.instagram.com/theslowfactory/">On instagram</a>
-      </p>
-
-      <p class="title-sm">
-        Our newsletter:
-      </p>
-
-      {% include newsletter-signup.liquid %}
-
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-
-    <p class="flex">
+  </div>
+</section>
+<section class="footer-contact">
+  <div class="container">
+    <div class="row">
+      <div class="half">
+        <h3 class="title-md">Connect with us</h3>
+      </div>
+      <div class="half">
+        <p>
+          <a href="mailto:services@slowfactory.com">By email</a>
+        </p>
+        <p >
+          <a href="https://www.instagram.com/theslowfactory/">On instagram</a>
+        </p>
+        <p >
+          Our newsletter:
+        </p>
+        {% include newsletter-signup.liquid %}
+      </div>
+    </div>
+    <p class="flex copyright">
       <a href="https://creativecommons.org/licenses/by-nc/3.0/"><img style="max-width:5em;" src="{{ 'images/util/cc-by-nc.svg' | asset_url }}"></a>
       <span style="display:block;">&nbsp;All content is released under a Creative Commons attribution/non-commercial open license</span>
     </p>
-
-
   </div>
-</div>
+</section>

@@ -6,8 +6,6 @@
   <div class="container">
 
     <div class="header">
-      <img src="{{ 'images/logo-SlowFactory-S-mark.png' | asset_url }}" class="sf-logo-S-mark">
-
       <div class="burger-menu js-show-mobile-menu burger-menu-placement">
         <span></span>
         <span></span>
@@ -15,11 +13,8 @@
       </div>
 
       <div class="flex" style="max-width:90%">
-        <a href="/" class="title-sm sf-logo">
-          <div>
-            Slow&nbsp;Factory
-            <div class="dark-grey">Foundation</div>
-          </div>
+        <a href="/" class="sf-logo">
+          <img src="{{ 'images/logos/slow-factory.svg' | asset_url }}" alt="Slow Factory Foundation" class="slow-factory-logo">
         </a>
         {% if page.name == 'index.html' %}
         <div class="title-lg on-dark-bg">
@@ -30,7 +25,11 @@
           &nbsp;/
         </div>
         <div class="title-sm" style="margin-left:.7em">
+          {% if page.title == 'Open Education' %}
+            <img src="{{ 'images/logos/open-education.svg' | asset_url }}" alt="Open Education" class="open-education-logo">
+          {% else %}
           {{ page.title }}
+          {% endif %}
         </div>
         {% endif %}
       </div>
