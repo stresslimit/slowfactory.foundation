@@ -44,6 +44,9 @@ ul.bulletless {
   padding-left: 0;
   list-style: none;
 }
+.b {
+  font-weight: bold;
+}
 
 a {
   color: var(--text-color);
