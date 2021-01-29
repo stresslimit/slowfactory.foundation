@@ -1,9 +1,10 @@
 .DS_Store
+.jekyll-cache*
+.jekyll-cache/*
+.firebase
 node_modules
-config.yml
 yarn.lock
 Gemfile.lock
 vendor
 _site
-.jekyll-cache*
 assets
