@@ -2,7 +2,8 @@
 .ruby-version
 .jekyll-cache*
 .jekyll-cache/*
-.firebase
+.firebase*
+.firebase/*
 node_modules
 yarn.lock
 Gemfile.lock
