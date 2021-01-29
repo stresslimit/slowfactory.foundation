@@ -7,21 +7,29 @@
   position: relative;
   padding-top: var(--unit);
 }
-.sf-logo-S-mark {
-  position: absolute;
-  top: 30px;
-  left: -29px;
-  width: 28px;
+.sf-logo{
+  margin-left: -19px;
 }
-.sf-logo {
-  text-decoration: none;
-  line-height: 1.1;
+.slow-factory-logo{
+  height: 25px;
+  width: 103px;
+}
+.open-education-logo{
+  height: 25px;
+  width: 100px;
 }
 @media (--viewport-md) {
-  .sf-logo-S-mark {
-    top: 39px;
-    left: -37px;
-    width: 36px;
+  .sf-logo{
+    margin-right: 7px;
+    margin-left: -32px;
+  }
+  .slow-factory-logo{
+    height: 43px;
+    width: 170px;
+  }
+  .open-education-logo{
+    height: 50px;
+    width: 210px;
   }
 }
 .the-earth {
