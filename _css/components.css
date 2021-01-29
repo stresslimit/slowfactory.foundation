@@ -38,3 +38,22 @@
   line-height: 30px;
   padding: 0 15px;
 }
+
+/* Instructor */
+.instructor{
+  display: inline-flex;
+  margin-bottom: 16px; 
+  align-items: center;
+}
+.instructor-photo{
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  padding: 0;
+  margin: 0 8px 0 0;
+}
+.instructor-name{
+  font-weight: bold;
+  padding: 0;
+  margin: 0; 
+}

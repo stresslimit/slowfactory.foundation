@@ -13,15 +13,9 @@
       <h1 class="title-md">{{ include.title }}</h1>
       <p class="text-md">{{ include.description }}</p>
       {% if include.instructor %}
-        <div class="flex">
-          {% if include.instructor.photo_bw and include.instructor.photo_bw != '' %}
-          <img class="open-education-2021-classes__instructor-photo" src="{{ 'images/open-education/instructors/' | append: include.instructor.photo_bw | asset_url }}">
-          {% endif %}
-          <p>by {{ include.instructor.name }}</p>
-        </div>
+        {% include components/instructor.liquid photo_bw=include.instructor.photo_bw name=include.instructor.name  %}
         <p class="text-sm">{{ instructor.bio }}
       {% endif %}
-
       <div class="text-center">
         {% include components/button.liquid data-toggle="modal-register" text="Register for the class" %}
       </div>
