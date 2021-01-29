@@ -47,9 +47,16 @@ hero_bg_color: "bg-brown"
   </div>
 </div>
 
-  <div class="container">
-    <p class="title-sm text-center"><a href="#background">#createdwithadidas</a></p>
+
+<div class="container text-center">
+  <div class="flex title-sm" style="justify-content:center">
+    <div>Created with </div>
+    <div>
+      <img src="{{ 'images/logos/logo-adidas.png' | asset_url }}" style="max-width:120px">
+    </div>
+  </div>
 </div>
+
 
 <div class="section open-education-2020-classes">
   <div class="container">
@@ -63,7 +70,7 @@ hero_bg_color: "bg-brown"
   </div>
 </div>
 
-{% include background.liquid %}
+{% include open-education/background.liquid %}
 
 {% include footer-donation.liquid %}
 
