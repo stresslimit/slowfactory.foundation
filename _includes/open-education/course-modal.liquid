@@ -14,8 +14,9 @@
       <p class="text-md">{{ include.description }}</p>
       {% if include.instructor %}
         {% include components/instructor.liquid photo_bw=include.instructor.photo_bw name=include.instructor.name  %}
-        <p class="text-sm">{{ instructor.bio }}
+        <p class="text-sm">{{ instructor.bio }}</p>
       {% endif %}
+      <br />
       <div class="text-center">
         {% include components/button.liquid data-toggle="modal-register" text="Register for the Semester" %}
       </div>
