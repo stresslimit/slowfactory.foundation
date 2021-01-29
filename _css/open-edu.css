@@ -270,14 +270,6 @@ display: flex;
   overflow: hidden;
   outline: 0;
 }
-.modal-title {
-  margin: 0;
-  line-height: 1.5;
-  color: black;
-  font-size: 1.5rem;
-  font-weight: 400;
-  font-weight: bold;
-}
 .modal-header {
   padding-bottom: 16px;
 }
