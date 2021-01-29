@@ -237,22 +237,33 @@
 .footer-we-are{
   background-color: #C9E3E2;
   color: black;
-  padding: 16px 32px;
+  padding: 16px;
 }
-.footer-info ul,
-.footer-info li {
+
+@media (--viewport-md) {
+  .footer-we-are{
+    padding: 0;
+  }
+  .footer-we-are h2{
+    padding: 30px 30px 0;
+  }
+  .footer-we-are p{
+    padding: 0 30px 30px;
+  }
+}
+.footer-info ul{
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
 .footer-we-are ul{
-  display: flex;
-  justify-content: space-between;
-  margin-bottom:32px;
+  /* display: flex; */
+  /* justify-content: space-between; */
+  /* margin-bottom:32px; */
 }
 .footer-we-are li{
-  width: 30%;
+  /* width: 30%; */
 }
 .footer-we-fund h2{
   padding-right: 32px;

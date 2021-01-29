@@ -22,6 +22,7 @@ display: flex;
 .open-education-2021-classes__calendar .cell{
   padding: 32px;
   box-sizing: border-box;
+  width: 100%;
 }
 
 @media (--viewport-md) {
@@ -101,13 +102,21 @@ display: flex;
   width: 25%;
 }
 .open-education-2021-classes__calendar .info{
-  width: 60%;
+  width: 75%;
 }
 
 .open-education-2021-classes__instructor-photo {
   width: 3em;
   height: 3em;
   border-radius: 50%;
+}
+.open-education-2020-classes h2{
+  padding-bottom: 32px;
+}
+@media (--viewport-md) {
+  .open-education-2020-classes h2{
+    padding-bottom: 16px;
+  }
 }
 .open-education-2020-classes .button{
   margin-top: 32px;
@@ -146,14 +155,12 @@ display: flex;
   margin-bottom: 16px;
 }
 
-
 /* Footer donate sticky */
 .donate-sticky{
   position:fixed;
   bottom:0;
   left:0;
   right: 0;
-  height: 150px;
   z-index:10;
   background-color:#F9F9F9;
   background-image: url(/assets/images/open-education/pen_icon.png), url(/assets/images/open-education/pen_icon_1.png), url(/assets/images/open-education/pen_icon_2.png);
@@ -167,18 +174,37 @@ display: flex;
   -o-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
   font-weight: bold;
+  padding: 16px;
 }
 .donate-sticky .container{
-  display: flex;
   height: 100%;
-  align-items: center;
-  justify-content: center;
 }
 .donate-sticky p{
-  margin: 0;
-  padding-right: 32px;
+ display: none;
+}
+.donate-sticky  button{
+  width: 100%;
 }
 
+@media (--viewport-md) {
+  .donate-sticky{
+    padding: 0;
+  }
+  .donate-sticky .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+  }
+  .donate-sticky p{
+    display: block;
+    margin: 0;
+    padding-right: 32px;
+  }
+  .donate-sticky  button{
+    width: auto;
+  }
+}
 @keyframes snow {
   0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
   100% {background-position: 50000px 50000px, 10000px 20000px, -10000px 15000px;}
@@ -214,23 +240,25 @@ display: flex;
 }
 
 
-
-/*  modal */
+/*  Modal */
 .modal-content {
   position: relative;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  max-width:800px;
-  pointer-events: auto;
   background-color: #fff;
-  background-clip: padding-box;
-  border: 4px solid rgba(0,0,0);
-  border-radius: .3rem;
-  outline: 0;
-  margin: 0 auto;
+  height: 100%;
+  overflow-y: scroll;
+  padding: 32px;
+  box-sizing: border-box;
 }
+@media (--viewport-md) {
+  .modal-content {
+    max-width:800px;
+    border: 4px solid rgba(0,0,0);
+    border-radius: .3rem;
+    margin: 0 auto;
+    overflow-y: none;
+  }
+}
+
 .modal{
   position: fixed;
   top: 0;
@@ -265,11 +293,19 @@ display: flex;
 }
 
 .modal-dialog {
-  margin: auto 1rem;
+  height: 100%;
+  width: 100%;
   opacity: 0;
   transform: translateY(-100px);
   transition: 300ms opacity ease-out,
               300ms transform ease-out;
+}
+@media (--viewport-md) {
+  .modal-dialog {
+    height: auto;
+    width: auto;
+    margin: auto 1rem;
+  }
 }
 .modal.animate-modal .modal-dialog{
   opacity: 1;
