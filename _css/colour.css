@@ -3,6 +3,9 @@
 .on-dark-bg {
   color: white;
 }
+/* . {
+  color: var(--);
+} */
 .dark-grey {
   color: var(--dark-grey);
 }
@@ -33,6 +36,9 @@
 .pink {
   color: var(--pink);
 }
+.light-salmon {
+  color: var(--light-salmon);
+}
 .magenta {
   color: var(--magenta);
 }
@@ -45,6 +51,12 @@
 .bright-yellow {
   color: var(--bright-yellow);
 }
+.light-yellow {
+  color: var(--light-yellow);
+}
+.light-beige {
+  color: var(--light-beige);
+}
 .brown {
   color: var(--brown);
 }
@@ -52,6 +64,11 @@
   color: var(--turquoise);
 }
 
+/* Backgrounds
+*/
+/* . {
+  background: var(--) !important;
+} */
 .bg-black {
   background: var(--black) !important;
 }
@@ -85,6 +102,9 @@
 .bg-pink {
   background: var(--pink) !important;
 }
+.bg-light-salmon {
+  background: var(--light-salmon) !important;
+}
 .bg-magenta {
   background: var(--magenta) !important;
 }
@@ -96,6 +116,12 @@
 }
 .bg-bright-yellow {
   background: var(--bright-yellow) !important;
+}
+.bg-light-yellow {
+  background: var(--light-yellow) !important;
+}
+.bg-light-beige {
+  background: var(--light-beige) !important;
 }
 .bg-brown {
   background: var(--brown) !important;

@@ -1,20 +1,12 @@
-/* Register */
-.open-education-register{
-  text-align: center;
-  background: url(/assets/images/open-education/register_bg.png) repeat #F2F4F5;
-}
 
 /* Calendar */
-.open-education-2021-classes h2{
-  padding-bottom: 32px;
-}
 .open-education-2021-classes .earth-logo path{
   fill: black;
   stroke: black;
 }
 .open-education-2021-classes__calendar{
   width: 100%;
-display: flex;
+  display: flex;
   align-content: flex-start;
   flex-wrap:wrap;
 }
@@ -45,19 +37,19 @@ display: flex;
 }
 
 .open-education-2021-classes__calendar .cell_1{
-  background-color: #FCF1D0;
+  background-color: var(--light-beige);
 }
 .open-education-2021-classes__calendar .cell_1 .teacher{
   color: #A67C00;
 }
 .open-education-2021-classes__calendar .cell_2{
-  background-color: #FBFCD0;
+  background-color: var(--light-yellow);
 }
 .open-education-2021-classes__calendar .cell_2 .teacher{
   color: #5C7A79;
 }
 .open-education-2021-classes__calendar .cell_3{
-  background-color: #FCE2D0;
+  background-color: var(--light-salmon);
 }
 .open-education-2021-classes__calendar .cell_3 .teacher{
   color: #995151;
