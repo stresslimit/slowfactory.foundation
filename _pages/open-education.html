@@ -95,8 +95,12 @@ hero_bg_color: "bg-brown"
   document.querySelectorAll('[data-toggle="modal"]').forEach(item => {
     item.addEventListener('click', function (e) {
       const modal = document.querySelector(`#${this.dataset.id}`);
+      // console.log(modal)
       const closeButtons = modal.querySelectorAll('[data-close]');
       open(modal);
+      // if ( this.dataset.id == 'register' ) {
+      //   // close the first modal
+      // }
       modal.addEventListener('click', function (e) {
         e.stopPropagation();
       });
