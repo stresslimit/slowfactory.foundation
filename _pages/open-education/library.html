@@ -8,7 +8,6 @@ hero_bg_color: "bg-turquoise"
 
 {% include components/hero.liquid %}
 
-
 <div class="section-lg open-education-classes">
   <div class="container">
     {% for course in site.data.openeducation.courses %}
@@ -21,10 +20,9 @@ hero_bg_color: "bg-turquoise"
 
 {% include open-education/background.liquid %}
 
-{% include footer-donation.liquid %}
+{% include components/donation-banner.liquid name="open-education" %}
 
 {% include open-education/register-modal.liquid %}
-
 
 <script type="text/javascript">
   const open = (element) => {

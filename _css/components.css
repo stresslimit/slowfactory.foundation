@@ -57,3 +57,100 @@
   padding: 0;
   margin: 0; 
 }
+
+
+/* Footer donate sticky */
+.donate-sticky{
+  position:fixed;
+  bottom:0;
+  left:0;
+  right: 0;
+  z-index:10;
+  background-color:#F9F9F9;
+  background-image: url(/assets/images/donation-banner/open-education_1.png), url(/assets/images/donation-banner/open-education_2.png), url(/assets/images/donation-banner/open-education_3.png);
+  -webkit-animation: snow 1000s linear infinite;
+  -moz-animation: snow 1000s linear infinite;
+  -ms-animation: snow 1000s linear infinite;
+  animation: snow 1000s linear infinite;
+  -webkit-transform: translate3d(0,0,0);
+  -moz-transform: translate3d(0,0,0);
+  -ms-transform: translate3d(0,0,0);
+  -o-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+  font-weight: bold;
+  padding: 16px;
+}
+.donate-sticky.open-education{
+  background-image: url(/assets/images/donation-banner/open-education_1.png), url(/assets/images/donation-banner/open-education_2.png), url(/assets/images/donation-banner/open-education_3.png);
+}
+.donate-sticky.homepage{
+  background-image: url(/assets/images/donation-banner/homepage_1.png), url(/assets/images/donation-banner/homepage_2.png), url(/assets/images/donation-banner/homepage_3.png);
+}
+.donate-sticky .container{
+  height: 100%;
+}
+.donate-sticky p{
+ display: none;
+}
+
+.donate-sticky .button{
+  font-size: 18px;
+  border: 2px solid black;
+  height: 50px;
+  line-height: 50px;
+  padding: 0 25px;
+  border-radius: 50px;
+  background-color: rgba(255,255,255,.5);
+  transition: all .3s ease-in-out;
+  backdrop-filter: blur(5px);
+  width: 100%;
+}
+.donate-sticky .button:hover{
+  text-decoration: none;
+  background:rgba(255,255,255,.8);
+
+}
+.donate-sticky .container{
+  padding: 0;
+}
+
+@media (--viewport-md) {
+  .donate-sticky{
+    padding: 0;
+  }
+  .donate-sticky .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+  }
+  .donate-sticky p{
+    display: block;
+    margin: 0;
+    padding-right: 32px;
+  }
+  .donate-sticky .button{
+    width: auto;
+  }
+}
+
+
+@keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  100% {background-position: 50000px 50000px, 10000px 20000px, -10000px 15000px;}
+}
+
+@-moz-keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  100% {background-position: 50000px 50000px, 10000px 20000px, -10000px 15000px;}
+}
+
+@-webkit-keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  100% {background-position: 50000px 50000px, 10000px 20000px, -10000px 15000px;}
+}
+
+@-ms-keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  100% {background-position: 50000px 50000px, 10000px 20000px, -10000px 15000px;}
+}
