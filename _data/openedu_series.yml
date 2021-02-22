@@ -1,6 +1,3 @@
-- name: "Fashion And ..."
-  color: red
+- name: Fashion And ...
 - name: History of ...
-  color: blue
-- name: Master Class Series
-  color: green
+- name: Asymmetric Studies

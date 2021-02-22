@@ -23,18 +23,20 @@ hero_bg_color: "bg-brown"
           <ul>
             {% assign courses = site.data.openedu | where_exp: "item", "item.series == series.name" %}
             {% for course in courses %}
-              {% assign id = 'course-' | append: index1 | append: '-' | append: index2 %}
-              {% assign instructors = site.data.openedu_instructors | where_exp: "item", "item.name == course.instructor" %}
-              {% assign instructor = instructors[0] %}
-              <li data-toggle="modal" data-id="{{id}}">
-                {% assign index2 = forloop.index %}
-                <div class="date">{{ course.date }}</div>
-                <div class="info">
-                  <div class="title-xs">{{ course.title }}{% if course.vimeo_id %} ▶ {% else %} ✎ {% endif %}</div>
-                  <div class="text-sm teacher">{{ course.instructor }}</div>
-                </div>
-              </li>
-              {% include open-education/course-modal.liquid id=id series_name=series.name title=course.title instructor=instructor instructor=instructor description=course.description vimeo_id=course.vimeo_id %}
+              {% if course.confirmed == 'Confirmed' %}
+                {% assign id = 'course-' | append: index1 | append: '-' | append: index2 %}
+                {% assign instructors = site.data.openedu_instructors | where_exp: "item", "item.name == course.instructor" %}
+                {% assign instructor = instructors[0] %}
+                <li data-toggle="modal" data-id="{{id}}">
+                  {% assign index2 = forloop.index %}
+                  <div class="date">{{ course.date }}</div>
+                  <div class="info">
+                    <div class="title-xs">{{ course.title }}{% if course.vimeo_id %} ▶ {% else %} ✎ {% endif %}</div>
+                    <div class="text-sm teacher">{{ course.instructor }}</div>
+                  </div>
+                </li>
+                {% include open-education/course-modal.liquid id=id series_name=series.name title=course.title instructor=instructor instructor=instructor description=course.description vimeo_id=course.vimeo_id %}
+              {% endif %}
             {% endfor %}
           </ul>
         </div>
