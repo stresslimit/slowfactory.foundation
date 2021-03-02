@@ -31,7 +31,7 @@ hero_bg_color: "bg-brown"
                   {% assign index2 = forloop.index %}
                   <div class="date">{{ course.date }}</div>
                   <div class="info">
-                    <div class="title-xs">{{ course.title }}{% if course.vimeo_id %} ▶ {% else %} ✎ {% endif %}</div>
+                    <div class="title-xs">{{ course.title }}{% if course.vimeo_id %}&nbsp;▶ {% else %}&nbsp;✎ {% endif %}</div>
                     <div class="text-sm teacher">{{ course.instructor }}</div>
                   </div>
                 </li>
