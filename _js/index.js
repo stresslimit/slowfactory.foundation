@@ -3,7 +3,7 @@ import formAjax from './form-ajax'
 import revealAnimations from './lam-reveal-animations'
 import animator from './animator'
 import { init as mobile_menu, close_mobile_menu } from './mobile-menu'
-// import sticky from './sticky'
+import typewriter from './typewriter'
 
 
 window.addEventListener('load', (e) => {
@@ -13,6 +13,11 @@ window.addEventListener('load', (e) => {
   mobile_menu()
   formAjax()
   animator()
+  if ( document.getElementById('js-typewriter') )
+    typewriter(
+      sayings, // LOL global
+      document.getElementById('js-typewriter')
+    )
 
 })
 
