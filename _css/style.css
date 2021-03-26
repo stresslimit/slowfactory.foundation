@@ -311,19 +311,6 @@
   width: 40%;
   margin-bottom: calc(var(--unit) / 2);
 }
-.footer-contact input[type="submit"]{
-  font-size: 24px;
-  border: 2px solid black;
-  height:50px;
-  line-height: 50px;
-  padding: 0 25px;
-  border-radius: 50px;
-  background-color: transparent;
-}
-.footer-contact input[type="submit"]:hover{
-  text-decoration: none;
-  background:rgba(255,255,255,.3)
-}
 .footer-contact  .copyright{
   padding: 32px 0 0 ;
   margin: 0;

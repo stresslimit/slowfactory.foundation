@@ -42,6 +42,9 @@
 .magenta {
   color: var(--magenta);
 }
+.light-purple {
+  color: var(--light-purple);
+}
 .purple {
   color: var(--purple);
 }
@@ -107,6 +110,9 @@
 }
 .bg-magenta {
   background: var(--magenta) !important;
+}
+.bg-light-purple {
+  background: var(--light-purple) !important;
 }
 .bg-purple {
   background: var(--purple) !important;

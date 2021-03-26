@@ -28,15 +28,29 @@ input[type=submit] {
   -webkit-appearance: none;
 }
 .button, .btn {
+  background-color: transparent;
   cursor: pointer;
   display: inline-block;
   padding: .6em;
-  border: 3px solid var(--light-grey);
-  background: white;
-  border-radius: 0;
+  border: 3px solid black;
+  line-height: 1em;
+  border-radius: 1.5em / 50%;
+  padding: .75em 1em;
+  text-decoration: none;
 
   @extend .title-sm;
+
 }
+
+.button:hover, .btn:hover {
+  text-decoration: none;
+}
+
+
+/* .btn--jsmotiongradient {
+  background-position: calc((100 - var(--mouse-x, 0)) * 1%) calc((100 - var(--mouse-y, 0)) * 1%); --mouse-x:69.601; --mouse-y:81.25;
+  background-image: radial-gradient(at calc(var(--mouse-x, 0) * 100%) calc(var(--mouse-y, 0) * 100%), yellow, green);
+} */
 .btn.btn--lg {
   font-size: 2em;
   padding: .35em .7em .2em;
@@ -55,15 +69,6 @@ input[type=submit] {
   border-color: var(--text-color);
 }
 
-.btn--yellow-pill {
-  background: var(--yellow);
-  border-radius: 1.5em / 50%;
-  padding: 1em;
-  display: block;
-  text-decoration: none;
-
-  @extend .title-xs;
-}
 .btn--inline {
   display: inline-block;
 }
