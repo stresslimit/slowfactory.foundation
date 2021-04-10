@@ -13,6 +13,7 @@ window.addEventListener('load', (e) => {
   mobile_menu()
   formAjax()
   animator()
+  // motiongradient()
   if ( document.getElementById('js-typewriter') )
     typewriter(
       sayings, // LOL global
@@ -20,6 +21,41 @@ window.addEventListener('load', (e) => {
     )
 
 })
+
+
+function motiongradient() {
+/*  let a = document.querySelectorAll('.btn--jsmotiongradient')
+  a.forEach((el) => {
+    // console.log('setting up listener for', el)
+    const root = document.documentElement;
+
+    el.addEventListener("mousemove", (e) => {
+
+      let x = -e.offsetX
+      let y = -e.offsetY
+
+      console.log('setting', x, y)
+
+      // root.style.setProperty('--mouse-x', x + "px");
+      // root.style.setProperty('--mouse-y', y + "px");
+
+      el.style.setProperty('--mouse-x', x);
+      el.style.setProperty('--mouse-y', y);
+    })
+  })*/
+
+  const root = document.documentElement;
+
+document.addEventListener('mousemove', e => {
+    // let x = e.clientX / innerWidth;
+    // let y = e.clientY / innerHeight;
+
+    let x = e.offsetX
+    let y = e.offsetY
+    root.style.setProperty('--mouse-x', x);
+    root.style.setProperty('--mouse-y', y);
+});
+}
 
 
 function externalLinks() {

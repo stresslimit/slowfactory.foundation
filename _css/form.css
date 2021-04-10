@@ -47,10 +47,9 @@ input[type=submit] {
 }
 
 
-/* .btn--jsmotiongradient {
-  background-position: calc((100 - var(--mouse-x, 0)) * 1%) calc((100 - var(--mouse-y, 0)) * 1%); --mouse-x:69.601; --mouse-y:81.25;
-  background-image: radial-gradient(at calc(var(--mouse-x, 0) * 100%) calc(var(--mouse-y, 0) * 100%), yellow, green);
-} */
+.btn--jsmotiongradient {
+  /* background: transparent radial-gradient(at calc(var(--mouse-x, 0) * 100%) calc(var(--mouse-y, 0) * 100%), #ff0, #008000) no-repeat 0 0; */
+}
 .btn.btn--lg {
   font-size: 2em;
   padding: .35em .7em .2em;

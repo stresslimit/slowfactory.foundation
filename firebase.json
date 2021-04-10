@@ -19,6 +19,11 @@
         "type": 301
       },
       {
+        "source": "/open-edu",
+        "destination": "/open-education",
+        "type": 301
+      },
+      {
         "source": "/landfills",
         "destination": "/landfills-as-museums",
         "type": 301
