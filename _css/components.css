@@ -1,5 +1,5 @@
 /* Button */
-.component-button{
+.component-button {
   display: inline-block;
   font-size: 18px;
   border: 2px solid black;
@@ -17,13 +17,13 @@
   width: max-content;
 }
 @media (--viewport-md) {
-  .component-button{
+  .component-button {
     font-size: 24px;
     height: 70px;
     line-height: 70px;
   }
 }
-.component-button:hover{
+.component-button:hover {
   background-color: rgba(255,255,255,.5);
 }
 .component-button.md{
@@ -32,28 +32,43 @@
   line-height: 40px;
   padding: 0 20px;
 }
-.component-button.sm{
+.component-button.sm {
   font-size: 18px;
   height: 30px;
   line-height: 30px;
   padding: 0 15px;
 }
 
-/* Instructor */
-.instructor{
+/* Sponsor */
+/* .sponsor {
   display: inline-flex;
-  margin-bottom: 16px; 
+  margin-bottom: 16px;
+  align-items: center;
+} */
+.sponsor-photo {
+  max-width: 150px;
+  padding: 0;
+  margin: 0 8px 0 0;
+}
+.info .sponsor-photo {
+  max-width: 80px;
+}
+
+/* Instructor */
+.instructor {
+  display: inline-flex;
+  margin-bottom: 16px;
   align-items: center;
 }
-.instructor-photo{
+.instructor-photo {
   width: 45px;
   height: 45px;
   border-radius: 50%;
   padding: 0;
   margin: 0 8px 0 0;
 }
-.instructor-name{
+.instructor-name {
   font-weight: bold;
   padding: 0;
-  margin: 0; 
+  margin: 0;
 }

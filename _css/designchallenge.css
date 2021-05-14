@@ -13,3 +13,10 @@
 .wm-logos {
   max-width: 140px;
 }
+
+.wm-advisor {
+  margin-bottom: 3em;
+}
+.wm-advisor-name {
+  @extend .title-sm;
+}

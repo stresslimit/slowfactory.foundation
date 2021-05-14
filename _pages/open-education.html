@@ -33,9 +33,12 @@ hero_bg_color: "bg-brown"
                   <div class="info">
                     <div class="title-xs">{{ course.title }}{% if course.vimeo_id %}&nbsp;▶ {% else %}&nbsp;✎ {% endif %}</div>
                     <div class="text-sm teacher">{{ course.instructor }}</div>
+                    {% if course.sponsor_logo %}
+                      {% include components/sponsor.liquid sponsor_logo=course.sponsor_logo %}
+                    {% endif %}
                   </div>
                 </li>
-                {% include open-education/course-modal.liquid id=id series_name=series.name title=course.title instructor=instructor instructor=instructor description=course.description vimeo_id=course.vimeo_id %}
+                {% include open-education/course-modal.liquid id=id series_name=series.name title=course.title instructor=instructor sponsor_logo=course.sponsor_logo description=course.description vimeo_id=course.vimeo_id %}
               {% endif %}
             {% endfor %}
           </ul>
