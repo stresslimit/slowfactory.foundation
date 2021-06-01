@@ -16,7 +16,16 @@ window.addEventListener('load', (e) => {
   // motiongradient()
   if ( document.getElementById('js-typewriter') )
     typewriter(
-      sayings, // LOL global
+      [
+        'Empower open and accessible programs.',
+        'Educate the public about climate & social justice.',
+        'Dismantle oppressive systems.',
+        'Pass legislation on microplastics.',
+        'Implement waste-led resources.',
+        'Democratize science.',
+        'Invest in climate positive solutions.',
+        'Research & developing leading innovations.'
+      ],
       document.getElementById('js-typewriter')
     )
 

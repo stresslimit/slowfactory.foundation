@@ -27,6 +27,9 @@ input, select {
 input[type=submit] {
   -webkit-appearance: none;
 }
+.email-field {
+  margin-bottom: calc(var(--unit) / 2);
+}
 .button, .btn {
   background-color: transparent;
   cursor: pointer;
