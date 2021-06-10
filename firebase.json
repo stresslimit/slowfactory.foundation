@@ -44,11 +44,6 @@
         "type": 301
       },
       {
-        "source": "/team",
-        "destination": "/about",
-        "type": 301
-      },
-      {
         "source": "/pages/team",
         "destination": "/team",
         "type": 301

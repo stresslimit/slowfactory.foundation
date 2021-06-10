@@ -37,7 +37,7 @@ permalink: /designchallenge
 
       <p>This program will challenge participants to experiment with and provide tangible  solutions for disassembly and reuse of products through de-manufacturing, up-cycling materials and other processes.</p>
 
-      <p><a class="btn" href="#advisors">Meet our Advisory Board</a></p>
+      <!-- <p><a class="btn" href="#advisors">Meet our Advisory Board</a></p> -->
 
     </div>
     <div class="half">
@@ -127,7 +127,7 @@ permalink: /designchallenge
     </div>
   </div>
 
-
+{ % comment %}
   <div id="advisors" class="section row valign-top">
     <p class="title-md">Advisory Board</p>
   </div>
@@ -153,11 +153,17 @@ permalink: /designchallenge
       <p class="wm-advisor-bio">Aja Barber is an American writer based in London whose work has been featured in The Guardian, The Independent and CNN.  Aja's writing focuses on the sustainable landscapes within the fashion industry and what they should look like in an intersectional future. Aja is a proud board member of Slow Factory.</p>
     </div>
 
-    <!-- <div class="wm-advisor third">
-      <p><img src="{{ 'images/wm-designchallenge/advisors/.jpg' | asset_url }}"></p>
+    <div class="wm-advisor third">
+      <p><img src="{{ 'images/wm-designchallenge/advisors/Chad_Bolick.jpg' | asset_url }}"></p>
+      <p class="wm-advisor-name">Chad Bolick</p>
+      <p class="wm-advisor-bio">Chad Bolick has spent over 25 years as a sales and technical leader in the global textile industry. In his most recent role as Vice President Global Key Accounts at Unifi Manufacturing Inc., he leads the charge for adoption of sustainable synthetic fibers - driving global demand for REPREVE® recycled polyester and nylon fibers.</p>
+    </div>
+
+    <div class="wm-advisor third">
+      <p><img src="{{ 'images/wm-designchallenge/advisors/Korina_Emmerich.jpg' | asset_url }}"></p>
       <p class="wm-advisor-name">Korina Emmerich</p>
-      <p class="wm-advisor-bio"></p>
-    </div> -->
+      <p class="wm-advisor-bio">Korina Emmerich has built her Brooklyn NY based brand, EMME Studio, on the backbone of Expression, Art and Culture. Leading the charge to embrace art and design as one and weaving it into her brand story. Items are made-to-order in our Brooklyn, New York studio located on occupied Canarsee territories. Originally from the Pacific Northwest, her colorful work is known to reflect her patrilineal Indigenous heritage from The Coast Salish Territory, Puyallup tribe.</p>
+    </div>
 
     <div class="wm-advisor third">
       <p><img src="{{ 'images/wm-designchallenge/advisors/Lauren_Bright.jpg' | asset_url }}"></p>
@@ -219,11 +225,11 @@ permalink: /designchallenge
       <p class="wm-advisor-bio">Cyndi founded Worn Again Technologies in 2005 with a determination to create a business out of solving the global problem of textiles waste. She is an early pioneer of the sustainable fashion movement, a co-Founder of the RE:Fashion Awards, the world’s first Sustainable Fashion Awards in London, and more recently a co-Founder of World Circular Textiles Day. </p>
     </div>
 
-    <!-- <div class="wm-advisor third">
-      <p><img src="{{ 'images/wm-designchallenge/advisors/.jpg' | asset_url }}"></p>
+    <div class="wm-advisor third">
+      <p><img src="{{ 'images/wm-designchallenge/advisors/Theanne_Schiros.jpg' | asset_url }}"></p>
       <p class="wm-advisor-name">Dr. Theanne Schiros</p>
       <p class="wm-advisor-bio">Theanne Schiros, PhD, is an Assistant Professor at the Fashion Institute of Technology, where she guides students to rethink materials in collaboration with nature, and a Research Scientist at Columbia University. She is a co-founder and the CSO of Werewool, developing biodegradable textile fibers with DNA-programmed color and performance, and a co-founder and the former Scientific Director of Algiknit. </p>
-    </div> -->
+    </div>
 
     <div class="wm-advisor third">
       <p><img src="{{ 'images/wm-designchallenge/advisors/Jessica_Schreiber.jpg' | asset_url }}"></p>
@@ -231,11 +237,11 @@ permalink: /designchallenge
       <p class="wm-advisor-bio">Jessica Schreiber is the Founder and CEO of FABSCRAP, which provides convenient pickup and recycling of fabric scraps from businesses in New York City and creates opportunities for reuse. Prior to launching FABSCRAP, she worked in the Bureau of Recycling and Sustainability at the NYC Department of Sanitation. She has a Masters degree in Climate and Society from the Earth Institute at Columbia University.</p>
     </div>
 
-    <!-- <div class="wm-advisor third">
-      <p><img src="{{ 'images/wm-designchallenge/advisors/.jpg' | asset_url }}"></p>
+    <div class="wm-advisor third">
+      <p><img src="{{ 'images/wm-designchallenge/advisors/Catherine_Scott.jpg' | asset_url }}"></p>
       <p class="wm-advisor-name">Catherine Scott</p>
-      <p class="wm-advisor-bio"></p>
-    </div> -->
+      <p class="wm-advisor-bio">Catherine Scott has served as the Experiential Marketing and Strategic Alliance Manager at Unifi Manufacturing, Inc (makers of REPREVE) since 2016.  Within her role, she has developed the implementation of all Unifi experiences to include program objectives, thematic direction, overall look & feel, campaign tactics, ROI and logistical executions.  Within her role she also overseas all Unifi alliances to include sponsorships, brand marketing, and integrated marketing programs. Catherine is excited in the sustainability initiatives her company has implemented and her part in marking a difference.</p>
+    </div>
 
     <div class="wm-advisor third">
       <p><img src="{{ 'images/wm-designchallenge/advisors/Yunhee_Shin.jpg' | asset_url }}"></p>
@@ -270,6 +276,7 @@ permalink: /designchallenge
     </div> -->
 
   </div>
+  { % endcomment %}
 
 
   <div class="section row valign-top">
